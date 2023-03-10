@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Formula Book</title>
+    <link rel="stylesheet" href="../static/css/formulas.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <div class="side-wave start">.</div> -->
+      <div class="x" id="x">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="tab-container">
+          <a
+            class="tab"
+            onclick="switch_content('canvas','physics')"
+            style="background-image: linear-gradient(to left, #15c9e9, #0a6ddd)"
+            >Physics</a
+          >
+          <a
+            onclick="switch_content('canvas','math')"
+            class="tab"
+            style="background-image: linear-gradient(to left, #ff8c2e, #ff3195)"
+            >Math</a
+          >
+          <a
+            onclick="switch_content('canvas','chemistry')"
+            class="tab"
+            style="background-image: linear-gradient(to left, #497aff, #9036e4)"
+            >Chemistry</a
+          >
+        </div>
+        <div id="canvas">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla nobis
+          eveniet, enim libero neque consequuntur necessitatibus recusandae eum
+          harum atque ad reiciendis nisi? Temporibus recusandae enim pariatur
+          quod ipsa laboriosam.
+        </div>
+      </div>
+      <!-- <div class="side-wave flip end">.</div> -->
+    </main>
+
+    <div class="content-container hidden">
+      <div id="math">
+        <div class="formula-container">
+          <div class="separator">General</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">xn * xm = xm + n</div>
+          <div class="desc">Used for Multiplying Indices</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">xn / xm = xm - n</div>
+          <div class="desc">Used for Dividing Indices</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">(xn)m = xn*m</div>
+          <div class="desc">Used of solving indices with two exponents</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">(y/x)m = ym/xm</div>
+          <div class="desc">used for indices with a fraction</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">x-m = 1/xm</div>
+          <div class="desc">used for indices with negative exponents</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">xm/n = n √(xm)</div>
+          <div class="desc">
+            Used if any number has a fraction as an exponent
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">x</div>
+          <div class="formula green">
+            avg = sum of all elements/number of elements
+          </div>
+          <div class="desc">finding average</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">Q2 = median</div>
+          <div class="desc">value of Q2</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Shape Chapters</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">P = 2(L + B)</div>
+          <div class="desc">Used to calculate perimeter of rectangle.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">P = 4*s</div>
+          <div class="desc">Used to calculate perimeter of square.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">C = πd or 2πr</div>
+          <div class="desc">Used to calculate perimeter of circle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = s²</div>
+          <div class="desc">Used to calculate area of square</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = L*B</div>
+          <div class="desc">Used to calculate area of rectangle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = (1/2)*bh</div>
+          <div class="desc">Used to calculate area of triangle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = πr²</div>
+          <div class="desc">Used to calculate area of circle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.2</div>
+          <div class="formula green">V = L*B*H</div>
+          <div class="desc">Used to calculate volume of cuboid</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = s³</div>
+          <div class="desc">Used to calculate volume of cube</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = 𝜋πr²h</div>
+          <div class="desc">Used to calculate volume of cylinder</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = A of cross section * height</div>
+          <div class="desc">
+            Used to calculate volume of any regular 3d shape
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = (a + b)/2 * h</div>
+          <div class="desc">Used to calculate area of trapezium.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula yellow">A = Θ/360 * πr²</div>
+          <div class="desc">Used to calculate area of a sector</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula yellow">C = Θ/360 * 2πr</div>
+          <div class="desc">Used to calculate arc length</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = (1/3) 𝜋r^2h</div>
+          <div class="desc">Used to calculate volume of cone</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">SA = 4πr^2</div>
+          <div class="desc">Used to calculate surface area of sphere</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = (4/3)πr^3</div>
+          <div class="desc">Used to calculate volume of sphere</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.1</div>
+          <div class="formula green">a² +b² = c²</div>
+          <div class="desc">
+            Pythagoras theorem, used to calculate various sides of a right
+            angles triangle
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.3</div>
+          <div class="formula green">
+            Scale factor(Area) = scale factor (length)²
+          </div>
+          <div class="desc">Used to calculate scale factor of Areas.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.3</div>
+          <div class="formula green">
+            Scale factor(vol) = scale factor(length)³
+          </div>
+          <div class="desc">Used to calculate scale factor of volumes.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">sinθ = O/H</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            opposite and hypotenuse
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">cosθ = A/H</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            Adjacent and hypotenuse
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">tanθ = O/A</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            opposite and Adjacent
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.3</div>
+          <div class="formula red">sin^2θ + cos^2θ = 1</div>
+          <div class="desc">
+            Trigonometric formula which gives a product of 1
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">sinθ = sin(180 - θ)</div>
+          <div class="desc">Alternative sine formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">cosθ = -cos(180 - θ)</div>
+          <div class="desc">Alternative cosine formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">cosθ = cos(360-θ)</div>
+          <div class="desc">
+            Alternative cosine formula which has positive value
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">tanθ = tan(180 + θ)</div>
+          <div class="desc">Alternative Tangent formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula red">a/sinA = b/sinB = c/sinC</div>
+          <div class="desc">
+            Used to calculate sides and angles of a triangle
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula red">a^2 = b^2 + c^2 - 2bccosA</div>
+          <div class="desc">Cosine Ratio</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula yellow">b^2 = a^2 + c^2 - 2accosB</div>
+          <div class="desc">Cosine Ratio</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula yellow">c^2 = a^2 + b^2 - 2abcosC</div>
+          <div class="desc">Cosine Ratio</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula helper">
+            (main side)² = (other sides)² - 2(other sides) *Cos(main angle)
+          </div>
+          <div class="desc">
+            simplifies cosine ratios, main side is the side you want to use,
+            main angle is the angle opposite to the side you want to find, if
+            you learn to use this there is no need to remember the above 3
+            formulas
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula red">A = 1/2absinC</div>
+          <div class="desc">
+            Using to calculate area of triangle when height is not given
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula yellow">A = 1/2 bc*sinA</div>
+          <div class="desc">
+            Using to calculate area of triangle when height is not given
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula yellow">A = 1/2ac * sinB</div>
+          <div class="desc">
+            Using to calculate area of triangle when height is not given
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula yellow">
+            Area = (1/2)*(given sides) * sin(given angle)
+          </div>
+          <div class="desc">
+            simplifies the above 3 formulas, if you learn to use this no need to
+            remember the above formulas
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula red">
+            (The angle in a semi circle is a right angle)
+          </div>
+          <div class="desc">circle theorm #1</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (The angle between the tangent and radius is 90 degrees)
+          </div>
+          <div class="desc">circle theorm #2</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (The angle at the center of a circle is twice the angle at the
+            circumference
+          </div>
+          <div class="desc">circle theorm #3</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (angles in the same segment are equal)
+          </div>
+          <div class="desc">circle theorm #4</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (The opposite angles of a cyclic quadrilateral add up to 180
+            degrees)
+          </div>
+          <div class="desc">circle theorm #5</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (Each exterior angle of a cyclic quadrilateral is equal to the
+            interior angle opposite to it)
+          </div>
+          <div class="desc">circle theorm #6</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            (The angle between the tangent and the chord is equal to the angle
+            in alternate segment)
+          </div>
+          <div class="desc">Alternate segment theorm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.4</div>
+          <div class="formula green">
+            (change in y coordinates)/(change in x coordinates) = gradient =
+            speed of distance time graph
+          </div>
+          <div class="desc">
+            used to find the speed in a distance time graph
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.6</div>
+          <div class="formula red">F = K * D</div>
+          <div class="desc">
+            Formula used to solve direct proportionality problems
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.6</div>
+          <div class="formula red">F = K * 1/D</div>
+          <div class="desc">
+            Formula used to solve inverse proportionality problems
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">Sequences</div>
+          <div class="formula"></div>
+          <div class="desc"></div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">9.1</div>
+          <div class="formula green">An = A1 + (n - 1)D</div>
+          <div class="desc">Used to find nth term of a sequence</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">Graph and Quadric Chapters</div>
+          <div class="formula"></div>
+          <div class="desc"></div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.1</div>
+          <div class="formula green">m = (y2 - y1)/(x2 - x1)</div>
+          <div class="desc">Used to find gradient</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula green">y = mx + c</div>
+          <div class="desc">
+            A formula that links gradient and c interception, this is the
+            standard formula and should be used for graphing
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula yellow">(a + b)^2 = a² + b² + 2ab</div>
+          <div class="desc">Used to square a binomial with operation +</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula yellow">
+            (a - b)² = (a + b)(a - b) = a² + b² - 2ab
+          </div>
+          <div class="desc">Used to square a binomial with operation -</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">Mean = ∑ xifi/∑ fi</div>
+          <div class="desc">Used to calculate mean</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">Median = fi/2</div>
+          <div class="desc">Used to calculate the middle number</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">Range = highest - lowest</div>
+          <div class="desc">Used to calculate the range</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">Q1 = (1/4) * (n+1)</div>
+          <div class="desc">Finding lower quartile</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">Q3 = (3/4) * (n+1)</div>
+          <div class="desc">Finding upper quartile</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">IQR = Q3 - Q1</div>
+          <div class="desc">Used to calculate inter quartile range</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">14.5</div>
+          <div class="formula red">(-b±√(b^2-4ac))/2a</div>
+          <div class="desc">Used to solve quadratic equations</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">x = -(b/2a)</div>
+          <div class="desc">
+            Used to find the x intercept of the turning point of a parabola
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">ax^2 + bx + c = 0</div>
+          <div class="desc">
+            used to find the x intercept of a parabola by making the y value as
+            0, in the equation
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.2</div>
+          <div class="formula green">y = (a/x) + q</div>
+          <div class="desc">general formula for hyperbola</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">ax^2 + bx + c</div>
+          <div class="desc">general formula for parabola</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.5</div>
+          <div class="formula green">y = a^x</div>
+          <div class="desc">general formula for exponential graphs</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.5</div>
+          <div class="formula green">y = x^3</div>
+          <div class="desc">general formula for cubic graphs</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">if y = x, dy/dx or f'(x) = 0</div>
+          <div class="desc">derivation for a numerical value such as 5</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">if y = nx, dy/dx or f'(x) = n</div>
+          <div class="desc">
+            derivation for a variable to the power 1, such as 5x
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">
+            if y = nx^a, dy/dx or f'(x) = anx^(n - 1)
+          </div>
+          <div class="desc">
+            derivation for a variable to the power higher then 1, such as 5x2
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">20.1</div>
+          <div class="formula yellow">fd = f/cw</div>
+          <div class="desc">Used to calculate the frequency density</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">20.1</div>
+          <div class="formula yellow">P = pn/100</div>
+          <div class="desc">Used to find the position of a percentile</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">Measurements and Conversions</div>
+          <div class="formula"></div>
+          <div class="desc"></div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 km = 10 hm</div>
+          <div class="desc">Used to convert km to hm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 hm = 100 dacm</div>
+          <div class="desc">Used to convert hm to dacm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 dacm = 10 m</div>
+          <div class="desc">Used to convert dacm to m</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 m = 10 dm</div>
+          <div class="desc">Used to convert m = dm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yelow">1 dm = 10 cm</div>
+          <div class="desc">Used to convert dm = cm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 cm = 10 mm</div>
+          <div class="desc">Used to convert cm = mm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1000 kg = 1t</div>
+          <div class="desc">Used to convert kg to t</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">Finance related chapters</div>
+          <div class="formula"></div>
+          <div class="desc"></div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">I = PRT/100</div>
+          <div class="desc">Used to find the simple interest</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.1</div>
+          <div class="formula green">
+            Net Income = Gross Income - Deductions
+          </div>
+          <div class="desc">Used to calculate the net income</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">
+            HP = Deposit + (number of installments + amount per installment)
+          </div>
+          <div class="desc">Used to calculate the hire purchase (HP)</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">V = P(1 + r/100)^n</div>
+          <div class="desc">Used to calculate compound interest</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula yellow">P = SP - CP</div>
+          <div class="desc">Used to calculate the profit</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula yellow">L = CP - SP</div>
+          <div class="desc">Used to calculate loss</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula green">p% = P/CP * 100%</div>
+          <div class="desc">Used to calculate percentage profit</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula green">l% = L/CP * 100%</div>
+          <div class="desc">Used to calculate percentage loss</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">Finance related chapters</div>
+          <div class="formula"></div>
+          <div class="desc"></div>
+        </div>
+      </div>
+
+      <div id="physics">phy</div>
+      <div id="chemistry">chem</div>
+    </div>
+
+    <script src="../static/javascript/util.js"></script>
+  </body>
+</html>

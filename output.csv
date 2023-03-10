@@ -1,0 +1,34 @@
+5.1,1 mole (1 mol),6.02 x 1023
+5.3,R.T.P (room temperature and pressure),20*C & 1 atmosphere
+5.3,volume of gas at R.T.P,24dm³
+Formulae,,
+5.1,moles = mass/mass of 1 mole,finding the number of moles 
+5.1,mass = moles * mass of 1 moles,no need to learn these formulas if the above formula is learnt
+5.1,mass of 1 mole = mass / number of moles,
+5.1,mass of 1 mole = Mr or Ar,Very important formula of finding the how much mass one mole has
+5.3,volume of gas at rtp = 24dm³ * number of moles,volumes of gas for any amount of moles
+5.3,number of moles in x volume = volume/24dm³,no need to learn this formulas if the above formula is learnt
+5.4,concentration = amount(mol/g) / volume,concentration formula
+5.4,volume = amount / concentration,no need to learn these formulas if the above formula is learnt
+5.4,amount = concentration * volume,
+5.6,"multiplier = Mr / empirical mass
+molecular formula = multiplier * empirical formula",finding the molecular formula from empirical mass
+5.7,%yield = mass of product / theoretical mass,finding the percentage yield
+5.8,%purity = pure mass / impure mass,"finding the percentage purity, too much logic for the marks these are worth, the hardest formula to apply"
+8.3,enthalpy (∆H) = bond break energy - bond making energy,"enthalpy, the total energy change during a reaction"
+18.6,(Retention Factor) Rf = distance from origin to dot / distance from origin to solvent front,"retention factor, using a table can tell you what element/compound you will deal with"
+Group,Trend,Sequence (from period 1 to lower)
+I & II,reactivity,increases
+I & II,Density,increases
+I & II,melting point,increases
+VII,reactivity,decreases
+VII,Density,increases
+VII,boiling point,increases
+VII,colour ,darkness increases
+Cat ion flame test element,,colour
+Lithium,,Red
+Sodium,,Yellow
+Potassium,,Lilac
+Calcium,,Orange-Red
+Barium,,Light Green
+Copper (II),,Blue-Green
