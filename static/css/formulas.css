@@ -107,6 +107,9 @@ body{
 
 .unit{
     width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(218, 0, 83);
     border-right: 1px solid black;
     border-left: 1px solid black;    
