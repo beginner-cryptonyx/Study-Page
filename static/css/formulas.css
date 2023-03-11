@@ -35,11 +35,11 @@ body{
     width: 80%;
     /* box-sizing: border-box; */
     padding: 1%;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-left: auto;
     margin-right: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-around;
 
     
 }
@@ -50,11 +50,10 @@ body{
     -webkit-background-clip: text;
     background-clip: text;
     font-size: 170%;
-    padding: 1% 12%;
+    padding: 1% 10%;
     box-sizing: border-box;
     text-align: center;
     font-weight: bolder;
-    display: inline-block;
     cursor: pointer;
     -webkit-user-select: none;
 	-moz-user-select: none;
@@ -66,7 +65,7 @@ body{
     /* border: gray 5px solid; */
     border-right: 1px solid grey;
     border-left: 1px solid grey;
-    padding: 1% 12%;
+    /* padding: 1% 10%; */
 }
 
 #canvas{
@@ -76,7 +75,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     padding: 2% 1.5%;
-    font-size: 115%;
+    font-size: 130%;
     background: rgb(255,56,192);
     background: -moz-radial-gradient(circle, rgba(255,56,192,0.9682247899159664) 0%, rgba(168,6,218,0.9346113445378151) 100%);
     background: -webkit-radial-gradient(circle, rgba(255,56,192,0.9682247899159664) 0%, rgba(168,6,218,0.9346113445378151) 100%);
@@ -95,12 +94,12 @@ body{
 }
 
 .formula-container:hover .unit,.formula-container:hover .formula,.formula-container:hover .desc{
-    font-size: 101%;
+    font-size: 102%;
     /* padding: 0.9% 0%; */
     filter: grayscale(20%);
 }
 .formula-container:active .unit,.formula-container:active .formula,.formula-container:active .desc{
-    font-size: 102%;
+    font-size: 103%;
     /* padding: 0.9% 0%; */
     filter: grayscale(30%);
 }
@@ -142,6 +141,7 @@ body{
 
 .yellow{
     background-color: rgb(204, 204, 39);
+    color: black;
 }
 
 .helper{
@@ -150,6 +150,8 @@ body{
 }
 
 .separator{
+    margin-top: 1%;
+    border-top: 1px solid black;
     background-color: gray;
     width: 100%;
     padding: 2% 0%;
@@ -196,9 +198,17 @@ body{
     fill: #8CFF7F;
 }
 
+::-webkit-scrollbar{
+    width: 5px;
+    max-height: 5px;
+}
 
-@media screen and (max-width:800px){
+::-webkit-scrollbar-track{
+    background-color: rgb(0, 167, 28);
+}
 
+::-webkit-scrollbar-thumb{
+    background-color: rgb(100, 0, 214);
 }
 
 
@@ -227,31 +237,31 @@ body{
         position: absolute;
         margin: 0%;
         padding: none;
-        /* top: 50%;
+        top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        width: 80vw; */
+        transform: translate(-52%, 10%);
+        width: 80vw;
     }
     #canvas{
         font-size: 80%;
         justify-content: center;
+        width: 80vw;
     }
 
     .tab{
-        font-size: 110%;
+        font-size: 100%;
     }
 
-
-
-    .desc{
+     .desc{
         display: none;
         width: 0vw;
     }
 
     .formula-container{
-        margin-left: auto;
+
         max-width: fit-content;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .tab-container{
@@ -259,5 +269,33 @@ body{
         padding: none;
         margin: none;
         box-sizing: border-box; 
+        width: 82.5vw;
+        justify-content: stretch;
+
+    }
+    .unit{
+        display: none;
+    }
+
+    .formula{
+        width: 70vw;
+        font-size: 130%;
+        justify-self: center;
+        align-items: center;
+    }
+    .separator{
+        font-size: 130%;
+        width: 70vw;
+        
+    }
+    .formula-container:active .unit,.formula-container:active .formula,.formula-container:active .desc{
+        font-size: 130%;
+        /* padding: 0.9% 0%; */
+        filter: grayscale(30%);
+    }
+    .formula-container:hover .unit,.formula-container:hover .formula,.formula-container:hover .desc{
+        font-size: 130%;
+        /* padding: 0.9% 0%; */
+        filter: grayscale(20%);
     }
 }
