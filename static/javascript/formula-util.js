@@ -6,3 +6,5 @@ for (i = 0; i < formulas.length; i++) {
     console.log(".");
   });
 }
+
+document.querySelector(".x svg").style.height = Math.random() * 90 + 130;

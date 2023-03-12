@@ -13,6 +13,7 @@ function switch_content(target_id, source_id){
     target_element.innerHTML = source_element.innerHTML
     
 }
-console.log(document.querySelector('.x svg'))
 
-document.querySelector('.x svg').style.height = (Math.random()*90) + 130
+function redirect(href){
+    window.location = href
+}
