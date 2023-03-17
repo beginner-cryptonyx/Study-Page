@@ -32,6 +32,10 @@ time, mark, audio, video {
     font-family: "Roboto", "Arial";
 }
 
+::selection{
+	background: black;
+}
+
 body{
 	background-color: black;
 

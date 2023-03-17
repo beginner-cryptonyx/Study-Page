@@ -229,7 +229,18 @@ pre{
     background-color: rgb(100, 0, 214);
 }
 
+.guide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
 
+.guide-content{
+    padding: 5%;
+
+}
 
 @media screen and (max-width:800px) {
     .side-wave{
