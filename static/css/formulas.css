@@ -200,6 +200,18 @@ body{
 
 }
 
+pre{
+    white-space: pre-wrap;
+}
+
+.half-mob-sep{
+    width: 29vw;
+}
+
+.half-mob{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
 .x .shape-fill {
     fill: #8CFF7F;
 }
@@ -291,8 +303,8 @@ body{
     }
     .separator{
         width: 70vw;
-        font-size: 130%;
         margin-top: 2vh;
+        font-size: 130%;
         
     }
     .formula-container:active .unit,.formula-container:active .formula,.formula-container:active .desc{
@@ -316,6 +328,11 @@ body{
         margin-left: 1vw;
         border-right: 1px solid black;
         border-left: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .separator .half-mob{
+        width: 20vw;
     }
 
 }
