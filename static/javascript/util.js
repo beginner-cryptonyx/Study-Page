@@ -1,3 +1,4 @@
+
 console.log("util init")
 
 function _toggle(id){
@@ -5,7 +6,7 @@ function _toggle(id){
     node.classList.toggle('hidden')
 }
 
-function switch_content(target_id, source_id){
+export default function switch_content(target_id, source_id){
     
     let source_element = document.getElementById(source_id)
     let target_element = document.getElementById(target_id)
