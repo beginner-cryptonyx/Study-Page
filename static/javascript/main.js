@@ -9,8 +9,8 @@ function txtupdate(){
     setTimeout(txtupdate, 15250)
 }
 
-document.querySelector('.card-bg svg').style.height = Math.floor(Math.random()*70) + 313
-document.querySelector('.card-bg-down svg').style.height = (Math.random()*80) + 90
+document.querySelector('.card-bg svg').style.height = Math.floor(Math.random()*70) + 200
+document.querySelector('.card-bg-down svg').style.height = Math.floor(Math.random()*70) + 50
 
 
 txtupdate()
