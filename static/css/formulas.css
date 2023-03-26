@@ -129,6 +129,7 @@ body{
     width: 42%; 
     border-bottom: 1px solid black;
     text-align: center;
+    flex-direction: column;
 }
 
 .red{
@@ -168,7 +169,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 1%;
+    margin-top: 2%;
     padding: 2% 0%;
     background-color: gray;
     border-top: 1px solid black;
@@ -211,6 +212,9 @@ pre{
 .half-mob{
     border-right: 1px solid black;
     border-left: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .x .shape-fill {
     fill: #8CFF7F;
@@ -239,7 +243,15 @@ pre{
 
 .guide-content{
     padding: 5%;
+}
 
+b{
+    color: black;
+}
+
+.formula>span{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width:800px) {
@@ -281,7 +293,7 @@ pre{
         font-size: 100%;
     }
 
-     .desc{
+    .desc{
         display: none;
         width: 0vw;
     }
@@ -311,6 +323,8 @@ pre{
         width: 70vw;
         font-size: 130%;
         justify-self: center;
+        display: flex;
+        text-align: center;
     }
     .separator{
         width: 70vw;
@@ -330,7 +344,7 @@ pre{
     }
 
     .half-mob{
-        align-items: baseline;
+        align-items: center;
         /* min-width: fit-content; */
         justify-content: baseline;
         width: 34vw;
