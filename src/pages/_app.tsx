@@ -1,6 +1,8 @@
 import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import Cell from "./components/FormulaCell"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function App(){
+    return <div><Cell formula={"Hola"} description={"wold"}/></div>
 }
+
+export default App;
