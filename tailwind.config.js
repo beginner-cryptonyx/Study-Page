@@ -8,9 +8,15 @@ module.exports = {
                 'text':'#fbf4f8',
                 'primary':'#9ec671',
                 'secondary':'#000000',
+
+                // Accents
                 'accent#1':'#719ec6',
+                'accent#1.5': '#51799a',
                 'accent#2':'#61aeab',
                 'accent#3':'#74b672',
+
+                // Important bg-colors
+
               }
         },
     },

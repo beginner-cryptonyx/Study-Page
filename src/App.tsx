@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
     return (
         <>
-            <Cell formula="XD" description="DX" f_width="1/2" d_width="1/2"/>
+            <Cell formula="XD" description="DX"/>
             <Routes>
                 <Route path="/"></Route>
                 {/* <Route path="/Textbooks"></Route>
