@@ -6,25 +6,25 @@ interface Props {
 
 function Card({ header, content, tags }: Props) {
     return (
-        <div className="rounded-md bg-[#505050] max-w-[25vw] mx-2 my-1 duration-[300ms] hover:scale-125">
-            <div className="bg-black py-1 text-[25pt] text-center rounded-t-md ">
-                <div className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-green-500 animate-text_down">
+        <>
+            <div className="rounded-md bg-[#666666] max-w-[25vw] mx-2 my-1 duration-[300ms] hover:scale-125">
+                <div className="bg-black text-white text-[20pt] text-center rounded-t-md">
                     {header}
                 </div>
-            </div>
-            <div className="w-[100%]">
-                <div className="mt-3 text-[17pt] flex justify-center mb-2">
-                    {content}
+                <div className="w-[100%]">
+                    <div className="mt-5 text-lg flex justify-center mb-2">
+                        {content}
+                    </div>
+                    <div className="flex flex-row mx-auto justify-center ">
+                        {tags.map((item) => (
+                            <div className="px-0.5 mx-1 bg-accent#2 rounded-md min-w-[20%] mb-2 cursor-pointer hue-rotate-30  text-center hover:brightness-90 active:brightness-75 ">
+                                {item}
+                            </div>
+                        ))}
+                    </div>
                 </div>
-                <div className="flex flex-row mx-auto justify-center">
-                    {tags.map((item) => (
-                        <div className="px-0.5 text-[14pt] mx-1 bg-gradient-to-bl from-blue-400 to-purple-500 rounded-md min-w-[20%] mb-6    cursor-pointer  text-center hover:brightness-90 active:brightness-75 animate-gradient_slide">
-                            {item}
-                        </div>
-                    ))}
-                </div>
             </div>
-        </div>
+        </>
     );
 }
 
