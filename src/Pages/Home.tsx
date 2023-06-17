@@ -51,8 +51,18 @@ function Home() {
                         header="Math Textbook"
                         content="Find all Math Chapters Here"
                         tags={[
-                            ["Answers", "Extras/Math Textbook Answers.pdf"],
-                            ["Textbook", "Extras/Math Textbook.pdf"],
+                            ["Textbook", "Extras/Math Textbook.pdf", "true"],
+                            [
+                                "Answers",
+                                "Extras/Math Textbook Answers.pdf",
+                                "true",
+                            ],
+                            ["Contents", "Extras/Contents.pdf", "true"],
+                            [
+                                "Practice Questions",
+                                "Extras/Examination Formatted Questions.pdf",
+                                "true",
+                            ],
                             ["Chapter 1", "Extras/Chapter 1.pdf", "true"],
                             ["Chapter 2", "Extras/Chapter 2.pdf", "true"],
                             ["Chapter 3", "Extras/Chapter 3.pdf", "true"],
