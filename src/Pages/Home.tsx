@@ -31,21 +31,21 @@ function Home() {
                 <Card
                     header="Physics Formulae"
                     content="Lmao"
-                    tags={["hi", "hello"]}
+                    tags={[["hi", "lmao"], ["hello"]]}
                 />
                 <Card
                     header="Math Formulae"
                     content="Lmao"
-                    tags={["hi", "hello"]}
+                    tags={[["hi"], ["hello"]]}
                 />
                 <Card
                     header="Chemistry Formulae"
                     content="Lmao"
-                    tags={["hi", "hello"]}
+                    tags={[["hi"], ["hello"]]}
                 />
             </div>
         </>
     );
 }
 
-export default Home 
+export default Home;
