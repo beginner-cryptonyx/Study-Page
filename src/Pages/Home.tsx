@@ -30,19 +30,73 @@ function Home() {
             <div className="grid grid-cols-3 mx-auto w-[90vw] mt-6">
                 <Card
                     header="Physics Formulae"
-                    content="Lmao"
+                    content="All Physics Formulae"
                     tags={[["hi", "lmao"], ["hello"]]}
+                    redirect={[true, "/formulae"]}
                 />
                 <Card
                     header="Math Formulae"
-                    content="Lmao"
+                    content="All Math Formulae"
+                    redirect={[true, "/formulae"]}
                     tags={[["hi"], ["hello"]]}
                 />
                 <Card
                     header="Chemistry Formulae"
-                    content="Lmao"
+                    content="All Chemistry Formulae"
+                    redirect={[true, "/formulae"]}
                     tags={[["hi"], ["hello"]]}
                 />
+                <div className="mt-14">
+                    <Card
+                        header="Math Textbook"
+                        content="Find all Math Chapters Here"
+                        tags={[
+                            ["Answers", "Extras/Math Textbook Answers.pdf"],
+                            ["Textbook", "Extras/Math Textbook.pdf"],
+                            ["Chapter 1", "Extras/Chapter 1.pdf", "true"],
+                            ["Chapter 2", "Extras/Chapter 2.pdf", "true"],
+                            ["Chapter 3", "Extras/Chapter 3.pdf", "true"],
+                            ["Chapter 4", "Extras/Chapter 4.pdf", "true"],
+                            ["Chapter 5", "Extras/Chapter 5.pdf", "true"],
+                            ["Chapter 6", "Extras/Chapter 6.pdf", "true"],
+                            ["Chapter 7", "Extras/Chapter 7.pdf", "true"],
+                            ["Chapter 8", "Extras/Chapter 8.pdf", "true"],
+                            ["Chapter 9", "Extras/Chapter 9.pdf", "true"],
+                            ["Chapter 10", "Extras/Chapter 10.pdf", "true"],
+                            ["Chapter 11", "Extras/Chapter 11.pdf", "true"],
+                            ["Chapter 12", "Extras/Chapter 12.pdf", "true"],
+                            ["Chapter 13", "Extras/Chapter 13.pdf", "true"],
+                            ["Chapter 14", "Extras/Chapter 14.pdf", "true"],
+                            ["Chapter 15", "Extras/Chapter 15.pdf", "true"],
+                            ["Chapter 16", "Extras/Chapter 16.pdf", "true"],
+                            ["Chapter 17", "Extras/Chapter 17.pdf", "true"],
+                            ["Chapter 18", "Extras/Chapter 18.pdf", "true"],
+                            ["Chapter 19", "Extras/Chapter 19.pdf", "true"],
+                            ["Chapter 20", "Extras/Chapter 20.pdf", "true"],
+                            ["Chapter 21", "Extras/Chapter 21.pdf", "true"],
+                            ["Chapter 22", "Extras/Chapter 22.pdf", "true"],
+                            ["Chapter 23", "Extras/Chapter 23.pdf", "true"],
+                            ["Chapter 24", "Extras/Chapter 24.pdf", "true"],
+                        ]}
+                    />
+                </div>
+                <div className="grid grid-rows-3 mt-14">
+                    <Card
+                        header="ICT Resources"
+                        content="ICT Resources Here"
+                        tags={[["ICT Textbook", "/formulae"], ["Source Files"]]}
+                    />
+                    <Card
+                        header="Biology Resources"
+                        content="Textbook, Workbook and Answers"
+                        tags={[
+                            ["Online Textbook And Workbook"],
+                            ["Textbook Answers"],
+                            ["Workbook Answers"],
+                        ]}
+                    />
+                    <Card header="" content="" tags={[[""]]} />
+                </div>
             </div>
         </>
     );
