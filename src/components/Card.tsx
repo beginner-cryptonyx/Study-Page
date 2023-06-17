@@ -15,7 +15,7 @@ function Card({ header, content, tags }: Props) {
     };
 
     return (
-        <div className="rounded-md bg-[#505050] max-w-[25vw] mx-2 my-1 duration-[300ms] hover:scale-125">
+        <div className="rounded-md bg-[#505050] max-w-[25vw] mx-2 my-1 duration-[300ms] hover:scale-125" onClick={handleClickCard}>
             <div className="bg-black py-1 text-[25pt] text-center rounded-t-md ">
                 <div className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-green-500 animate-text_down font-bold">
                     {header}
