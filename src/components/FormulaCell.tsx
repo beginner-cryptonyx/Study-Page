@@ -1,28 +1,45 @@
+import "../App.css";
+import { useState } from "react";
+
 interface Props {
     formula: string;
     description: string;
     importance?: string;
 }
 
-function Cell({ formula , description , importance }: Props) {
-    let color: string = "";
+function Cell({ formula, description, importance }: Props) {
+    const [color, setColor] = useState(
+        (importance = "normal"
+            ? "fs_green"
+            : (importance = "important" ? "fs_red" : "fs_grey"))
+    );
 
-    switch (importance) {
-        case "normal":
-            color = "fs_green";
-            break;
+    // switch (importance) {
+    //     case "normal":
+    //         setColor("fs_green");
+    //         break;
 
-        case "important":
-            color = "fs_red";
-            break;
+    //     case "important":
+    //         setColor("fs_red");
+    //         break;
 
-        case "external":
-            color = "fs_grey";
-    }
+    //     case "external":
+    //         setColor("fs_gray");
+    // }
     return (
-        <div className="flex flex-row w-[70vw] mx-auto text-center">
-            <div className={`w-1/2 bg-gradient-to-r `}>{formula}</div>
-            <div className={`w-1/2 bg-gradient-to-l`}>{description}</div>
+        <div
+            className={`flex flex-row w-[70vw] mx-auto text-center formula-cell-2 duration-500`}
+        >
+            <div
+                className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
+            >
+                {formula}
+            </div>
+            <div
+                className={`w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black duration-500`}
+            >
+                {description}
+            </div>
         </div>
     );
 }
