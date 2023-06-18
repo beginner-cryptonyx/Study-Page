@@ -1,0 +1,26 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base{
+    .formula-cell-2{
+        @apply text-2xl font-semibold my-0.5
+    }
+
+
+    .formula-cell-2 div{
+        @apply mx-0.5 bg-fs_green hover:bg-fs_green#1 hover:scale-105
+    }
+}
+
+@layer components{
+    .normal{
+        @apply bg-gradient-to-l
+    }
+    .important{
+        @apply bg-gradient-to-l
+    }
+    .external{
+        @apply bg-gradient-to-l
+    }
+}
