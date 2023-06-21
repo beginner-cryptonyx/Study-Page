@@ -13,8 +13,12 @@
     "crypto-js": "^4.1.1",
     "file-saver": "^2.0.5",
     "js-file-download": "^0.4.12",
+    "mathjax": "^3.2.2",
+    "mathjax-react": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-element-to-jsx-string": "^15.0.0",
+    "react-mathjax-preview": "^2.2.6",
     "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.5",
@@ -48,6 +52,7 @@
   "devDependencies": {
     "@types/crypto-js": "^4.1.1",
     "@types/file-saver": "^2.0.5",
+    "@types/mathjax": "^0.0.37",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.3.2"
