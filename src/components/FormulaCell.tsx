@@ -1,13 +1,14 @@
 import "../App.css";
 import { useState } from "react";
+import { MathComponent } from "mathjax-react";
 
-interface Props {
-    formula: string;
+interface MathCellProps {
+    formula: any;
     description: string;
     importance?: string;
 }
 
-function Cell({ formula, description, importance }: Props) {
+function MathCell({ formula, description, importance }: MathCellProps) {
     const [color, setColor] = useState(
         (importance = "normal"
             ? "fs_green"
@@ -34,6 +35,31 @@ function Cell({ formula, description, importance }: Props) {
                 className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
             >
                 {formula}
+                <MathComponent
+                    tex={String.raw`
+                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mi>x</mi> <mo>=</mo>
+                <mrow>
+                  <mfrac>
+                    <mrow>
+                      <mo>&#x2212;</mo>
+                      <mi>b</mi>
+                      <mo>&#x00B1;</mo>
+                      <msqrt>
+                        <msup><mi>b</mi><mn>2</mn></msup>
+                        <mo>&#x2212;</mo>
+                        <mn>4</mn><mi>a</mi><mi>c</mi>
+                      </msqrt>
+                    </mrow>
+                    <mrow>
+                      <mn>2</mn><mi>a</mi>
+                    </mrow>
+                  </mfrac>
+                </mrow>
+                <mtext>.</mtext>
+              </math>
+                `}
+                />
             </div>
             <div
                 className={`w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black duration-500`}
@@ -44,4 +70,4 @@ function Cell({ formula, description, importance }: Props) {
     );
 }
 
-export default Cell;
+export default MathCell;
