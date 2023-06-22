@@ -1,7 +1,6 @@
 import "../App.css";
 import { useState } from "react";
-import { MathComponent } from "mathjax-react";
-
+import { MathJaxContext, MathJax } from "better-react-mathjax";
 interface MathCellProps {
     formula: any;
     description: string;
@@ -27,6 +26,7 @@ function MathCell({ formula, description, importance }: MathCellProps) {
     //     case "external":
     //         setColor("fs_gray");
     // }
+
     return (
         <div
             className={`flex flex-row w-[70vw] mx-auto text-center formula-cell-2 duration-500`}
@@ -35,31 +35,10 @@ function MathCell({ formula, description, importance }: MathCellProps) {
                 className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
             >
                 {formula}
-                <MathComponent
-                    tex={String.raw`
-                <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
-                <mi>x</mi> <mo>=</mo>
-                <mrow>
-                  <mfrac>
-                    <mrow>
-                      <mo>&#x2212;</mo>
-                      <mi>b</mi>
-                      <mo>&#x00B1;</mo>
-                      <msqrt>
-                        <msup><mi>b</mi><mn>2</mn></msup>
-                        <mo>&#x2212;</mo>
-                        <mn>4</mn><mi>a</mi><mi>c</mi>
-                      </msqrt>
-                    </mrow>
-                    <mrow>
-                      <mn>2</mn><mi>a</mi>
-                    </mrow>
-                  </mfrac>
-                </mrow>
-                <mtext>.</mtext>
-              </math>
-                `}
-                />
+                <MathJaxContext>
+                    <h2>Basic MathJax example with Latex</h2>
+                    <MathJax>{"\\(\\frac{10}{4x} \\approx 2^{12}\\)"}</MathJax>
+                </MathJaxContext>
             </div>
             <div
                 className={`w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black duration-500`}
