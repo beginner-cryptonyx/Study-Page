@@ -1,6 +1,6 @@
 import "../App.css";
-import { useState } from "react";
 import { MathJaxContext, MathJax } from "better-react-mathjax";
+const Mathml2latex = require("mathml-to-latex");
 interface MathCellProps {
     formula: any;
     description: string;
@@ -8,12 +8,19 @@ interface MathCellProps {
 }
 
 function MathCell({ formula, description, importance }: MathCellProps) {
-    const [color, setColor] = useState(
-        (importance = "normal"
-            ? "fs_green"
-            : (importance = "important" ? "fs_red" : "fs_grey"))
-    );
+    // const [color, setColor] = useState(
+    //     (importance = "normal"
+    //         ? "fs_green"
+    //         : (importance = "important" ? "fs_red" : "fs_grey"))
+    // );
 
+    const mathJaxConfig = {
+        tex: {
+          inlineMath: [["$", "$"]],
+        },
+      };
+
+    const latex_formula = Mathml2latex.convert(formula);
     // switch (importance) {
     //     case "normal":
     //         setColor("fs_green");
@@ -34,10 +41,8 @@ function MathCell({ formula, description, importance }: MathCellProps) {
             <div
                 className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
             >
-                {formula}
-                <MathJaxContext>
-                    <h2>Basic MathJax example with Latex</h2>
-                    <MathJax>{"\\(\\frac{10}{4x} \\approx 2^{12}\\)"}</MathJax>
+                <MathJaxContext config={mathJaxConfig}>
+                    <MathJax>{`$${latex_formula}$`}</MathJax>
                 </MathJaxContext>
             </div>
             <div

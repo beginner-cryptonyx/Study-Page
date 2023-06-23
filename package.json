@@ -16,6 +16,7 @@
     "html-react-parser": "^4.0.0",
     "js-file-download": "^0.4.12",
     "mathjax": "^3.2.2",
+    "mathml-to-latex": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-mathjax2": "^0.0.2",
