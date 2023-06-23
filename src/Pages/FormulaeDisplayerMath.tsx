@@ -35,7 +35,7 @@ function FormulaeMath() {
                     </mrow>
                   </math>"
                     description="Theory of Relativity"
-                    importance="normal"
+                    importance="important"
                 />
                 <FormulaCell
                     formula="<math>
@@ -91,7 +91,7 @@ function FormulaeMath() {
                     </msup>
                   </math>"
                     description="Theory of Relativity"
-                    importance="normal"
+                    importance="important"
                 />
                 <FormulaCell
                     formula="<math>
