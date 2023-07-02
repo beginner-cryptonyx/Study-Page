@@ -1,5 +1,4 @@
 import { MathCell, CellSeparator } from "../components/FormulaCell";
-import Accordion from "../components/Accordion";
 import MUIaccordion from "../components/MuiAccordion";
 
 function FormulaeMath() {
