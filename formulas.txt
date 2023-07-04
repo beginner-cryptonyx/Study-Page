@@ -1,0 +1,2817 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Formula Book</title>
+    <link rel="stylesheet" href="../static/css/formulas.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <div class="side-wave start">.</div> -->
+      <div class="x" id="x">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="container">
+        <div class="tab-container">
+          <a
+            class="tab"
+            onclick="switch_content('canvas','physics')"
+            style="background-image: linear-gradient(to left, #15c9e9, #0a6ddd)"
+            >Physics</a
+          >
+          <a
+            onclick="switch_content('canvas','math')"
+            class="tab"
+            style="background-image: linear-gradient(to left, #ff8c2e, #ff3195)"
+            >Math</a
+          >
+          <a
+            onclick="switch_content('canvas','chemistry')"
+            class="tab"
+            style="background-image: linear-gradient(to left, #497aff, #9036e4)"
+            >Chemistry</a
+          >
+        </div>
+        <div id="canvas">
+          <center>
+            Click Any of the Tabs Above To View Formulae Of Subjects. Here is a
+            guide:
+
+            <div class="guide">
+              <span class="guide-content" style="color: black"
+                ><span
+                  style="color: green; background-color: black; padding: 0.5%"
+                  >Green</span
+                >
+                Formulae are Normal formulae good to Know and Many May Come on a
+                Paper</span
+              >
+              <span class="guide-content" style="color: black"
+                ><span
+                  style="color: red; background-color: black; padding: 0.5%"
+                  >Red</span
+                >
+                Signifies that the Formula is very Important and is Likely to be
+                Asked in an Examination</span
+              >
+              <span class="guide-content" style="color: black"
+                ><span
+                  style="color: yellow; background-color: black; padding: 0.5%"
+                  >Yellow</span
+                >
+                Means that formulae are Not Super Important to Remember, Come
+                back to These Later</span
+              >
+            </div>
+          </center>
+        </div>
+      </div>
+      <!-- <div class="side-wave flip end">.</div> -->
+    </main>
+
+    <div class="content-container hidden">
+      <div id="math">
+        <div class="formula-container">
+          <div class="separator">Algebraic Identities and Law's of indices</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <mrow>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>+</mo>
+                <mi>b</mi>
+                <msup>
+                  <mo>)</mo>
+                  <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <msup>
+                  <mi>a</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>a</mi>
+
+                  <mi>b</mi>
+                </mrow>
+              </mrow>
+            </math>
+            
+          </div>
+          <div class="desc">Algebric Indentity #1</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <mrow>
+                <mo>(</mo>
+                <mi>a</mi>
+                <mo>-</mo>
+                <mi>b</mi>
+                <msup>
+                  <mo>)</mo>
+                  <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <msup>
+                  <mi>a</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>a</mi>
+                  <mi>b</mi>
+                </mrow>
+              </mrow>
+            </math>
+            
+          </div>
+          <div class="desc">Algebraic Identity #2</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <mrow>
+                <msup>
+                  <mi>a</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>a</mi>
+                  <mo>+</mo>
+                  <mi>b</mi>
+                  <mo>)</mo>
+                  <mo>&#x22C5;</mo>
+                  <mo>(</mo>
+                  <mi>a</mi>
+                  <mo>-</mo>
+                  <mi>b</mi>
+                  <mo>)</mo>
+                </mrow>
+              </mrow>
+            </math>
+            
+            
+          </div>
+          <div class="desc">Algebraic Identity #3</div>
+        </div>
+        
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <msup>
+                <mi>x</mi>
+                <mi>n</mi>
+              </msup>
+              <mo>&#x22C5;</mo>
+              <msup>
+                <mi>x</mi>
+                <mi>m</mi>
+              </msup>
+              <mo>=</mo>
+              <msup>
+                <mi>x</mi>
+                <mrow>
+                  <mi>m</mi>
+                  <mo>+</mo>
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </math>
+          </div>
+          <div class="desc">Used for Multiplying Indices</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <mfrac>
+                <msup>
+                  <mi>x</mi>
+                  <mi>n</mi>
+                </msup>
+                <msup>
+                  <mi>x</mi>
+                  <mi>m</mi>
+                </msup>
+              </mfrac>
+              <mo>=</mo>
+              <msup>
+                <mi>x</mi>
+                <mrow>
+                  <mi>m</mi>
+                  <mo> -- </mo>
+                  <mi>n</mi>
+                </mrow>
+              </msup>
+            </math>
+          </div>
+          <div class="desc">Used for Dividing Indices</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <msup>
+                <mrow>
+                  <mrow>
+                    <mo>(</mo>
+                    <msup>
+                      <mi>x</mi>
+                      <mi>n</mi>
+                    </msup>
+                    <mo>)</mo>
+                  </mrow>
+                  <mspace width="0.1em" />
+                  <mi>m</mi>
+                </mrow>
+                <mi></mi>
+              </msup>
+              <mo>=</mo>
+              <msup>
+                <mi>x</mi>
+                <mrow>
+                  <mi>n</mi>
+                  <mo>&#x22C5;</mo>
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+            </math>
+          </div>
+          <div class="desc">Used of solving indices with two exponents</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <mfrac>
+                <mi>y</mi>
+                <msup>
+                  <mi>x</mi>
+                  <mi>m</mi>
+                </msup>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <msup>
+                  <mi>y</mi>
+                  <mi>m</mi>
+                </msup>
+                <msup>
+                  <mi>x</mi>
+                  <mi>m</mi>
+                </msup>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">used for indices with a fraction</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <msup>
+                <mi>x</mi>
+                <mrow>
+                  <mo>-</mo>
+                  <mi>m</mi>
+                </mrow>
+              </msup>
+              <mo>=</mo>
+              <mfrac>
+                <mn>1</mn>
+                <msup>
+                  <mi>x</mi>
+                  <mi>m</mi>
+                </msup>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">used for indices with negative exponents</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.5</div>
+          <div class="formula green">
+            <math>
+              <msup>
+                <mi>x</mi>
+                <mfrac>
+                  <mi>m</mi>
+                  <mi>n</mi>
+                </mfrac>
+              </msup>
+              <mo>=</mo>
+              <mroot>
+                <msup>
+                  <mi>x</mi>
+                  <mi>m</mi>
+                </msup>
+                <mi>n</mi>
+              </mroot>
+            </math>
+          </div>
+          <div class="desc">
+            Used if any number has a fraction as an exponent
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">x</div>
+          <div class="formula green">
+            avg = sum of all elements/number of elements
+          </div>
+          <div class="desc">finding average</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">
+            <math>
+              <mi>Q2</mi>
+              <mo> =</mo>
+              <mi>median</mi>
+            </math>
+          </div>
+          <div class="desc">value of Q2</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Shape Chapters</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">
+            <math>
+              <mi>P</mi>
+              <mo>=</mo>
+              <mn>2</mn>
+              <mo>&#x22C5;</mo>
+              <mrow>
+                <mo>(</mo>
+                <mi>L</mi>
+                <mo>+</mo>
+                <mi>B</mi>
+                <mo>)</mo>
+              </mrow>
+            </math>
+          </div>
+          <div class="desc">Used to calculate perimeter of rectangle.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">P = 4*s</div>
+          <div class="desc">Used to calculate perimeter of square.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">C = πd or 2πr</div>
+          <div class="desc">Used to calculate perimeter of circle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = s²</div>
+          <div class="desc">Used to calculate area of square</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = L*B</div>
+          <div class="desc">Used to calculate area of rectangle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = (1/2)*bh</div>
+          <div class="desc">Used to calculate area of triangle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">A = πr²</div>
+          <div class="desc">Used to calculate area of circle</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.2</div>
+          <div class="formula green">
+            <math>
+              <mi>V</mi>
+              <mo>=</mo>
+              <mi>L</mi>
+              <mo>&#x22C5;</mo>
+              <mi>B</mi>
+              <mo>&#x22C5;</mo>
+              <mi>H</mi>
+            </math>
+          </div>
+          <div class="desc">Used to calculate volume of cuboid</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = s³</div>
+          <div class="desc">Used to calculate volume of cube</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">
+            <math>
+              <mi>V</mi>
+              <mo>=</mo>
+              <mi>&#x3C0;</mi>
+              <msup>
+                <mi>r</mi>
+                <mn>2</mn>
+              </msup>
+              <mi>h</mi>
+            </math>
+          </div>
+          <div class="desc">Used to calculate volume of cylinder</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+
+          <div class="formula green">V = A of cross section * height</div>
+          <div class="desc">
+            Used to calculate volume of any regular 3d shape
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">
+            <math>
+              <mi>A</mi>
+              <mo>=</mo>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <mi>a</mi>
+                    <mo>+</mo>
+                    <mi>b</mi>
+                  </mrow>
+                  <mn>2</mn>
+                </mfrac>
+                <mo>&#x22C5;</mo>
+                <mi>h</mi>
+            </math>
+          </div>
+          <div class="desc">Used to calculate area of trapezium.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula yellow">A = Θ/360 * πr²</div>
+          <div class="desc">Used to calculate area of a sector</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula yellow">C = Θ/360 * 2πr</div>
+          <div class="desc">Used to calculate arc length</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = (1/3) 𝜋r^2h</div>
+          <div class="desc">Used to calculate volume of cone</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">SA = 4πr^2</div>
+          <div class="desc">Used to calculate surface area of sphere</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.1</div>
+          <div class="formula green">V = (4/3)πr^3</div>
+          <div class="desc">Used to calculate volume of sphere</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.1</div>
+          <div class="formula green">a² +b² = c²</div>
+          <div class="desc">
+            Pythagoras theorem, used to calculate various sides of a right
+            angles triangle
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.3</div>
+          <div class="formula green">
+            Scale factor(Area) = scale factor (length)²
+          </div>
+          <div class="desc">Used to calculate scale factor of Areas.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">11.3</div>
+          <div class="formula green">
+            Scale factor(vol) = scale factor(length)³
+          </div>
+          <div class="desc">Used to calculate scale factor of volumes.</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">sin(θ) = O/H</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            opposite and hypotenuse
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">cos(θ) = A/H</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            Adjacent and hypotenuse
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.2</div>
+          <div class="formula green">tan(θ) = O/A</div>
+          <div class="desc">
+            Trigonometric formula which is used to calculate angle using
+            opposite and Adjacent
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.3</div>
+          <div class="formula red">sin^2θ + cos^2θ = 1</div>
+          <div class="desc">
+            Trigonometric formula which gives a product of 1
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">sin(θ) = sin(180 - θ)</div>
+          <div class="desc">Alternative sine formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">cos(θ) = -cos(180 - θ)</div>
+          <div class="desc">Alternative cosine formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">cos(θ) = cos(360-θ)</div>
+          <div class="desc">
+            Alternative cosine formula which has positive value
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.5</div>
+          <div class="formula green">tan(θ) = tan(180 + θ)</div>
+          <div class="desc">Alternative Tangent formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula red">a/sinA = b/sinB = c/sinC</div>
+          <div class="desc">
+            Used to calculate sides and angles of a triangle
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula red">
+
+            <math>
+              <mrow>
+                <msup>
+                  <mi>a</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <msup>
+                  <mi>b</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>+</mo>
+                <msup>
+                  <mi>c</mi>
+                  <mn>2</mn>
+                </msup>
+                <mo>-</mo>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>b</mi>
+                  <mi>c</mi>
+                  <mo>&#x2062;</mo>
+                  <mo>⋅</mo>
+                  <mi>cos</mi>
+                  <mo>&#x2062;</mo>
+                  <mi>(A)</mi>
+                </mrow>
+              </mrow>
+            </math>
+
+          </div>
+          <div class="desc">Cosine Ratio</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.6</div>
+          <div class="formula helper">
+            (main side)² = (other sides)² - 2(other sides) *Cos(main angle)
+          </div>
+          <div class="desc">
+            simplifies cosine ratios, main side is the side you want to use,
+            main angle is the angle opposite to the side you want to find, if
+            you learn to use this there is no need to remember the above 3
+            formulas
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula red">
+            <math>
+              <mi>A</mi>
+              <mo>=</mo>
+              <mrow>
+                <mfrac>
+                  <mn>1</mn>
+                  <mn>2</mn>
+                </mfrac>
+                <mo>&#x22C5;</mo>
+                <mi>a</mi>
+                <mo>&#x22C5;</mo>
+                <mi>b</mi>
+                <mo>&#x22C5;</mo>
+                <msin>
+                  <mi>C</mi>
+                </msin>
+              </mrow>
+            </math>
+          </div>
+          <div class="desc">
+            Using to calculate area of triangle when height is not given
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">15.7</div>
+          <div class="formula helper">
+            Area = (1/2)*(given sides) * sin(given angle)
+          </div>
+          <div class="desc">
+            simplifies the above 3 formulas, if you learn to use this no need to
+            remember the above formulas
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula red">
+            The angle in a semi circle is a right angle
+          </div>
+          <div class="desc">circle theorem #1</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            The angle between the tangent and radius is 90 degrees
+          </div>
+          <div class="desc">circle theorem #2</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            The angle at the center of a circle is twice the angle at the
+            circumference
+          </div>
+          <div class="desc">circle theorem #3</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">angles in the same segment are equal</div>
+          <div class="desc">circle theorem #4</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            The opposite angles of a cyclic quadrilateral add up to 180 degrees
+          </div>
+          <div class="desc">circle theorem #5</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            Each exterior angle of a cyclic quadrilateral is equal to the
+            interior angle opposite to it
+          </div>
+          <div class="desc">Circle theorem #6</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            Angle subtended by the diameter on the circumference is 90 degrees
+          </div>
+          <div class="desc">Circle theorem #7</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">19.4</div>
+          <div class="formula green">
+            The angle between the tangent and the chord is equal to the angle in
+            alternate segment
+          </div>
+          <div class="desc">Alternate segment theorem</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.4</div>
+          <div class="formula green">
+            <math>
+              <mfrac>
+                <mrow>
+                  <msub>
+                    <mi>&Delta;</mi>
+                    <mi>y</mi>
+                  </msub>
+                </mrow>
+                <mo>/</mo>
+                <mrow>
+                  <msub>
+                    <mi>&Delta;</mi>
+                    <mi>x</mi>
+                  </msub>
+                </mrow>
+              </mfrac>
+              <mrow>
+                <mo>=</mo>
+                <mi>gradient</mi>
+                <mo>=</mo>
+                <mi>speed</mi>
+              </mrow>
+            </math>
+          </div>
+          <div class="desc">
+            used to find the speed in a distance time graph
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.6</div>
+          <div class="formula red">F = K * D</div>
+          <div class="desc">
+            Formula used to solve direct proportionality problems
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">21.6</div>
+          <div class="formula red">F = K * 1/D</div>
+          <div class="desc">
+            Formula used to solve inverse proportionality problems
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Sequences</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">9.1</div>
+          <div class="formula green">An = A1 + (n - 1)D</div>
+          <div class="desc">Used to find nth term of a sequence</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Graph and Quadric Chapters</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.1</div>
+          <div class="formula green">m = (y2 - y1)/(x2 - x1)</div>
+          <div class="desc">Used to find gradient</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula green">y = mx + c</div>
+          <div class="desc">
+            A formula that links gradient and c interception, this is the
+            standard formula and should be used for graphing
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula yellow">
+            <math>
+              <msup>
+                <mrow>
+                  <mo>(</mo>
+                  <mi>a</mi>
+                  <mo>+</mo>
+                  <mi>b</mi>
+                  <mo>)</mo>
+                </mrow>
+                <mn>2</mn>
+              </msup>
+              <mo>=</mo>
+              <msup>
+                <mi>a</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <msup>
+                <mi>b</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <mn>2</mn>
+              <mo>&#x22C5;</mo>
+              <mi>a</mi>
+              <mo>&#x22C5;</mo>
+              <mi>b</mi>
+            </math>
+          </div>
+          <div class="desc">Used to square a binomial with operation +</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">10.2</div>
+          <div class="formula yellow">
+            (a - b)² = (a + b)(a - b) = a² + b² - 2ab
+          </div>
+          <div class="desc">Used to square a binomial with operation -</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">
+            <math>
+              <mi>Mean</mi>
+              <mo>=</mo>
+              <mfrac>
+                <munder>
+                  <mo>&#x2211;</mo>
+                  <mi>x</mi>
+                  <mi>f</mi>
+                  <mi>i</mi>
+                  <mi>f</mi>
+                  <mi>i</mi>
+                </munder>
+                <munder>
+                  <mo>&#x2211;</mo>
+                  <mi>f</mi>
+                  <mi>i</mi>
+                </munder>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">Used to calculate mean</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">Median = fi/2</div>
+          <div class="desc">Used to calculate the middle number</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.1</div>
+          <div class="formula yellow">Range = highest - lowest</div>
+          <div class="desc">Used to calculate the range</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">Q1 = (1/4) * (n+1)</div>
+          <div class="desc">Finding lower quartile</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">Q3 = (3/4) * (n+1)</div>
+          <div class="desc">Finding upper quartile</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">12.5</div>
+          <div class="formula green">IQR = Q3 - Q1</div>
+          <div class="desc">Used to calculate inter quartile range</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">14.5</div>
+          <div class="formula red">
+            <math>
+              <mfrac>
+                <mrow>
+                  <mo>-</mo>
+                  <mi>b</mi>
+                  <mo>&PlusMinus;</mo>
+                  <msqrt>
+                    <msup>
+                      <mi>b</mi>
+                      <mn>2</mn>
+                    </msup>
+                    <mo>-</mo>
+                    <mrow>
+                      <mn>4</mn>
+                      <mi>a</mi>
+                      <mi>c</mi>
+                    </mrow>
+                  </msqrt>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>a</mi>
+                </mrow>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">Used to solve quadratic equations</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">
+            <math>
+              <mi>x</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mo>-</mo>
+                  <mi>b</mi>
+                </mrow>
+                <mrow>
+                  <mn>2</mn>
+                  <mi>a</mi>
+                </mrow>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">
+            Used to find the x intercept of the turning point of a parabola
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">
+            <math>
+              <mi>a</mi>
+              <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>c</mi>
+              <mo>=</mo>
+              <mn>0</mn>
+            </math>
+          </div>
+          <div class="desc">
+            used to find the x intercept of a parabola by making the y value as
+            0, in the equation
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.2</div>
+          <div class="formula green">
+            <math>
+              <mi>y</mi>
+              <mo>=</mo>
+              <mrow>
+                <mfrac>
+                  <mi>a</mi>
+                  <mi>x</mi>
+                </mfrac>
+                <mo>+</mo>
+                <mi>q</mi>
+              </mrow>
+            </math>
+          </div>
+          <div class="desc">general formula for hyperbola</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.1</div>
+          <div class="formula green">
+            <math>
+              <mi>a</mi>
+              <msup>
+                <mi>x</mi>
+                <mn>2</mn>
+              </msup>
+              <mo>+</mo>
+              <mi>b</mi>
+              <mi>x</mi>
+              <mo>+</mo>
+              <mi>c</mi>
+            </math>
+          </div>
+          <div class="desc">general formula for parabola</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.5</div>
+          <div class="formula green">y = a^x</div>
+          <div class="desc">general formula for exponential graphs</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.5</div>
+          <div class="formula green">y = x^3</div>
+          <div class="desc">general formula for cubic graphs</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">if y = x, dy/dx or f'(x) = 0</div>
+          <div class="desc">derivation for a numerical value such as 5</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">if y = nx, dy/dx or f'(x) = n</div>
+          <div class="desc">
+            derivation for a variable to the power 1, such as 5x
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.7</div>
+          <div class="formula red">
+            if y = nx^a, dy/dx or f'(x) = anx^(n - 1)
+          </div>
+          <div class="desc">
+            derivation for a variable to the power higher then 1, such as 5x2
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">20.1</div>
+          <div class="formula yellow">fd = f/cw</div>
+          <div class="desc">Used to calculate the frequency density</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">20.1</div>
+          <div class="formula yellow">P = pn/100</div>
+          <div class="desc">Used to find the position of a percentile</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Measurements and Conversions</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 km = 10 hm</div>
+          <div class="desc">Used to convert km to hm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 hm = 100 decameter</div>
+          <div class="desc">Used to convert hm to decameter</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 decameter = 10 m</div>
+          <div class="desc">Used to convert decameter to m</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 m = 10 dm</div>
+          <div class="desc">Used to convert m = dm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yelow">1 dm = 10 cm</div>
+          <div class="desc">Used to convert dm = cm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1 cm = 10 mm</div>
+          <div class="desc">Used to convert cm = mm</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">13.1</div>
+          <div class="formula yellow">1000 kg = 1t</div>
+          <div class="desc">Used to convert kg to t</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Finance related chapters</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">I = PRT/100</div>
+          <div class="desc">Used to find the simple interest</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.1</div>
+          <div class="formula green">
+            Net Income = Gross Income - Deductions
+          </div>
+          <div class="desc">Used to calculate the net income</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">
+            HP = Deposit + (number of installments + amount per installment)
+          </div>
+          <div class="desc">Used to calculate the hire purchase (HP)</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.2</div>
+          <div class="formula green">V = P(1 + r/100)^n</div>
+          <div class="desc">Used to calculate compound interest</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula yellow">P = SP - CP</div>
+          <div class="desc">Used to calculate the profit</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula yellow">L = CP - SP</div>
+          <div class="desc">Used to calculate loss</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula green">p% = P/CP * 100%</div>
+          <div class="desc">Used to calculate percentage profit</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">17.3</div>
+          <div class="formula green">l% = L/CP * 100%</div>
+          <div class="desc">Used to calculate percentage loss</div>
+        </div>
+      </div>
+
+      <div id="physics">
+        <div class="formula-container">
+          <div class="separator half-mob half-mob-sep">Terms</div>
+          <div
+            class="separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            S.I Unit
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">mass</div>
+          <div class="formula green half-mob" style="margin-left: auto">kg</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">volume</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            m(eter³) or cm³
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">distance</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            m(eters)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">time</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            s(econds)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">speed</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            m/s
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">acceleration</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            m/s²
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">g</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            10 m/s²
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">momentum</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            kg m/s
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Density</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            ƥ (rho)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">weight</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            N(ewtons)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Force</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            N(ewtons)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">velocity</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            +m/s or -m/s
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">pressure</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            (p)ascals
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">work</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            J(oules)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">power</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            W(atts)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">energy</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            J(oules)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">kelvin</div>
+          <div class="formula green half-mob" style="margin-left: auto">K</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Celsius</div>
+          <div class="formula green half-mob" style="margin-left: auto">*C</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Specific heat capacity</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            J/kg *c
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">
+            Specific latent heat of fusion
+          </div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            J/kg
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Specific heat capacity</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            J/kg
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Frequency</div>
+          <div class="formula green half-mob" style="margin-left: auto">Hz</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">wavelength</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            ƛ or m(eters)
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="separator">Formulae's</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">1.4</div>
+          <div class="formula green">density = mass / volume</div>
+          <div class="desc">density formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.1</div>
+          <div class="formula green">speed = distance / time</div>
+          <div class="desc">speed formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.1</div>
+          <div class="formula green">speed = velocity (just value)</div>
+          <div class="desc"></div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.1</div>
+          <div class="formula green">acceleration = ∆ velocity / ∆ time</div>
+          <div class="desc">acceleration formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.1</div>
+          <div class="formula green">Force = mass * acceleration</div>
+          <div class="desc">formula of force</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.9</div>
+          <div class="formula green">weight = mass * g</div>
+          <div class="desc">formula of weight</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.11</div>
+          <div class="formula green">momentum = mass * velocity</div>
+          <div class="desc">formula of momentum</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.12</div>
+          <div class="formula green">impulse = force * time</div>
+          <div class="desc">formula of impulse</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.12</div>
+          <div class="formula green">impulse = ∆ change in momentum</div>
+          <div class="desc">formula of impulse</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">2.11</div>
+          <div class="formula green">
+            resultant force = ∆ change in momentum [or impulse] / ∆ time taken
+          </div>
+          <div class="desc">resultant force formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">x</div>
+          <div class="formula yellow">
+            (final velocity)² = (initial velocity)² + 2*(acceleration *
+            displacement)
+          </div>
+          <div class="desc">formula of (final velocity)²</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">x</div>
+          <div class="formula green">
+            displacement = (initial velocity * time) + (acceleration*time²)/2
+          </div>
+          <div class="desc">displacement formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">x</div>
+          <div class="formula yellow">
+            final velocity = initial velocity + (acceleration * time)
+          </div>
+          <div class="desc">formula of final velocity</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">3.1</div>
+          <div class="formula green">
+            moment = perpendicular distance * force
+          </div>
+          <div class="desc">formula of moment</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">3.4</div>
+          <div class="formula green">
+            load of spring = spring constant * extension
+          </div>
+          <div class="desc">formula of load of spring</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">3.5</div>
+          <div class="formula green">pressure = force / area</div>
+          <div class="desc">pressure formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">3.6</div>
+          <div class="formula green">liquid pressure = density * g * depth</div>
+          <div class="desc">formula of liquid pressure</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">3.8</div>
+          <div class="formula red">
+            pressure 1 * volume 1 == pressure*2 * volume 2
+          </div>
+          <div class="desc">formula of pressure 1 * volume 1</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.1</div>
+          <div class="formula green">work = distance * Force</div>
+          <div class="desc">formula of work</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.3</div>
+          <div class="formula green">G.P.E = mass * g * height from ground</div>
+          <div class="desc">formula of g.p.e</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.3</div>
+          <div class="formula green">kinetic energy = (1/2)*mass*velocity²</div>
+          <div class="desc">kinetic energy formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.4</div>
+          <div class="formula green">power = work done / ∆ time taken</div>
+          <div class="desc">power formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.4</div>
+          <div class="formula green">
+            power = energy transferred / ∆ time taken
+          </div>
+          <div class="desc">power formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.4</div>
+          <div class="formula green">
+            efficiency = useful work / total energy input
+          </div>
+          <div class="desc">efficiency formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.4</div>
+          <div class="formula green">
+            efficiency = useful energy / total energy
+          </div>
+          <div class="desc">efficiency formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">4.4</div>
+          <div class="formula green">
+            efficiency = useful power / total power
+          </div>
+          <div class="desc">efficiency formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.1</div>
+          <div class="formula green">energy transfer = mass * L</div>
+          <div class="desc">formula of energy transfer</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.2</div>
+          <div class="formula green">kelvin = degrees Celsius + 273</div>
+          <div class="desc">formula of kelvin from Celsius scale</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.9</div>
+          <div class="formula green">
+            energy transfer = mass * S.H.C * ∆ temp
+          </div>
+          <div class="desc">formula of energy transfer</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">6.1</div>
+          <div class="formula green">
+            speed of wave = frequency * wavelength
+          </div>
+          <div class="desc">formula of speed of wave</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">6.4</div>
+          <div class="formula green">
+            speed of echo sound = (2 * distance to wall)/(echo time)
+          </div>
+          <div class="desc">formula to find the speed of an echo</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">6.4</div>
+          <div class="formula green">
+            speed of sound = (distance traveled)/(time taken)
+          </div>
+          <div class="desc">formula to find the speed of sound</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.6</div>
+          <div class="formula red">
+            <math>
+              <mi>n</mi>
+              <mo>=</mo>
+              <mfrac>
+                <mi>sin i </mi>
+                <mi>sin r</mi>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">
+            formula to calculate the refractive index of a medium, n is the
+            refractive index, I is the angle of incidence and r is the angle of
+            refraction
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">7.6</div>
+          <div class="formula red">
+            <math>
+              <mi>sin</mi>
+              <mo>(</mo>
+              <mi>c</mi>
+              <mo>)</mo>
+              <mo>=</mo>
+              <mfrac>
+                <mn>1</mn>
+                <mi>n</mi>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">
+            formula to calculate the critical angle on a medium, c is the
+            critical angle and n is the refractive index
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.4</div>
+          <div class="formula green">I = Q/T</div>
+          <div class="desc">
+            formula to calculate current from charge and time, I is current, Q
+            is charge and T is time
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.5</div>
+          <div class="formula green">V = W/Q</div>
+          <div class="desc">
+            formula to calculate voltage from work done and charge, V is
+            voltage, W is work done and Q is charge
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.6</div>
+          <div class="formula green">R = V/I</div>
+          <div class="desc">
+            ohm's law, R is resistance, V is voltage and A is current
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.7</div>
+          <div class="formula green">V = I⋅R</div>
+          <div class="desc">
+            ohm's law, R is resistance, V is voltage and A is current
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.7</div>
+          <div class="formula green">I = V/R</div>
+          <div class="desc">
+            ohm's law, R is resistance, V is voltage and A is current
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.8</div>
+          <div class="formula red">R = ρ * L/A</div>
+          <div class="desc">
+            formula to calculate resistance from the resistivity of the material
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.8</div>
+          <div class="formula red">
+            <math>
+              <mrow>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>a</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mi>a</mi>
+                    </msub>
+                  </mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mi>a</mi>
+                  </msub>
+                </mfrac>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>R</mi>
+                      <mi>b</mi>
+                    </msub>
+                    <mo>&#x2062;</mo>
+                    <msub>
+                      <mi>A</mi>
+                      <mi>b</mi>
+                    </msub>
+                  </mrow>
+                  <msub>
+                    <mi>L</mi>
+                    <mi>b</mi>
+                  </msub>
+                </mfrac>
+              </mrow>
+            </math>
+          </div>
+          <div class="desc">
+            formula used to calculate the resistance of another wire from
+            another wire with the same resistivity
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.1</div>
+          <div class="formula green">
+            <math>
+              <mi>R</mi>
+              <mo>=</mo>
+              <msub>
+                <mi>R</mi>
+                <mn>1</mn>
+              </msub>
+              <mo>+</mo>
+              <msub>
+                <mi>R</mi>
+                <mn>2</mn>
+              </msub>
+              <mo>+</mo>
+              <msub>
+                <mi>R</mi>
+                <mi>n</mi>
+              </msub>
+            </math>
+          </div>
+          <div class="desc">
+            formula used to calculate the total resistance of a series circuit
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.1</div>
+          <div class="formula green">
+            <math>
+              <mfrac>
+                <mn>1</mn>
+                <mi>R</mi>
+              </mfrac>
+              <mo>=</mo>
+              <mfrac>
+                <mn>1</mn>
+                <msub>
+                  <mi>R</mi>
+                  <mn>1</mn>
+                </msub>
+              </mfrac>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <msub>
+                  <mi>R</mi>
+                  <mn>2</mn>
+                </msub>
+              </mfrac>
+              <mo>+</mo>
+              <mfrac>
+                <mn>1</mn>
+                <msub>
+                  <mi>R</mi>
+                  <mi>n</mi>
+                </msub>
+              </mfrac>
+            </math>
+          </div>
+          <div class="desc">
+            formula use to calculate the total resistance of a parallel circuit
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.12</div>
+          <div class="formula green">P = V⋅I</div>
+          <div class="desc">
+            formula used to calculate the electrical power of a circuit
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.12</div>
+          <div class="formula green">E = V⋅I⋅T</div>
+          <div class="desc">
+            formula used to calculate the energy transferred in a circuit, E is
+            the energy transferred, I is the current and t is the time taken.
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">9.10</div>
+          <div class="formula red">Vs/Vp = Ns/Np</div>
+          <div class="desc">
+            formula used to calculate the number of coils present in the primary
+            and secondary circuit from the input and output voltage
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">9.11</div>
+          <div class="formula red">Vp⋅Ip = Vs⋅Is</div>
+          <div class="desc">
+            formula used to calculate the amount of current reduced and the
+            voltage increased, by knowing the power
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator">Physics Laws</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">2.6</div>
+          <div class="formula green">Newton's first law of motion</div>
+          <div class="desc">
+            If no external force is acting on it, an object will -if stationary,
+            remain stationary -if moving, keep moving at a steady speed in a
+            straight line
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">2.7</div>
+          <div class="formula green">Newton's second law of motion</div>
+          <div class="desc">
+            F = ma, this relationship between force, mass and acceleration is
+            sometimes called newton's second law of motion
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">2.1</div>
+          <div class="formula green">Newton's third law of motion</div>
+          <div class="desc">
+            every reaction has an equally likely opposite reaction
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">2.12</div>
+          <div class="formula green">Law of conservation of momentum</div>
+          <div class="desc">
+            When two or more objects act on each other, their total momentum
+            remains constant, provided no external forces are acting
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">3.1</div>
+          <div class="formula green">Principle of moments</div>
+          <div class="desc">
+            If an object is in equilibrium: the sum of the clockwise moments
+            about any point is equal to the sum of the anticlockwise moments
+            about that points
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">3.4</div>
+          <div class="formula green">Hooke's law</div>
+          <div class="desc">
+            A material obeys hooke's law if, beneath it's elastic limit, the
+            extension is proportional to the load
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">3.8</div>
+          <div class="formula green">Boyle's law</div>
+          <div class="desc">
+            P1V1 = P2V2, if pressure is halved, then volume is doubled, if
+            pressure is doubled, then volume is halved
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">4.2</div>
+          <div class="formula green">law of conservation of energy</div>
+          <div class="desc">
+            Energy can be stored or transferred, but it cannot be created or
+            destroyed
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">7.2</div>
+          <div class="formula green">laws of reflection</div>
+          <div class="desc">
+            1) The angle of incidence is equal to the angle of reflection 2) the
+            incident ray, the reflected raw, and the normal all lie in the same
+            place
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">7.6</div>
+          <div class="formula green">Snell's law</div>
+          <div class="desc">
+            the sines of the two angles are always in proportion, sin(i)/sin(r)
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">8.7</div>
+          <div class="formula green">Ohm's law</div>
+          <div class="desc">
+            The current in a circuit is always proportional to the pd, V = IR
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">9.3</div>
+          <div class="formula green">Right hand grip rule</div>
+          <div class="desc">
+            A rule used to find the field direction produced by a current
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">9.5</div>
+          <div class="formula green">Fleming's left hand rule</div>
+          <div class="desc">A rule used to find the direction of force</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">9.7</div>
+          <div class="formula green">
+            Faraday's law of electromagnetic induction
+          </div>
+          <div class="desc">
+            The emf induced in a conductor is proportional to the rate at which
+            magnetic field lines are cut by the conductor
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">9.8</div>
+          <div class="formula green">Lenz's law</div>
+          <div class="desc">
+            An induced current always flows in a direction such that it opposes
+            the charge which produced it
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="unit">9.8</div>
+          <div class="formula green">Fleming's right hand rule</div>
+          <div class="desc">
+            a rule used to find the direction of induced current
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator" style="margin-bottom: 0px">
+            Convex Lens
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula half-mob red" style="margin-top: 0px">
+            Object Position
+          </div>
+          <div
+            class="formula half-mob red"
+            style="margin-left: auto; margin-top: 0px"
+          >
+            Properties
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">∞</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Focus
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">At 2F</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            2F<sup>-</sup>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">F - 2F</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            beyond 2F<sup>-</sup>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">F</div>
+          <div class="formula green half-mob" style="margin-left: auto">∞</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">F - Optical Center</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            F-2F
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator" style="margin-bottom: 0px">
+            Concave Lens
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula half-mob red" style="margin-top: 0px">
+            Object Position
+          </div>
+          <div
+            class="formula half-mob red"
+            style="margin-left: auto; margin-top: 0px"
+          >
+            Properties
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">∞</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            F<sup>-</sup>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">∞ - Optical Center</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Optical Center - F<sup>-</sup>
+          </div>
+        </div>
+      </div>
+      <div id="chemistry">
+        <div class="formula-container">
+          <div class="separator">
+            <span style="margin-left: auto; margin-right: auto">Constant</span>
+            <span style="margin-left: auto; margin-right: auto">Values</span>
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.1</div>
+          <div class="formula green">1 mole (1 mol)</div>
+          <div class="desc">6.02 x 1023</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.3</div>
+          <div class="formula green">R.T.P (room temperature and pressure)</div>
+          <div class="desc">20*C \& 1 atmosphere</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.3</div>
+          <div class="formula green">volume of gas at R.T.P</div>
+          <div class="desc">24dm³</div>
+        </div>
+        <div class="formula-container">
+          <div class="separator">Formulae</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.1</div>
+          <div class="formula green">moles = mass/mass of 1 mole</div>
+          <div class="desc">finding the number of moles</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.1</div>
+          <div class="formula green">mass of 1 mole = Mr or Ar</div>
+          <div class="desc">
+            Very important formula of finding the how much mass one mole has
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.3</div>
+          <div class="formula green">
+            volume of gas at rtp = 24dm³ * number of moles
+          </div>
+          <div class="desc">volumes of gas for any amount of moles</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.3</div>
+          <div class="formula yellow">
+            number of moles in x volume = volume/24dm³
+          </div>
+          <div class="desc">
+            no need to learn this formulas if the above formula is learnt
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.4</div>
+          <div class="formula green">
+            concentration = amount(mol/g) / volume
+          </div>
+          <div class="desc">concentration formula</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.4</div>
+          <div class="formula green">volume = amount / concentration</div>
+          <div class="desc">
+            no need to this formula and the one below if the above formula is
+            learnt
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.4</div>
+          <div class="formula green">amount = concentration * volume</div>
+          <div class="desc">^</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.6</div>
+          <div class="formula green">
+            multiplier = Mr / empirical mass molecular formula = multiplier *
+            empirical formula
+          </div>
+          <div class="desc">
+            finding the molecular formula from empirical mass
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.7</div>
+          <div class="formula red">
+            %yield = mass of product / theoretical mass
+          </div>
+          <div class="desc">finding the percentage yield</div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">5.8</div>
+          <div class="formula red">%purity = pure mass / impure mass</div>
+          <div class="desc">
+            finding the percentage purity, too much logic for the marks these
+            are worth, the hardest formula to apply
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">8.3</div>
+          <div class="formula red">
+            enthalpy (∆H) = bond break energy - bond making energy
+          </div>
+          <div class="desc">
+            enthalpy, the total energy change during a reaction
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="unit">18.6</div>
+          <div class="formula green">
+            (Retention Factor) Rf = distance from origin to dot / distance from
+            origin to solvent front
+          </div>
+          <div class="desc">
+            retention factor, using a table can tell you what element/compound
+            you will deal with
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator">
+            The Reactivity Series
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Potassium</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Sodium</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Lithium</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Calcium</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Magnesium</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Aluminum</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;"><b>Carbon</b></div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Zinc</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Iron</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;"><b>Hydrogen</b></div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Copper</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Silver</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Gold</div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="width: 100%; border-right: 1px solid black; border-left: 1px solid black;">Platinum</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Ways to change Equilibrium
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Favours
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Temperature</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Endothermic Reaction
+          </div>
+        </div>
+
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Pressure</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            The Side with lowest amount of molecules
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Concentration</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Side with more concentration
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Catalyst</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Both Forward and Reverse Reactions
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="separator unit">Process</div>
+          <div class="separator formula">Catalyst Used And Product</div>
+          <div class="separator desc">Conditions</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Haber's Process</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Iron (Fe) is Catalyst</span>
+            <span>Ammonia is produced</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>450 Degrees C</span>
+            <span>200 Atmospheres</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Contact Process</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Vanadium <b>Pent</b>Oxide is the Catalyst</span>
+            <span>Produces Sulfuric Acid</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>450 Degrees C</span><span>2 Atmospheres</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="separator unit">Indicator</div>
+          <div class="separator formula">Colour in Acid</div>
+          <div class="separator desc">Colour in Bases</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Litmus</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Red
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Blue
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Methyl Orange</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Red
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Yellow
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Thymolphthalein</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Colourless
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Blue
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Phenolphthalein</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Colourless
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            Pink
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Ion or type of compound
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Acid or Base
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Metal Oxide</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Base (except aluminum oxide and zinc oxide)
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Non Metal Oxide</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Acid
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Hydroxide</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Base
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Carbonate</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Base
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Nitrate</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Non Determinable
+          </div>
+        </div>
+        
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Type of compound
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Typical Acid Reaction
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Metals</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Acid + Metal → Salt + Hydrogen
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Bases</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Acid + Base → Salt + Water
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Carbonates</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Acid + Carbonate → Salt + Carbon Dioxide + Water
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Ammonia</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Ammonia + Acid → Ammonium Salt <b>(NO WATER OR GAS FORMS)</b>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Soluble
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Insoluble
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Sodium Salts</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            No Exceptions
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Potassium Salts</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            No Exceptions
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Ammonium Salts</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            No Exceptions
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Halides</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Except halides of silver and lead
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Sulfates</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>Except:</span>
+            <span>Calcium</span>
+            <span>Barium</span>
+            <span>Lead sulfate</span>
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">
+            <span>Except:</span>
+            <span>Sodium</span>
+            <span>Potassium</span>
+            <span>Ammonium</span>
+
+          </div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Carbonates
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator grptrnd1">Grp</div>
+          <div class="formula separator grptrnd">Trend</div>
+          <div class="formula separator grptrnd">Sequence</div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            I & II
+          </div>
+          <div class="formula green">Reactivity</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            increases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            I & II
+          </div>
+          <div class="formula green">Density</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            increases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            I & II
+          </div>
+          <div class="formula green">Melting point</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            increases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            VII
+          </div>
+          <div class="formula green">Reactivity</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            decreases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            VII
+          </div>
+          <div class="formula green">Density</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            increases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            VII
+          </div>
+          <div class="formula green">Boiling point</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            increases
+          </div>
+        </div>
+        <div class="formula-container">
+          <div
+            class="formula red"
+            style="
+              width: 15%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            VII
+          </div>
+          <div class="formula green">Colour</div>
+          <div
+            class="formula yellow"
+            style="
+              width: 45%;
+              border-left: solid 1px black;
+              border-right: solid 1px black;
+            "
+          >
+            darkness increases
+          </div>
+        </div>
+
+
+        <div class="formula-container">
+          <div class="separator unit">Gas</div>
+          <div class="separator formula">Test</div>
+          <div class="separator desc">Properties</div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Ammonia</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Heat</span><span>Hold <b>Damp</b> Red Litmus Paper over it</span><span>Paper Turns Blue</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span class="prop">Colourless</span>
+            <span class="prop">Alkaline Gas</span>
+            <span class="prop">Strong Sharp Smell</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Hydrogen</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Collect in a Tube</span><span>Hold a lighted splint to it</span><span>Squeaky Pop is heard</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Colourless</span>
+            <span>When Lit, Reacts Vigorously with Oxygen</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Oxygen</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Collect Oxygen</span><span>Hold <b>glowing</b> splint to it</span><span>Splint Immediately bursts into flame</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Colourless</span>
+            <span>Fuel Burns Easier in it</span>
+            </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Chlorine</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Hold <b>Damp</b> Litmus Paper in a fume cupboard</span><span>Paper turns white</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Poisonous</span>
+            <span>Can Bleach Dyes</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">Sulfur Dioxide</div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Get solution of Potassium Manganate(VII)</span>
+            <span>Add a <b>Little</b> amount of dilute Hydrochloric Acid</span>
+            <span>Soak A piece of filter paper in the now <b>acidified</b> Potassium Manganate(VII)</span>
+            <span>Place filter paper in the gas (S0<sub>2</sub>)</span>
+            <span>Paper becomes colourless from purple</span>
+          </div>
+          <div class="formula green" style="border-right: 1px solid black; border-left: 1px solid black">
+            <span>Colourless</span>
+            <span>Poisonous</span>
+            <span>Acidic gas</span>
+            <span>Chocking smell</span>
+          </div>
+        </div>
+        
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Cation Flame Test
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Colour
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Lithium</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Red
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Sodium</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Yellow
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Potassium</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Lilac
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Calcium</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Orange-Red
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Barium</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Light Green
+          </div>
+        </div>
+        <div class="formula-container">
+          <div class="formula green half-mob">Copper (II)</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            Blue-Green
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">Cation Test</div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Procedure and Result
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Ammonium</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Add - dil. NaOH (aq) 
+
+Heat Gently
+
+Ammonia Released ( Turns damp Blue Litmus to red )
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Iron (||)</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Add - dil • Ammonia (aq) to one portion
+
+Add - dil • NaOH (aq) to the other potion
+
+Pale Green Precipitate will form
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Iron (|||)</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Divide into 2 portions
+Add - dil • Ammonia (aq) to one portion
+Add - dil • NaOH (aq) to the other potion
+
+Reddish Brown Precipitate will form
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Zinc</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Divide into 2 portions
+
+Add - dil • NaOH (aq) to one portion
+Add - dil • Ammonia (aq) to the other potion
+
+White Precipitate forms
+Adding more makes solution colourless
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Aluminum</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Divide into 2 portions
+
+Add - dil • NaOH (aq) to one portion
+White Precipitate forms
+Adding more makes it colourless
+
+Add - dil • Ammonia (aq) to the other potion
+White Precipitate forms
+Adding more has no effect
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula half-mob green">Calcium</div>
+          <div class="formula half-mob green" style="margin-left: auto">
+            <pre>
+Divide into 2 portions
+
+Add - dil • NaOH (aq) to one portion
+White Precipitate forms
+Adding more has no effect
+
+Add - dil • Ammonia (aq) to the other potion
+No Precipitate, or very slight white precipitate is formed
+Adding more has no effect
+            </pre>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula separator half-mob half-mob-sep">
+            Anion
+          </div>
+          <div
+            class="formula separator half-mob half-mob-sep"
+            style="margin-left: auto"
+          >
+            Tests
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Halide</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>To a small amount of solution, add an equal volume of dilute nitric acid</span>
+            <span>Add aqueous silver nitrate, which is insoluble</span>
+            <span>If halide is present, precipitate forms</span>
+            <span>Chlorine is white</span>
+            <span>Bromine is Creme</span>
+            <span>Iodine is Pale-Yellow</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">
+            Sulphate
+          </div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>To a small amount of solution, add an equal volume of dilute nitric acid</span>
+            <span>Add barium nitrate solution, which is insoluble</span>
+            <span>White Precipitate is formed if sulphate is present</span>
+            <span>SO4^2- + Ba^2+ -> BaSO4</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Sulfite</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>To a small amount of solution, add an equal volume of dilute acidified potassium permanganate (purple)</span>
+            <span>Solution turns colourless</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Carbonate</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>To a small amount of solution, add an equal volume of dilute Hydrochloric acid</span>
+            <span>A gas will be produced (Carbon Dioxide)</span>
+            <span>It turns limewater milky</span>
+          </div>
+        </div>
+
+        <div class="formula-container">
+          <div class="formula green half-mob">Nitrate</div>
+          <div class="formula green half-mob" style="margin-left: auto">
+            <span>To a small amount of solution (or solid), add little aqueous Sodium Hydroxide</span>
+            <span>Add small pieces of Aluminum foil</span>
+            <span>Heat Gently</span>
+            <span>A gas is given off (Ammonia)</span>
+            <span>Expose this gas with <b>Damp</b> red litmus paper</span>
+            <span>Paper turns blue</span>
+          </div>
+        </div>
+
+
+
+
+        
+        
+
+
+      </div>
+    </div>
+
+    <!-- <script src="../static/javascript/util.js"></script> -->
+    <script src="../static/javascript/formula-util.js"></script>
+  </body>
+</html>
