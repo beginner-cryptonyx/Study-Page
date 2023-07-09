@@ -1,11 +1,9 @@
 import "../App.css";
 import { MathJaxContext, MathJax } from "better-react-mathjax";
-const Mathml2latex = require("mathml-to-latex");
 export interface MathCellProps {
     formula: string;
     description: string;
     importance?: string;
-    Latex?: boolean;
 }
 export interface CellSeparatorProps {
     title: string;
@@ -17,15 +15,7 @@ const mathJaxConfig = {
     },
 };
 // Mathml2latex.convert(formula);
-function MathCell({ formula, description, importance, Latex }: MathCellProps) {
-    if (Latex === true) {
-        Latex = true;
-    } else {
-        Latex = false;
-    }
-
-    const latex_formula = Latex ? formula : Mathml2latex.convert(formula);
-    // const latex_formula =  Mathml2latex.convert(formula)
+function MathCell({ formula, description, importance }: MathCellProps) {
     return (
         <div
             className={`formula-cell-2 duration-500 ${
@@ -36,7 +26,7 @@ function MathCell({ formula, description, importance, Latex }: MathCellProps) {
                 className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
             >
                 <MathJaxContext config={mathJaxConfig}>
-                    <MathJax>{`$${latex_formula}$`}</MathJax>
+                    <MathJax>{`$${formula}$`}</MathJax>
                 </MathJaxContext>
             </div>
             <div
