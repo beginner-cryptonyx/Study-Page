@@ -1,14 +1,17 @@
-import Accordion from "@mui/material/Accordion";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import Typography from "@mui/material/Typography";
+import {
+    Accordion,
+    AccordionSummary,
+    AccordionDetails,
+    Typography,
+} from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material";
-// import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const theme = createTheme({
     palette: {
         primary: {
             main: "#505050",
+            dark: "#555555",
         },
     },
 });
@@ -24,13 +27,20 @@ function MUIaccordion({ content }: MUIaccordionProps) {
                     <Accordion
                         sx={{
                             bgcolor: "primary.main",
-                            textAlign: 'center'
+                            mx: "auto",
                         }}
                     >
-                        <AccordionSummary>
-                            <Typography>{content[0]}</Typography>
+                        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+                            <Typography
+                                className="w-min whitespace-nowrap mx-auto"
+                                sx={{ mx: "auto" }}
+                            >
+                                {content[0]}
+                            </Typography>
                         </AccordionSummary>
-                        <AccordionDetails>{content[1]}</AccordionDetails>
+                        <AccordionDetails sx={{ bgcolor: "primary.dark" }}>
+                            {content[1]}
+                        </AccordionDetails>
                     </Accordion>
                 </div>
             </ThemeProvider>
