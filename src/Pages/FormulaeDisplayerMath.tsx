@@ -2,69 +2,14 @@ import { MathCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 
 const AlgebraicMathFormulae: Array<Array<any>> = [
-    [
-        `<math>
-    <mrow>
-      <mo>(</mo>
-      <mi>a</mi>
-      <mo>+</mo>
-      <mi>b</mi>
-      <msup>
-        <mo>)</mo>
-        <mn>2</mn>
-      </msup>
-      <mo>=</mo>
-      <msup>
-        <mi>a</mi>
-        <mn>2</mn>
-      </msup>
-      <mo>+</mo>
-      <msup>
-        <mi>b</mi>
-        <mn>2</mn>
-      </msup>
-      <mo>+</mo>
-      <mrow>
-        <mn>2</mn>
-        <mi>a</mi>
-
-        <mi>b</mi>
-      </mrow>
-    </mrow>
-  </math>`,
-        "",
-    ],
-    [
-        `<math>
-    <mrow>
-      <mo>(</mo>
-      <mi>a</mi>
-      <mo>-</mo>
-      <mi>b</mi>
-      <msup>
-        <mo>)</mo>
-        <mn>2</mn>
-      </msup>
-      <mo>=</mo>
-      <msup>
-        <mi>a</mi>
-        <mn>2</mn>
-      </msup>
-      <mo>+</mo>
-      <msup>
-        <mi>b</mi>
-        <mn>2</mn>
-      </msup>
-      <mo>-</mo>
-      <mrow>
-        <mn>2</mn>
-        <mi>a</mi>
-        <mi>b</mi>
-      </mrow>
-    </mrow>
-  </math>`,
-        "",
-    ],
+    [`\(a + b\)^2 = a^2 + b^2 +2ab`, "Algebric Indentity #1", "normal", true],
+    [`\(a - b\)^2 = a^2 + b^2 -2ab`, "Algebraic Identity #2 ", "normal", true],
+    [`x^n × x^m = x^{m + n}`, "Algebraic Identity #3", "normal", true],
+    [`a^2 - b^2 = \(a + b\)×\(a - b\)`, "Algebraic Identity #3", "normal", true],
+    [`a^2 - b^2 = \(a + b\)×\(a - b\)`, "Algebraic Identity #3", "normal", true],
+    [`a^2 - b^2 = \(a + b\)×\(a - b\)`, "Algebraic Identity #3", "normal", true],
+    [`a^2 - b^2 = \(a + b\)×\(a - b\)`, "Algebraic Identity #3", "normal", true],
+    [`a^2 - b^2 = \(a + b\)×\(a - b\)`, "Algebraic Identity #3", "normal", true],
 ];
 
 function FormulaeMath() {
@@ -82,8 +27,9 @@ function FormulaeMath() {
                     AlgebraicMathFormulae.map((formula_holder, index) => (
                         <MathCell
                             formula={formula_holder[0]}
-                            description="Theory of Relativity"
-                            importance="important"
+                            description={formula_holder[1]}
+                            importance={formula_holder[2]}
+                            Latex={formula_holder[3]}
                             key={index}
                         />
                     )),

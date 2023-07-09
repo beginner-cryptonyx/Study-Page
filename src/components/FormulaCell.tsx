@@ -5,8 +5,8 @@ export interface MathCellProps {
     formula: string;
     description: string;
     importance?: string;
+    Latex?: boolean;
 }
-
 export interface CellSeparatorProps {
     title: string;
 }
@@ -16,12 +16,22 @@ const mathJaxConfig = {
         inlineMath: [["$", "$"]],
     },
 };
+// Mathml2latex.convert(formula);
+function MathCell({ formula, description, importance, Latex }: MathCellProps) {
+    if (Latex === true) {
+        Latex = true;
+    } else {
+        Latex = false;
+    }
 
-function MathCell({ formula, description, importance }: MathCellProps) {
-    const latex_formula = Mathml2latex.convert(formula);
-
+    const latex_formula = Latex ? formula : Mathml2latex.convert(formula);
+    // const latex_formula =  Mathml2latex.convert(formula)
     return (
-        <div className={`formula-cell-2 duration-500 ${importance ? importance : 'normal'}`}>
+        <div
+            className={`formula-cell-2 duration-500 ${
+                importance ? importance : "normal"
+            }`}
+        >
             <div
                 className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
             >
