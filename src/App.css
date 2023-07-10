@@ -9,7 +9,7 @@
 
 
     .formula-cell-2 div{
-        @apply hover:scale-[102%] mx-0.5
+        @apply hover:scale-[101%] mx-0.5
     ;}
 
 }

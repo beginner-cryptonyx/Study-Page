@@ -18,21 +18,23 @@ const mathJaxConfig = {
 function MathCell({ formula, description, importance }: MathCellProps) {
     return (
         <div
-            className={`formula-cell-2 duration-500 ${
+            className={`formula-cell-2 ${
                 importance ? importance : "normal"
             }`}
         >
             <div
-                className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black duration-500`}
+                className={`w-1/2 bg-gradient-to-r border border-gray-800 border-solid p-2  border-l-2 border-l-black flex duration-500`}
             >
                 <MathJaxContext config={mathJaxConfig}>
-                    <MathJax>{`$${formula}$`}</MathJax>
+                    <MathJax className="m-auto text-3xl p-1">{`$${formula}$`}</MathJax>
                 </MathJaxContext>
             </div>
             <div
-                className={`w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black duration-500`}
+                className={`w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex text-center justify-center align-middle duration-500`}
             >
-                {description}
+                <div className="mt-1.5">
+                    {description}
+                </div>
             </div>
         </div>
     );

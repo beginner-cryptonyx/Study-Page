@@ -5,13 +5,14 @@ import {
     Typography,
 } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material";
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const theme = createTheme({
     palette: {
         primary: {
             main: "#505050",
             dark: "#555555",
+            light: "#ffffff",
         },
     },
 });
@@ -28,12 +29,17 @@ function MUIaccordion({ content }: MUIaccordionProps) {
                         sx={{
                             bgcolor: "primary.main",
                             mx: "auto",
+                            my: "1rem"
                         }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                             <Typography
-                                className="w-min whitespace-nowrap mx-auto"
-                                sx={{ mx: "auto" }}
+                                sx={{
+                                    mx: "auto",
+                                    color: "primary.light",
+                                    fontSize: "22px",
+                                    fontWeight: 'bold'
+                                }}
                             >
                                 {content[0]}
                             </Typography>
