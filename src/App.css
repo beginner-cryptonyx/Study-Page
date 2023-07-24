@@ -8,21 +8,22 @@
     ;}
 
 
-    .formula-cell-2 .target {
+    .formula-cell-2 div {
         @apply hover:scale-[101%] bg-transparent p-2;
     ;}
 
 }
 span{
-    display: flex
+    display: flex;
 }
 
 .MathJax.CtxtMenu_Attached_0 .MJX-TEX{
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: baseline;
-    flex-wrap: wrap
+    justify-content: center;
 }
+
 
 
 @layer components{
@@ -55,6 +56,11 @@ span{
         width: 100% !important;
         word-wrap: break-word !important;
     }
+
+    ._jax{
+        font-size: 1rem !important;
+    }
+    
 
 }
 
