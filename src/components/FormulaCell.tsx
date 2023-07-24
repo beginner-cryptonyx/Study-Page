@@ -48,7 +48,7 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
 
 function CellSeparator({ title }: CellSeparatorProps) {
     return (
-        <div className="bg-slate-500 w-[70vw] mx-auto text-center font-bold mb-[0.0625rem] p-3 border-black border-1 border-x-2 mt-8 text-3xl">
+        <div className="bg-slate-500 mx-auto text-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-3xl">
             {title}
         </div>
     );
