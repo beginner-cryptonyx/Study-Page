@@ -1,8 +1,8 @@
 import "../App.css";
-import {MathJax } from "better-react-mathjax";
+import { MathJax } from "better-react-mathjax";
 export interface MathCellProps {
     formula: string;
-    description: string;
+    description?: string;
     importance?: string;
 }
 export interface CellSeparatorProps {
@@ -11,21 +11,31 @@ export interface CellSeparatorProps {
 
 // Mathml2latex.convert(formula);
 function MathCell({ formula, description, importance }: MathCellProps) {
-    return (
+    return description ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
                 className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center`}
             >
                 <div className="mx-auto text-3xl h-fit">
-                    <MathJax >
-                        {`$${formula}$`}
-                    </MathJax>
+                    <MathJax>{`$${formula}$`}</MathJax>
                 </div>
             </div>
             <div
                 className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2">{description}</div>
+                <div className="desc text-center h-[100%] w-[100%] p-2">
+                    {description}
+                </div>
+            </div>
+        </div>
+    ) : (
+        <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
+            <div
+                className={`target w-[100%] bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center`}
+            >
+                <div className="mx-auto text-3xl h-fit">
+                    <MathJax>{`$${formula}$`}</MathJax>
+                </div>
             </div>
         </div>
     );
