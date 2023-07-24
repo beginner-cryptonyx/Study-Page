@@ -47,6 +47,7 @@ const AlgebraicMathFormulae: Array<Array<any>> = [
 ];
 
 const GeometricalMathFormulae: Array<Array<any>> = [
+    ["separator", "Perimeter, Area and Volume"],
     [`P = 2 \\cdot (L+B)`, "Calculation perimeter of rectangle.", "normal"],
     [`P = 4s`, "Used to calculate perimeter of rectangle.", "normal"],
     [
@@ -115,6 +116,7 @@ const GeometricalMathFormulae: Array<Array<any>> = [
         "Used to calculate scale factor of volume.",
         "normal",
     ],
+    ["separator", "Trigonometry"],
     [
         `\\sin{\\theta} = \\frac{O}{H}`,
         "Trigonometric formula which is used to calculate angle using opposite and hypotenuse",
@@ -206,23 +208,35 @@ const GeometricalMathFormulae: Array<Array<any>> = [
     ],
     [
         `The angle between the tangent and the chord is equal to the angle in alternate segment`,
-        "Alternate segment theorem",
+        "",
         "normal",
         "false",
     ],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
+    ["separator", "Miscellaneous"],
+    [
+        `\\frac{\\triangle_y}{\\triangle_x} = \\text{gradient} = \\text{speed}`,
+        "used to find the speed in a distance time graph",
+        "normal",
+    ],
+    [
+        `F = k \\cdot D`,
+        "Formula used to solve direct proportionality problems",
+        "normal",
+    ],
+    [
+        `F = K \\cdot \\frac{1}{D}`,
+        "Formula used to solve inverse proportionality problems",
+        "normal",
+    ],
 ];
+
+const GraphicalMathFormulae: Array<Array<any>> = [
+    ["separator", "Perimeter, Area and Volume"],
+]
 function FormulaeMath() {
     return (
         <>
             <MathJaxContext config={mathJaxConfig} version={3}>
-                <div className="mt-4"></div>
-
                 <MUIaccordion
                     content={[
                         "Algebraic Identities and Law's of indices",
@@ -244,9 +258,34 @@ function FormulaeMath() {
                     ]}
                 />
 
+                <div className="separator">‎</div>
+
                 <MUIaccordion
                     content={[
-                        "Algebraic Identities and Law's of indices",
+                        "Geometry",
+                        GeometricalMathFormulae.map((formula_holder, index) =>
+                            formula_holder[0] === "separator" ? (
+                                <CellSeparator
+                                    title={formula_holder[1]}
+                                ></CellSeparator>
+                            ) : (
+                                <MathCell
+                                    formula={formula_holder[0]}
+                                    description={formula_holder[1]}
+                                    importance={formula_holder[2]}
+                                    jax={formula_holder[3] ? false : true}
+                                    key={index}
+                                />
+                            )
+                        ),
+                    ]}
+                />
+
+                <div className="separator">‎</div>
+
+                <MUIaccordion
+                    content={[
+                        "Graphical Chapters",
                         GeometricalMathFormulae.map((formula_holder, index) =>
                             formula_holder[0] === "separator" ? (
                                 <CellSeparator
