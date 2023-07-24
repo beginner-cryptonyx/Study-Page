@@ -150,11 +150,69 @@ const GeometricalMathFormulae: Array<Array<any>> = [
         "important",
     ],
     [
-        `\\text{main side} = (other sides)² \\
-         - 2(other sides) *Cos(main angle)`,
-        "",
+        `\\text{main side} = \(\\text{other sides}\)^2 \\
+         - 2\(\\text{other sides}\) \\times \\cos\(\\text{main angle}\)`,
+        "simplifies cosine ratios, main side is the side you want to use, main angle is the angle opposite to the side you want to find, if you learn to use this there is no need to remember the above 3 formulas",
         "external",
     ],
+    [
+        `A = \\frac{1}{2} \\cdot a \\cdot b \\cdot \\sin{C}`,
+        "Using to calculate area of triangle when height is not given",
+        "important",
+    ],
+    [
+        `\\text{Area} = \\frac{1}{2} \\cdot \\text{given sides} \\cdot \\text{sin(given angle)}`,
+        "Using to calculate area of triangle when height is not given",
+        "normal",
+    ],
+    [
+        `Area = \\frac{1}{2} \\cdot \\text{(given sides)} \\cdot \\text{sin(given angle)}`,
+        "Simplifies the above formula",
+        "external",
+    ],
+    ["separator", "Circle Theorems"],
+    [`The angle in a semi circle is a right angle`, "", "normal", "false"],
+    [
+        `The angle between the tangent and radius is 90 degrees`,
+        "",
+        "normal",
+        "false",
+    ],
+    [
+        `
+        The angle at the center of a circle is twice the angle at the circumference`,
+        "",
+        "normal",
+        "false",
+    ],
+    [`angles in the same segment are equal`, "", "normal", "false"],
+    [
+        `The opposite angles of a cyclic quadrilateral add up to 180 degrees`,
+        "",
+        "normal",
+        "false",
+    ],
+    [
+        `Each exterior angle of a cyclic quadrilateral is equal to the interior angle opposite to it`,
+        "",
+        "normal",
+        "false",
+    ],
+    [
+        `Angle subtended by the diameter on the circumference is 90 degrees`,
+        "",
+        "normal",
+        "false",
+    ],
+    [
+        `The angle between the tangent and the chord is equal to the angle in alternate segment`,
+        "Alternate segment theorem",
+        "normal",
+        "false",
+    ],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
     [``, "", "normal"],
     [``, "", "normal"],
     [``, "", "normal"],
@@ -168,28 +226,40 @@ function FormulaeMath() {
                 <MUIaccordion
                     content={[
                         "Algebraic Identities and Law's of indices",
-                        AlgebraicMathFormulae.map((formula_holder, index) => (
-                            <MathCell
-                                formula={formula_holder[0]}
-                                description={formula_holder[1]}
-                                importance={formula_holder[2]}
-                                key={index}
-                            />
-                        )),
+                        AlgebraicMathFormulae.map((formula_holder, index) =>
+                            formula_holder[0] === "separator" ? (
+                                <CellSeparator
+                                    title={formula_holder[1]}
+                                ></CellSeparator>
+                            ) : (
+                                <MathCell
+                                    formula={formula_holder[0]}
+                                    description={formula_holder[1]}
+                                    importance={formula_holder[2]}
+                                    key={index}
+                                />
+                            )
+                        ),
                     ]}
                 />
 
                 <MUIaccordion
                     content={[
-                        "Shape Chapters",
-                        GeometricalMathFormulae.map((formula_holder, index) => (
-                            <MathCell
-                                formula={formula_holder[0]}
-                                description={formula_holder[1]}
-                                importance={formula_holder[2]}
-                                key={index}
-                            />
-                        )),
+                        "Algebraic Identities and Law's of indices",
+                        GeometricalMathFormulae.map((formula_holder, index) =>
+                            formula_holder[0] === "separator" ? (
+                                <CellSeparator
+                                    title={formula_holder[1]}
+                                ></CellSeparator>
+                            ) : (
+                                <MathCell
+                                    formula={formula_holder[0]}
+                                    description={formula_holder[1]}
+                                    importance={formula_holder[2]}
+                                    key={index}
+                                />
+                            )
+                        ),
                     ]}
                 />
             </MathJaxContext>
