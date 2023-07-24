@@ -236,6 +236,7 @@ function FormulaeMath() {
                                     formula={formula_holder[0]}
                                     description={formula_holder[1]}
                                     importance={formula_holder[2]}
+                                    jax={formula_holder[3] ? false : true}
                                     key={index}
                                 />
                             )
@@ -256,6 +257,7 @@ function FormulaeMath() {
                                     formula={formula_holder[0]}
                                     description={formula_holder[1]}
                                     importance={formula_holder[2]}
+                                    jax={formula_holder[3] ? false : true}
                                     key={index}
                                 />
                             )
