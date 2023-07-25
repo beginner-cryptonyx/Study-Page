@@ -230,9 +230,100 @@ const GeometricalMathFormulae: Array<Array<any>> = [
     ],
 ];
 
-const GraphicalMathFormulae: Array<Array<any>> = [
-    ["separator", "Perimeter, Area and Volume"],
-]
+const GraphicalQuadraticMathFormulae: Array<Array<any>> = [
+    ["separator", "<< THE MOST IMPORTANT FORMULA IN THE BOOK >>"],
+
+    [
+        `\\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}`,
+        "Used to solve quadratic equations",
+        "important",
+    ],
+
+    ["separator", "Straight Line Graphs"],
+    [
+        `m = \\frac{y_2 - y_1}{x_2 - x_1}`,
+        "Formula for gradient, x2 and y2 are in the same point, so is x1 and y1",
+        "normal",
+        "",
+    ],
+    [
+        `d = \\sqrt{\(x_2 - x_1\)^2 + \(y_2 - y_1\)^2}`,
+        "Formula for finding distance between 2 points on a graph, x2 and y2 are in the same point, so is x1 and y1",
+        "normal",
+        "",
+    ],
+    [
+        `(\\frac{x_1 + x_2}{2},\\frac{y_1 + y_2}{2})`,
+        "Formula for finding the midpoint of 2 points on a graph, x2 and y2 are in the same point, so is x1 and y1",
+        "normal",
+        "",
+    ],
+
+    ["separator", "Curved Line Graphs"],
+    [
+        `x = \\frac{-b}{2a}`,
+        "Used to find the x intercept of the turning point of a parabola",
+        "normal",
+    ],
+    [
+        `ax^2 + bx + c = 0`,
+        "used to find the x intercept of a parabola by making the y value as 0, in the equation",
+        "normal",
+    ],
+    [`y = \\frac{a}{x} + q`, "general formula for hyperbola", "normal"],
+    [`ax^2 + bx + c`, "general formula for a quadratic equation", "normal"],
+    [`y = a^x`, "general formula for exponential graphs", "normal"],
+    [`y = x^2`, "general formula for simple quadratic graphs", "normal"],
+    [`y = x^3`, "general formula for simple cubic graphs", "normal"],
+
+    ["separator", "Differentiation"],
+    [
+        `\\text{if:‎  ‎} y = x, \\frac{dy}{dx} \\text{‎  or  ‎} f'(x) = 0`,
+        "derivation for a numerical value",
+        "normal",
+    ],
+    [
+        `\\text{if:‎  ‎} y = nx, \\frac{dy}{dx} \\text{‎  or  ‎} f'(x) = n`,
+        "derivation for a variable",
+        "normal",
+    ],
+    [
+        `\\text{if:‎  ‎} y = nx^a, \\frac{dy}{dx} \\text{‎  or  ‎} f'(x) = (a\\cdot n\\cdot x^{n-1})`,
+        "derivation for a variable to the power higher than 1",
+        "normal",
+    ],
+];
+
+const StatisticalMathFormulae: Array<Array<any>> = [
+    ["separator", "Statistics"],
+
+    [
+        `\\text{Mean} = \\frac{\\sum{x_i \\cdot f_i}}{\\sum{f_i}}`,
+        "Used to calculate mean",
+        "normal",
+    ],
+    [
+        `\\text{median} = \\frac{f_i}{2}`,
+        "Used to calculate the middle number",
+        "normal",
+    ],
+    [
+        `\\text{Range = highest - lowest}`,
+        "Used to calculate the range",
+        "normal",
+    ],
+    [`Q_1 = \\frac{1}{4} \\cdot \(n + 1\)`, "Finding lower quartile", "normal"],
+    [`Q_3 = \\frac{3}{4} \\cdot \(n + 1\)`, "Finding upper quartile", "normal"],
+    [`IQR = Q_3 - Q_1`, "Used to calculate inter quartile ranges", "normal"],
+
+    [`fd = \\frac{f}{cw}`, "Used to calculate the frequency density", "normal"],
+    [
+        `P = \\frac{pn}{100}`,
+        "Used to find the position of a percentile",
+        "normal",
+    ],
+    [``, "", "normal"],
+];
 function FormulaeMath() {
     return (
         <>
@@ -285,8 +376,32 @@ function FormulaeMath() {
 
                 <MUIaccordion
                     content={[
-                        "Graphical Chapters",
-                        GeometricalMathFormulae.map((formula_holder, index) =>
+                        "Polynomials and Graphs",
+                        GraphicalQuadraticMathFormulae.map(
+                            (formula_holder, index) =>
+                                formula_holder[0] === "separator" ? (
+                                    <CellSeparator
+                                        title={formula_holder[1]}
+                                    ></CellSeparator>
+                                ) : (
+                                    <MathCell
+                                        formula={formula_holder[0]}
+                                        description={formula_holder[1]}
+                                        importance={formula_holder[2]}
+                                        jax={formula_holder[3] ? false : true}
+                                        key={index}
+                                    />
+                                )
+                        ),
+                    ]}
+                />
+
+                <div className="separator">‎</div>
+
+                <MUIaccordion
+                    content={[
+                        "Statistics And Probability",
+                        StatisticalMathFormulae.map((formula_holder, index) =>
                             formula_holder[0] === "separator" ? (
                                 <CellSeparator
                                     title={formula_holder[1]}

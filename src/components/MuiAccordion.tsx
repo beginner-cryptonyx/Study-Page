@@ -29,7 +29,7 @@ function MUIaccordion({ content }: MUIaccordionProps) {
                         sx={{
                             bgcolor: "primary.main",
                             mx: "auto",
-                            my: "0.5rem"
+                            my: "0.1rem"
                         }}
                     >
                         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
