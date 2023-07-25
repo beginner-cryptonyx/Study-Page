@@ -10,8 +10,10 @@ function App() {
         <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/Textbooks"></Route>
-            <Route path="/formulae" element={<FormulaeMath/>}>
-                <Route path=":id"></Route>
+            <Route path="/formulae">
+                <Route path="/formulae/math"  element={<FormulaeMath/>}></Route>
+                <Route path="/formulae/physics"></Route>
+                <Route path="/formulae/chemistry"></Route>
             </Route>
         </Routes>
     );

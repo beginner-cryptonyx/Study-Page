@@ -32,18 +32,18 @@ function Home() {
                     header="Physics Formulae"
                     content="All Physics Formulae"
                     tags={[["hi", "lmao"], ["hello"]]}
-                    redirect={[true, "/formulae"]}
+                    redirect={[true, "/formulae/physics"]}
                 />
                 <Card
                     header="Math Formulae"
                     content="All Math Formulae"
-                    redirect={[true, "/formulae"]}
+                    redirect={[true, "/formulae/math"]}
                     tags={[["hi"], ["hello"]]}
                 />
                 <Card
                     header="Chemistry Formulae"
                     content="All Chemistry Formulae"
-                    redirect={[true, "/formulae"]}
+                    redirect={[true, "/formulae/chemistry"]}
                     tags={[["hi"], ["hello"]]}
                 />
                 <div className="mt-14">
