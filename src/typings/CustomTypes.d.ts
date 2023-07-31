@@ -1,4 +1,4 @@
-interface MathCell{
+interface DuoCell{
     formula: string;
     description: string;
     importance?: string;
@@ -14,7 +14,7 @@ interface Accordion {
 }
 
 export {
-    MathCell,
+    DuoCell,
     CellSeparator,
     Accordion,
 }

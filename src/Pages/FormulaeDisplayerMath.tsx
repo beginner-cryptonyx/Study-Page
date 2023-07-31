@@ -325,7 +325,6 @@ const StatisticalMathFormulae: Array<Array<any>> = [
     [``, "", "normal"],
 ];
 
-
 function FormulaeMath() {
     return (
         <>
