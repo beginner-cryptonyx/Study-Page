@@ -22,62 +22,39 @@ function MultiCell({
     formula,
     description,
     importance,
-    columns,
     jax,
 }: MultiCellProps) {
-    return columns === 1 ? (
-        jax ? (
-            <MathCell
-                formula={formula}
-                description=""
-                importance={importance}
-                jax={true}
-            />
-        ) : (
+    return description ? (
+        <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`formula-cell-2 ${
-                    importance ? importance : "normal"
+                className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                    jax ? "_jax" : ""
                 }`}
             >
-                <div
-                    className={`target w-[100%] bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center`}
-                >
-                    <div className="mx-auto text-3xl h-fit">{formula}</div>
+                <div className="mx-auto text-3xl h-fit">
+                    {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
                 </div>
             </div>
-        )
-    ) : columns === 2 ? (
-        jax ? (
-            <MathCell
-                formula={formula}
-                description={description}
-                importance={importance}
-                jax={true}
-            />
-        ) : (
             <div
-                className={`formula-cell-2 ${
-                    importance ? importance : "normal"
-                }`}
+                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
             >
-                <div
-                    className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center`}
-                >
-                    <div className="mx-auto text-3xl h-fit">{formula}</div>
-                </div>
-                <div
-                    className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
-                >
-                    <div className="desc text-center h-[100%] w-[100%] p-2">
-                        {description}
-                    </div>
+                <div className="desc text-center h-[100%] w-[100%] p-2">
+                    {description}
                 </div>
             </div>
-        )
-    ) : columns === 3 ? (
-        <h1>Under Progress</h1>
+        </div>
     ) : (
-        <h1>Under Progress</h1>
+        <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
+            <div
+                className={`target w-[100%] bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                    jax ? "_jax" : ""
+                }`}
+            >
+                <div className="mx-auto text-3xl h-fit">
+                    {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
+                </div>
+            </div>
+        </div>
     );
 }
 
