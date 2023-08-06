@@ -5,7 +5,7 @@ import { saveAs } from 'file-saver';
 interface Props {
     header: string;
     content: string;
-    tags: Array<Array<string>>;
+    tags: Array<Array<any>>;
     redirect?: [boolean, string];
 }
 

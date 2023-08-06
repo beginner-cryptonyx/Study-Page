@@ -27,6 +27,7 @@ span{
 
 
 @layer components{
+
     .normal .target{
         @apply from-green-500 to-green-700
     ;}
@@ -65,6 +66,28 @@ span{
         padding-top: 2rem;
     }
     
+    #right_wave_container{
+        position: relative;
+        z-index: -1;
+        height: 100vh;
+        overflow-y: hidden;
+        max-width: 30vw;
+        margin-left: auto;
+    }
+
+    #left_wave_container{
+        transform: rotate(180deg);
+    }
+
+    #right_wave{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width:70vw;
+        height: 100vh;
+    }
+
+
 
 }
 

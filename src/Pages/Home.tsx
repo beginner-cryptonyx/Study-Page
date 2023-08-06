@@ -105,7 +105,65 @@ function Home() {
                             ["Workbook Answers"],
                         ]}
                     />
-                    <Card header="" content="" tags={[[""]]} />
+                    <Card
+                        header="EVM resources"
+                        content="Textbook, Workbook and answers"
+                        tags={[
+                            ["Textbook", "/Extras/EVM Textbook.pdf", "true"],
+                            ["Workbook", "/Extras/EVM Workbook.pdf", "true"],
+                            [
+                                "Textbook Answers",
+                                "/Extras/environmental management glossary.pdf",
+                                "true",
+                            ],
+                            [
+                                "Workbook Answers",
+                                "/Extras/EVM Workbook Answers.pdf",
+                                "true",
+                            ],
+                            [
+                                "Glossary",
+                                "/Extras/environmental management glossary.pdf",
+                                "true",
+                            ],
+                        ]}
+                    />
+                </div>
+                <div className="grid grid-rows-2 mt-14">
+                    <Card
+                        header="Useful Resources"
+                        content="Find multiple useful stuff here"
+                        tags={[
+                            ["Class Timetable"],
+                            ["Grade 10 Exam Portion"],
+                            ["Grade 10 Exam Timetable"],
+                            [
+                                <a href="https://papers.gceguide.com/Cambridge%20IGCSE/">
+                                    GCE Guide
+                                </a>,
+                            ],
+                            [
+                                <a href="https://www.savemyexams.com/igcse/#cie">
+                                    Save My Exams
+                                </a>,
+                            ],
+                            [
+                                <a href="https://xtremepape.rs/threads/save-my-exams-notes-markschemes-free.108774/">
+                                    SaveMyExams Cracked
+                                </a>,
+                            ],
+                            [
+                                <a href="https://znotes.org/caie/igcse/">
+                                    ZNotes
+                                </a>,
+                            ],
+                            [
+                                <a href="https://papacambridge.com/caie">
+                                    Papa Cambridge
+                                </a>,
+                            ],
+                        ]}
+                    />
                 </div>
             </div>
         </>

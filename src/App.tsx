@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import FormulaeMath from "./Pages/FormulaeDisplayerMath";
 import FormulaeChemistry from "./Pages/FormulaeDisplayerChemistry";
 import Home from "./Pages/Home";
+import Formulae from "./Pages/Displayer";
 
 function App() {
     return (
