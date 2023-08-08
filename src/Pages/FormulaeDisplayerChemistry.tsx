@@ -1,6 +1,7 @@
 import { MultiCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJaxContext } from "better-react-mathjax";
+import Point from "../components/Point";
 
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },
@@ -196,12 +197,31 @@ const Acids: Array<Array<any>> = [
     [
         `Phenolphthalein`,
         <p className="text-pink-700">Pink</p>,
-        "",
+        "normal",
         "",
         3,
         <p className="text-white">Colourless</p>,
     ],
 ];
+
+const PracticalChemistryTesting: Array<Array<any>> = [
+    [
+        `main formulae`,
+        <Point
+            points={[
+                "Add - dil. NaOH (aq)",
+                "Heat Gently",
+                "Ammonia Released ( Turns damp Blue Litmus to red )",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [`main formulae`, "description", "normal", "columns", "", "thirdcontent"],
+];
+
 function FormulaeChemistry() {
     return (
         <MathJaxContext config={mathJaxConfig} version={3}>
@@ -286,8 +306,33 @@ function FormulaeChemistry() {
                                 formula={element_data[0]}
                                 description={element_data[1]}
                                 importance={element_data[2]}
-                                jax={element_data[3] ? true : false}
                                 columns={element_data[4]}
+                                jax={element_data[3] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )
+                    ),
+                ]}
+            />
+
+            <div className="separator">‎</div>
+
+            <MUIaccordion
+                content={[
+                    "Testing for Ions",
+                    PracticalChemistryTesting.map((element_data, index) =>
+                        element_data[0] === "separator" ? (
+                            <CellSeparator title={element_data[1]} />
+                        ) : element_data[0] === "element" ? (
+                            element_data[1]
+                        ) : (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
                                 third_content={element_data[5]}
                                 key={index}
                             ></MultiCell>
