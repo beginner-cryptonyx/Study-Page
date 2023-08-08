@@ -154,11 +154,53 @@ const Acids: Array<Array<any>> = [
     [`Metal Oxide`, <p className="text-3xl">Insoluble</p>, "normal", ""],
     [`Metal Oxide`, <p className="text-3xl">Insoluble</p>, "normal", ""],
 
-    ["separator", "Acid Reaction"],
+    ["separator", "Acid Reactions"],
     [`Acid + Metal → Salt + Hydrogen`, "", "normal", ""],
     [`Acid + Base → Salt + Water`, "", "normal", ""],
     [`Acid + Carbonate → Salt + Carbon Dioxide + Water`, "", "normal", ""],
     [`Ammonia + Acid → Ammonium Salt`, "", "normal", ""],
+
+    ["separator", "Indicator color"],
+    [
+        `Indicator`,
+        <p className="text-blue-900">Base</p>,
+        "external",
+        "",
+        3,
+        <p className="text-red-600">Acid</p>,
+    ],
+    [
+        `Litmus`,
+        <p className="text-blue-900">Blue</p>,
+        "normal",
+        "",
+        3,
+        <p className="text-red-600">Red</p>,
+    ],
+    [
+        `Methyl Orange`,
+        <p className="text-yellow-400">Yellow</p>,
+        "normal",
+        "",
+        3,
+        <p className="text-red-600">Red</p>,
+    ],
+    [
+        `Thymolphthalein`,
+        <p className="text-blue-900">Blue</p>,
+        "important",
+        "",
+        3,
+        <p className="text-white">Colourless</p>,
+    ],
+    [
+        `Phenolphthalein`,
+        <p className="text-pink-700">Pink</p>,
+        "",
+        "",
+        3,
+        <p className="text-white">Colourless</p>,
+    ],
 ];
 function FormulaeChemistry() {
     return (
@@ -233,7 +275,7 @@ function FormulaeChemistry() {
 
             <MUIaccordion
                 content={[
-                    "Acids and their Reactions",
+                    "Acids and Bases",
                     Acids.map((element_data, index) =>
                         element_data[0] === "separator" ? (
                             <CellSeparator title={element_data[1]} />
@@ -245,6 +287,8 @@ function FormulaeChemistry() {
                                 description={element_data[1]}
                                 importance={element_data[2]}
                                 jax={element_data[3] ? true : false}
+                                columns={element_data[4]}
+                                third_content={element_data[5]}
                                 key={index}
                             ></MultiCell>
                         )
