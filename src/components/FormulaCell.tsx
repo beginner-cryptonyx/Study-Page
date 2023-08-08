@@ -55,6 +55,25 @@ function MultiCell({
                 </div>
             </div>
         </div>
+    ) : columns === 2 ? (
+        <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
+            <div
+                className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                    jax ? "_jax" : ""
+                }`}
+            >
+                <div className="mx-auto text-3xl h-fit">
+                    {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
+                </div>
+            </div>
+            <div
+                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+            >
+                <div className="desc text-center h-[100%] w-[100%] text-3xl p-2">
+                    {description}
+                </div>
+            </div>
+        </div>
     ) : description ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
