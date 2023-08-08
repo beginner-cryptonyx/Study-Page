@@ -11,6 +11,7 @@ export interface MultiCellProps {
     formula: string;
     description?: string;
     importance?: string;
+    third_content?: any;
     columns?: number;
     jax?: boolean;
 }
@@ -23,8 +24,38 @@ function MultiCell({
     description,
     importance,
     jax,
+    third_content,
+    columns,
 }: MultiCellProps) {
-    return description ? (
+    return columns === 3 ? (
+        <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
+            <div
+                className={`target w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                    jax ? "_jax" : ""
+                }`}
+            >
+                <div className="mx-auto text-3xl h-fit">
+                    {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
+                </div>
+            </div>
+
+            <div
+                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+            >
+                <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
+                    {description}
+                </div>
+            </div>
+
+            <div
+                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+            >
+                <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
+                    {third_content}
+                </div>
+            </div>
+        </div>
+    ) : description ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
                 className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
