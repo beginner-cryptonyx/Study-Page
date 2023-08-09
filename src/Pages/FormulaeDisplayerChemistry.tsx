@@ -205,8 +205,9 @@ const Acids: Array<Array<any>> = [
 ];
 
 const PracticalChemistryTesting: Array<Array<any>> = [
+    [`separator`, "Cation Tests"],
     [
-        `main formulae`,
+        `Ammonium`,
         <Point
             points={[
                 "Add - dil. NaOH (aq)",
@@ -219,7 +220,88 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         "",
         "thirdcontent",
     ],
-    [`main formulae`, "description", "normal", "columns", "", "thirdcontent"],
+
+    [
+        `Iron (||)`,
+        <Point
+            points={[
+                "Add - dil • Ammonia (aq) to one portion",
+                "Add - dil • NaOH (aq) to the other potion",
+                "Pale Green Precipitate will form",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Iron (|||)`,
+        <Point
+            points={[
+                "Divide into 2 portions",
+                "Add - dil • Ammonia (aq) to one portion",
+                "Add - dil • NaOH (aq) to the other potion",
+                "Reddish Brown Precipitate will form",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Zinc`,
+        <Point
+            points={[
+                "Divide into 2 portions",
+                "Add - dil • NaOH (aq) to one portion",
+                "Add - dil • Ammonia (aq) to the other potion",
+                "White Precipitate forms",
+                "Adding more makes solution colourless",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Aluminum`,
+        <Point
+            points={[
+                "Divide into 2 portions",
+                "Add - dil • NaOH (aq) to one portion",
+                "White Precipitate forms",
+                "Adding more makes it colourless",
+                "Add - dil • Ammonia (aq) to the other portion",
+                "White Precipitate forms",
+                "Adding more has no effect",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Calcium`,
+        <Point
+            points={[
+                "Divide into 2 portions",
+                "Add - dil • NaOH (aq) to one portion",
+                "White Precipitate forms",
+                "Adding more has no effect",
+                "Add - dil • Ammonia (aq) to the other portion",
+                "No Precipitate, or very slight white precipitate is formed",
+                "Adding more has no effect",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
 ];
 
 function FormulaeChemistry() {
