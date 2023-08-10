@@ -1,6 +1,6 @@
 import { MultiCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
-import { MathJaxContext } from "better-react-mathjax";
+import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
 
 const mathJaxConfig = {
@@ -211,6 +211,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Add - dil. NaOH (aq)",
+                "",
                 "Heat Gently",
                 "Ammonia Released ( Turns damp Blue Litmus to red )",
             ]}
@@ -226,6 +227,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Add - dil • Ammonia (aq) to one portion",
+                "",
                 "Add - dil • NaOH (aq) to the other potion",
                 "Pale Green Precipitate will form",
             ]}
@@ -240,8 +242,10 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Divide into 2 portions",
+                "",
                 "Add - dil • Ammonia (aq) to one portion",
                 "Add - dil • NaOH (aq) to the other potion",
+                "",
                 "Reddish Brown Precipitate will form",
             ]}
         ></Point>,
@@ -255,8 +259,10 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Divide into 2 portions",
+                "",
                 "Add - dil • NaOH (aq) to one portion",
                 "Add - dil • Ammonia (aq) to the other potion",
+                "",
                 "White Precipitate forms",
                 "Adding more makes solution colourless",
             ]}
@@ -271,9 +277,11 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Divide into 2 portions",
+                "",
                 "Add - dil • NaOH (aq) to one portion",
                 "White Precipitate forms",
                 "Adding more makes it colourless",
+                "",
                 "Add - dil • Ammonia (aq) to the other portion",
                 "White Precipitate forms",
                 "Adding more has no effect",
@@ -289,12 +297,104 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         <Point
             points={[
                 "Divide into 2 portions",
+                "",
                 "Add - dil • NaOH (aq) to one portion",
                 "White Precipitate forms",
                 "Adding more has no effect",
+                "",
                 "Add - dil • Ammonia (aq) to the other portion",
                 "No Precipitate, or very slight white precipitate is formed",
                 "Adding more has no effect",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+
+    ["separator", "Anion Test"],
+    [
+        `Halide`,
+        <Point
+            points={[
+                "To a small amount of solution, add an equal volume of dilute nitric acid",
+                "",
+                "Add aqueous silver nitrate, which is insoluble",
+
+                "",
+                "If halide is present, precipitate forms",
+                "Chlorine is white",
+                "Bromine is Creme",
+                "Iodine is Pale-Yellow",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `\\text{Sulphate} (SO_4^{2-})`,
+        <Point
+            points={[
+                "To a small amount of solution, add an equal volume of dilute nitric acid",
+                "",
+                "Add barium nitrate solution, which is insoluble",
+                "",
+                <MathJax>
+                    {"$SO_4^{2-} + Ba^{2+} \\rightarrow BaSO_4$"}
+                </MathJax>,
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "true",
+        "thirdcontent",
+    ],
+    [
+        `Sulfite`,
+        <Point
+            points={[
+                "To a small amount of solution, add an equal volume of dilute acidified potassium permanganate (purple)",
+                "",
+                "Solution turns colourless",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Carbonate`,
+        <Point
+            points={[
+                "To a small amount of solution, add an equal volume of dilute Hydrochloric acid",
+                "",
+                "A gas will be produced (Carbon Dioxide)",
+                "",
+                "It turns limewater milky",
+            ]}
+        ></Point>,
+        "normal",
+        "columns",
+        "",
+        "thirdcontent",
+    ],
+    [
+        `Nitrate`,
+        <Point
+            points={[
+                "To a small amount of solution (or solid), add little aqueous Sodium Hydroxide",
+                "",
+                "Add small pieces of Aluminum foil",
+                "Heat Gently",
+                "",
+                "A gas is given off (Ammonia)",
+                "",
+                <p>Expose this gas with <span className="text-red-500 font-semibold inline">Damp</span> red litmus paper</p>,
+                "Paper turns blue",
             ]}
         ></Point>,
         "normal",
