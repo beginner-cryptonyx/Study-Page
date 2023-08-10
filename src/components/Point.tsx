@@ -14,10 +14,12 @@ export default function Point({ points }: PointProps) {
                                 " "
                             )}`}
                             key={index}
-                        ></span>
+                        >
+                            {point !== "" ? point : <br></br>}
+                        </span>
                     ) : (
                         <span className="text-center mx-auto" key={index}>
-                            {point}
+                            {point !== "" ? point : <br></br>}
                         </span>
                     )
                 )}
