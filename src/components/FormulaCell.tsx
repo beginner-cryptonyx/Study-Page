@@ -40,7 +40,7 @@ function MultiCell({
             </div>
 
             <div
-                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap  duration-500  justify-center align-bottom`}
             >
                 <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
                     {description}
@@ -48,7 +48,7 @@ function MultiCell({
             </div>
 
             <div
-                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap duration-500 justify-center align-bottom`}
             >
                 <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
                     {third_content}
@@ -67,7 +67,7 @@ function MultiCell({
                 </div>
             </div>
             <div
-                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
             >
                 <div className="desc text-center h-[100%] w-[100%] text-3xl p-2">
                     {description}
@@ -86,7 +86,7 @@ function MultiCell({
                 </div>
             </div>
             <div
-                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
             >
                 <div className="desc text-center h-[100%] w-[100%] p-2">
                     {description}
@@ -121,7 +121,7 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
                 </div>
             </div>
             <div
-                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center align-bottom`}
+                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
             >
                 <div className="desc text-center h-[100%] w-[100%] p-2">
                     {description}
