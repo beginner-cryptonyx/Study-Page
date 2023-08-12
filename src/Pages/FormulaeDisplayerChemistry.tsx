@@ -393,7 +393,13 @@ const PracticalChemistryTesting: Array<Array<any>> = [
                 "",
                 "A gas is given off (Ammonia)",
                 "",
-                <p>Expose this gas with <span className="text-red-500 font-semibold inline">Damp</span> red litmus paper</p>,
+                <p>
+                    Expose this gas with{" "}
+                    <span className="text-red-500 font-semibold inline">
+                        Damp
+                    </span>{" "}
+                    red litmus paper
+                </p>,
                 "Paper turns blue",
             ]}
         ></Point>,
@@ -401,6 +407,119 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         "columns",
         "",
         "thirdcontent",
+    ],
+
+    ["separator", "Gas Tests"],
+    [
+        `Ammonia`,
+        <Point
+            points={[
+                "Heat",
+                "",
+                "Hold Damp Red Litmus Paper over it",
+                "",
+                "Paper Turns Blue",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point
+            points={[
+                "Colourless",
+                "",
+                "Alkaline Gas",
+                "",
+                "Strong Sharp Smell",
+                "",
+            ]}
+        ></Point>,
+    ],
+    [
+        `Hydrogen`,
+        <Point
+            points={[
+                "Collect in a Tube",
+                "",
+                "Hold a lighted splint to it",
+                "",
+                "",
+                "Squeaky Pop is heard",
+                "",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point
+            points={[
+                "Colourless",
+                "",
+                "When Lit, Reacts Vigorously with Oxygen",
+            ]}
+        ></Point>,
+    ],
+    [
+        `Oxygen`,
+        <Point
+            points={[
+                "Collect Oxygen",
+                "",
+                "Hold glowing splint to it",
+                "",
+                "",
+                "Splint Immediately bursts into flame",
+                "",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point points={["Colourless", "", "Fuel Burns Easier in it"]}></Point>,
+    ],
+    [
+        `Chlorine`,
+        <Point
+            points={[
+                "Hold Damp Litmus Paper in a fume cupboard",
+                "",
+                "Paper turns white",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point points={["Poisonous", "", "Can Bleach Dyes"]}></Point>,
+    ],
+    [
+        `Sulfur Dioxide`,
+        <Point
+            points={[
+                "Get solution of Potassium Manganate(VII)",
+                "",
+                "Add a Little amount of dilute Hydrochloric Acid",
+                "",
+                "Soak A piece of filter paper in the now acidified Potassium Manganate(VII)",
+                "",
+                "Place filter paper in the gas (S02)",
+                "",
+                "Paper becomes colourless from purple",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point
+            points={[
+                "Poisonous",
+                "",
+                "Colourless",
+                "",
+                "Acidic gas",
+                "",
+                "Chocking smell",
+            ]}
+        ></Point>,
     ],
 ];
 
