@@ -522,13 +522,54 @@ const PracticalChemistryTesting: Array<Array<any>> = [
         ></Point>,
     ],
 
-    ["separator", "Cation Flame Test",],
-    [`Lithium`, "Red", "normal", 2, ''],
-    [`Sodium`, "Yellow", "normal", 2, ''],
-    [`Potassium`, "Lilac", "normal", 2, ''],
-    [`Calcium`, "Orange-Red", "normal", 2, ''],
-    [`Barium`, "Light Green", "normal", 2, ''],
-    [`Copper (II)`, "Blue-Green", "normal", 2, ''],
+    ["separator", "Cation Flame Test"],
+    [`Lithium`, "Red", "normal", 2, ""],
+    [`Sodium`, "Yellow", "normal", 2, ""],
+    [`Potassium`, "Lilac", "normal", 2, ""],
+    [`Calcium`, "Orange-Red", "normal", 2, ""],
+    [`Barium`, "Light Green", "normal", 2, ""],
+    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
+];
+
+const EquilibriumAndRate: Array<Array<any>> = [
+    ["separator", "Processes and their Conditions"],
+    [
+        `Process`,
+        "Catalyst & Product",
+        "external",
+        3,
+        "",
+        "Conditions",
+    ],
+    [
+        `Haber's Process`,
+        <Point
+            points={["Iron (Fe) is Catalyst", "", "Ammonia is produced"]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point points={["450 Degrees C", "", "200 Atmospheres"]}></Point>,
+    ],
+    [
+        `Contact Process`,
+        <Point
+            points={[
+                "Vanadium PentOxide is the Catalyst",
+                "",
+                "Produces Sulfuric Acid",
+            ]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point points={["450 Degrees C", "", "2 Atmospheres"]}></Point>,
+    ],
+
+    ["separator", "Processes and their Conditions"],
+    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
+    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
+    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
 ];
 
 function FormulaeChemistry() {
@@ -631,6 +672,30 @@ function FormulaeChemistry() {
                 content={[
                     "Testing for Ions",
                     PracticalChemistryTesting.map((element_data, index) =>
+                        element_data[0] === "separator" ? (
+                            <CellSeparator title={element_data[1]} />
+                        ) : element_data[0] === "element" ? (
+                            element_data[1]
+                        ) : (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )
+                    ),
+                ]}
+            />
+            <div className="separator">‎</div>
+
+            <MUIaccordion
+                content={[
+                    "Equilibrium, Rate of Reaction and Processes",
+                    EquilibriumAndRate.map((element_data, index) =>
                         element_data[0] === "separator" ? (
                             <CellSeparator title={element_data[1]} />
                         ) : element_data[0] === "element" ? (
