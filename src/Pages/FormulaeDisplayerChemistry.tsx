@@ -521,6 +521,14 @@ const PracticalChemistryTesting: Array<Array<any>> = [
             ]}
         ></Point>,
     ],
+
+    ["separator", "Cation Flame Test",],
+    [`Lithium`, "Red", "normal", 2, ''],
+    [`Sodium`, "Yellow", "normal", 2, ''],
+    [`Potassium`, "Lilac", "normal", 2, ''],
+    [`Calcium`, "Orange-Red", "normal", 2, ''],
+    [`Barium`, "Light Green", "normal", 2, ''],
+    [`Copper (II)`, "Blue-Green", "normal", 2, ''],
 ];
 
 function FormulaeChemistry() {
