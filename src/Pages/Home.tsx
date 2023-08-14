@@ -31,20 +31,34 @@ function Home() {
                 <Card
                     header="Physics Formulae"
                     content="All Physics Formulae"
-                    tags={[["hi", "lmao"], ["hello"]]}
+                    tags={[]}
                     redirect={[true, "/formulae/physics"]}
                 />
                 <Card
                     header="Math Formulae"
                     content="All Math Formulae"
                     redirect={[true, "/formulae/math"]}
-                    tags={[["hi"], ["hello"]]}
+                    tags={[
+                        ["Algebra", "lmao"],
+                        ["Geometry"],
+                        ["Polynomials"],
+                        ["Statistics"],
+                        ["Graphs"],
+                        ["Probability"],
+                    ]}
                 />
                 <Card
                     header="Chemistry Formulae"
                     content="All Chemistry Formulae"
                     redirect={[true, "/formulae/chemistry"]}
-                    tags={[["hi"], ["hello"]]}
+                    tags={[
+                        ["Reactivity Series"],
+                        ["General Formulae"],
+                        ["Solubility"],
+                        ["Acids and Basses"],
+                        ["Ion testing"],
+                        ["Equilibrium and Rate of Reaction"],
+                    ]}
                 />
                 <div className="mt-14">
                     <Card
