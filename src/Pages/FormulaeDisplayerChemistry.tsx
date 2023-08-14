@@ -566,10 +566,12 @@ const EquilibriumAndRate: Array<Array<any>> = [
         <Point points={["450 Degrees C", "", "2 Atmospheres"]}></Point>,
     ],
 
-    ["separator", "Processes and their Conditions"],
-    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
-    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
-    [`Copper (II)`, "Blue-Green", "normal", 2, ""],
+    ["separator", "Factors affecting Reversible Reactions"],
+    ["Factor", "Favours", 'external', 2],
+    [`Temperature`, "Endothermic Reaction", "normal", 2, ""],
+    [`Pressure`, "Side with lowest amount of molecules", "normal", 2, ""],
+    [`Concentration`, "Side with more concentration", "normal", 2, ""],
+    [`Catalyst`, "Both forward and reverse", "normal", 2, ""],
 ];
 
 function FormulaeChemistry() {
