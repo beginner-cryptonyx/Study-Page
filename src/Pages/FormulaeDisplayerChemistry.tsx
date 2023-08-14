@@ -572,6 +572,14 @@ const EquilibriumAndRate: Array<Array<any>> = [
     [`Pressure`, "Side with lowest amount of molecules", "normal", 2, ""],
     [`Concentration`, "Side with more concentration", "normal", 2, ""],
     [`Catalyst`, "Both forward and reverse", "normal", 2, ""],
+
+    ["separator", "Increasing Rate of reaction"],
+    [`Increasing Temperature`],
+    [`Increasing Surface Area`],
+    [`Increasing Concentration`],
+    [`Introducing a Catalyst`],
+
+
 ];
 
 function FormulaeChemistry() {
