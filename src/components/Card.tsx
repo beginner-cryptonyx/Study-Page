@@ -1,6 +1,6 @@
 import { SHA256 } from "crypto-js";
 import { useNavigate } from "react-router-dom";
-import { saveAs } from 'file-saver';
+import { saveAs } from "file-saver";
 
 interface Props {
     header: string;
@@ -26,12 +26,17 @@ function Card({ header, content, tags, redirect }: Props) {
                     // link.href = tags[index][1];
                     // link.setAttribute("download", tags[index][1]);
                     // link.click();
-                    saveAs(tags[index][1], tags[index][1].substring(tags[index][1].lastIndexOf("/") + 1, tags[index][1].lastIndexOf(".pdf")))
-                    break
-                
+                    saveAs(
+                        tags[index][1],
+                        tags[index][1].substring(
+                            tags[index][1].lastIndexOf("/") + 1,
+                            tags[index][1].lastIndexOf(".pdf")
+                        )
+                    );
+                    break;
+
                 case "false":
                     navigate(tags[index][1]);
-
             }
         }
     };
@@ -50,10 +55,10 @@ function Card({ header, content, tags, redirect }: Props) {
                 <div className="mt-3 text-[17pt] flex justify-center mb-3.5">
                     {content}
                 </div>
-                <div className="flex flex-row mx-auto justify-center flex-wrap">
+                <div className="flex flex-row mx-auto justify-center flex-wrap align-middle h-[100%] pt-1">
                     {tags.map((item, index) => (
                         <div
-                            className="text-[14pt] mx-1 bg-gradient-to-bl from-blue-400 py-1 px-1.5 to-purple-500 rounded-md min-w-[20%] mb-6 cursor-pointer  text-center hover:brightness-90 active:brightness-75 animate-gradient_slide"
+                            className="text-[14pt] mx-1 bg-gradient-to-bl from-blue-400 py-1 px-1.5 to-purple-500 rounded-md min-w-[20%] mb-6 cursor-pointer  text-center hover:brightness-90 active:brightness-75 animate-gradient_slide flex align-middle justify-center "
                             key={parseInt(SHA256(item[0]).toString(), 16)}
                             onClick={(e) => handleClickTag(index)}
                         >

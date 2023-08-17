@@ -39,7 +39,7 @@ function Home() {
                     content="All Math Formulae"
                     redirect={[true, "/formulae/math"]}
                     tags={[
-                        ["Algebra", "lmao"],
+                        ["Algebra", ""],
                         ["Geometry"],
                         ["Polynomials"],
                         ["Statistics"],

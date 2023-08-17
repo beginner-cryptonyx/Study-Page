@@ -2,6 +2,22 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+html, body{min-height:100%;
+    background: rgb(52,52,52);
+background: radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(29,27,28,1) 100%);-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+
+.container{
+    height: 99.5vh;
+    max-height: 99.5vh;
+    background-color: transparent;
+    
+}
+
+
 @layer base{
     .formula-cell-2{
         @apply flex flex-row mx-auto text-center text-2xl font-semibold my-0.5
@@ -70,9 +86,9 @@ span{
         position: relative;
         z-index: -1;
         height: 100vh;
-        overflow-y: hidden;
         max-width: 30vw;
         margin-left: auto;
+        overflow-y: hidden;
     }
 
     #left_wave_container{

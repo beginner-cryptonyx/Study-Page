@@ -72,14 +72,14 @@ const GeometricalMathFormulae: Array<Array<any>> = [
         "important",
     ],
     [`A = s^2`, "Used to calculate area of square", "normal"],
-    [`A = L ⋅ B`, "Used to calculate area of rectangle", "normal", 'false'],
+    [`A = L ⋅ B`, "Used to calculate area of rectangle", "normal", "false"],
     [
         `A = \\frac{1}{2} \\cdot bh`,
         "Used to calculate area of triangle",
         "normal",
     ],
     [`A = \\pi r^2`, "Used to calculate area of circle", "important"],
-    [`V = L⋅B⋅H`, "Used to calculate volume of cuboid", "normal", 'false'],
+    [`V = L⋅B⋅H`, "Used to calculate volume of cuboid", "normal", "false"],
     [`V = s^3`, "Used to calculate volume of cube", "normal"],
     [`V = \\pi r^2h`, "Used to calculate volume of cylinder", "normal"],
     [
@@ -168,7 +168,7 @@ const GeometricalMathFormulae: Array<Array<any>> = [
         "normal",
     ],
 
-    [`c^2 = a^2 + b^2 -2ab\\cos{C}`, 'Cosine rule', "important"],
+    [`c^2 = a^2 + b^2 -2ab\\cos{C}`, "Cosine rule", "important"],
     [
         `\\text{main side}^2 = (\\text{other sides}\)^2 \\
          - 2(\\text{other sides}) \\times \\cos(\\text{main angle})`,
@@ -354,12 +354,13 @@ const StatisticalMathFormulae: Array<Array<any>> = [
         "normal",
     ],
     [``, "", "normal"],
-
 ];
 
 function FormulaeMath() {
     return (
-        <>
+        <div className="container">
+            <div className="pt-10"></div>
+
             <MathJaxContext config={mathJaxConfig} version={3}>
                 <MUIaccordion
                     content={[
@@ -452,7 +453,7 @@ function FormulaeMath() {
                     ]}
                 />
             </MathJaxContext>
-        </>
+        </div>
     );
 }
 

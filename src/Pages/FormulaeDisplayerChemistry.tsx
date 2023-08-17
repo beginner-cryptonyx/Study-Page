@@ -533,14 +533,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
 
 const EquilibriumAndRate: Array<Array<any>> = [
     ["separator", "Processes and their Conditions"],
-    [
-        `Process`,
-        "Catalyst & Product",
-        "external",
-        3,
-        "",
-        "Conditions",
-    ],
+    [`Process`, "Catalyst & Product", "external", 3, "", "Conditions"],
     [
         `Haber's Process`,
         <Point
@@ -567,7 +560,7 @@ const EquilibriumAndRate: Array<Array<any>> = [
     ],
 
     ["separator", "Factors affecting Reversible Reactions"],
-    ["Factor", "Favours", 'external', 2],
+    ["Factor", "Favours", "external", 2],
     [`Temperature`, "Endothermic Reaction", "normal", 2, ""],
     [`Pressure`, "Side with lowest amount of molecules", "normal", 2, ""],
     [`Concentration`, "Side with more concentration", "normal", 2, ""],
@@ -578,153 +571,147 @@ const EquilibriumAndRate: Array<Array<any>> = [
     [`Increasing Surface Area`],
     [`Increasing Concentration`],
     [`Introducing a Catalyst`],
-
-
 ];
 
 function FormulaeChemistry() {
     return (
-        <MathJaxContext config={mathJaxConfig} version={3}>
-            <MUIaccordion
-                content={[
-                    "The Reactivity Series",
-                    ReactivitySeries.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                columns={element_data[3]}
-                                jax={element_data[4] ? true : false}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-            <div className="separator">‎</div>
-
-            <MUIaccordion
-                content={[
-                    "Formulae",
-                    Formulae.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                jax={element_data[3] ? true : false}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-            <div className="separator">‎</div>
-
-            <MUIaccordion
-                content={[
-                    "Solubility Rules",
-                    SolubilityRules.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                jax={element_data[3] ? true : false}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-
-            <div className="separator">‎</div>
-
-            <MUIaccordion
-                content={[
-                    "Acids and Bases",
-                    Acids.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                columns={element_data[4]}
-                                jax={element_data[3] ? true : false}
-                                third_content={element_data[5]}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-
-            <div className="separator">‎</div>
-
-            <MUIaccordion
-                content={[
-                    "Testing for Ions",
-                    PracticalChemistryTesting.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                columns={element_data[3]}
-                                jax={element_data[4] ? true : false}
-                                third_content={element_data[5]}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-            <div className="separator">‎</div>
-
-            <MUIaccordion
-                content={[
-                    "Equilibrium, Rate of Reaction and Processes",
-                    EquilibriumAndRate.map((element_data, index) =>
-                        element_data[0] === "separator" ? (
-                            <CellSeparator title={element_data[1]} />
-                        ) : element_data[0] === "element" ? (
-                            element_data[1]
-                        ) : (
-                            <MultiCell
-                                formula={element_data[0]}
-                                description={element_data[1]}
-                                importance={element_data[2]}
-                                columns={element_data[3]}
-                                jax={element_data[4] ? true : false}
-                                third_content={element_data[5]}
-                                key={index}
-                            ></MultiCell>
-                        )
-                    ),
-                ]}
-            />
-        </MathJaxContext>
+        <div className="container">
+            <div className="pt-10"></div>
+            <MathJaxContext config={mathJaxConfig} version={3}>
+                <MUIaccordion
+                    content={[
+                        "The Reactivity Series",
+                        ReactivitySeries.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Formulae",
+                        Formulae.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    jax={element_data[3] ? true : false}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Solubility Rules",
+                        SolubilityRules.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    jax={element_data[3] ? true : false}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Acids and Bases",
+                        Acids.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[4]}
+                                    jax={element_data[3] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Testing for Ions",
+                        PracticalChemistryTesting.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Equilibrium, Rate of Reaction and Processes",
+                        EquilibriumAndRate.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+            </MathJaxContext>
+        </div>
     );
 }
 
