@@ -6,6 +6,7 @@ import FormulaeMath from "./Pages/FormulaeDisplayerMath";
 import FormulaeChemistry from "./Pages/FormulaeDisplayerChemistry";
 import Home from "./Pages/Home";
 import Formulae from "./Pages/Displayer";
+import FormulaePhysics from "./Pages/FormulaeDispayerPhysics";
 
 function App() {
     return (
@@ -14,7 +15,7 @@ function App() {
             <Route path="/Textbooks"></Route>
             <Route path="/formulae">
                 <Route path="/formulae/math" element={<FormulaeMath />}></Route>
-                <Route path="/formulae/physics"></Route>
+                <Route path="/formulae/physics" element={<FormulaePhysics />}></Route>
                 <Route
                     path="/formulae/chemistry"
                     element={<FormulaeChemistry />}
