@@ -44,7 +44,7 @@ function MUIaccordion({ content }: MUIaccordionProps) {
                                 {content[0]}
                             </Typography>
                         </AccordionSummary>
-                        <AccordionDetails sx={{ bgcolor: "primary.dark" }}>
+                        <AccordionDetails sx={{ bgcolor: "primary.dark" }} className="AccordionDetails">
                             {content[1]}
                         </AccordionDetails>
                     </Accordion>

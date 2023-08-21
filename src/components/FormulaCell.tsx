@@ -1,5 +1,6 @@
 import "../App.css";
 import { MathJax } from "better-react-mathjax";
+import { useState } from "react";
 export interface MathCellProps {
     formula: string;
     description?: string;
@@ -30,7 +31,7 @@ function MultiCell({
     return columns === 3 ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`target w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                className={`formulae-3 target w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
@@ -42,15 +43,15 @@ function MultiCell({
             <div
                 className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap  duration-500  justify-center align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
+                <div className="desc text-center h-[100%] w-[100%]  p-2 text-3xl">
                     {description}
                 </div>
             </div>
 
             <div
-                className={`target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap duration-500 justify-center align-bottom`}
+                className={`third target w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap duration-500 justify-center align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2 text-3xl">
+                <div className="flex justify-center items-center text-center h-[100%] w-[100%] p-2 text-3xl">
                     {third_content}
                 </div>
             </div>
@@ -58,7 +59,7 @@ function MultiCell({
     ) : columns === 2 ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                className={`formula target w-[100%] md:w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
@@ -67,9 +68,9 @@ function MultiCell({
                 </div>
             </div>
             <div
-                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
+                className={`target flex bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-middle items-center`}
             >
-                <div className="desc text-center h-[100%] w-[100%] text-3xl p-2">
+                <div className="flex justify-center items-center text-center h-[100%] w-[100%] text-3xl p-2">
                     {description}
                 </div>
             </div>
@@ -77,7 +78,7 @@ function MultiCell({
     ) : description ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`target w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                className={`target w-[100%] md:w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
@@ -86,9 +87,9 @@ function MultiCell({
                 </div>
             </div>
             <div
-                className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
+                className={`target hidden md:w-1/2 md:flex bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2">
+                <div className="flex justify-center items-center text-center h-[100%] w-[100%] p-2">
                     {description}
                 </div>
             </div>
@@ -123,7 +124,7 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
             <div
                 className={`target w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2">
+                <div className="flex justify-center items-center text-center h-[100%] w-[100%] p-2">
                     {description}
                 </div>
             </div>
@@ -144,11 +145,16 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
 }
 
 function CellSeparator({ title }: CellSeparatorProps) {
-    return (
-        <div className="bg-slate-500 mx-auto text-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-3xl">
-            {title}
-        </div>
-    );
+    
+        return (
+            <div
+                className={`bg-slate-500 mx-auto text-center flex font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-3xl`}
+            >
+                <button>{"<"}</button>
+                {title}
+                <button>{">"}</button>
+            </div>
+        );
 }
 
 export default MathCell;

@@ -239,7 +239,7 @@ const Formulae: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        `speed of wave = frequency * wavelength`,
+        `speed of wave = frequency ⋅ wavelength`,
         "formula of speed of wave",
         "normal",
         1,
@@ -247,7 +247,7 @@ const Formulae: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        `speed of echo sound = (2 * distance to wall)/(echo time)`,
+        `speed of echo sound = (2 ⋅ distance to wall)/(echo time)`,
         "formula to find the speed of an echo",
         "normal",
         1,
