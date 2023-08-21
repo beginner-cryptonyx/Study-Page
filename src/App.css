@@ -40,6 +40,10 @@ span{
     justify-content: center;
 }
 
+.mjx-n{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
 
 
 @layer components{
@@ -58,11 +62,11 @@ span{
         @apply bg-gradient-to-bl animate-gradient_slide;
     }
 
-    .desc{
+    /* .desc{
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 
     .accordion_title{
         background-image: linear-gradient( 179deg, rgb(0, 0, 0) 9.2%, rgb(77, 77, 77) 103.9% );
@@ -72,6 +76,14 @@ span{
         display: block !important;
         width: 100% !important;
         word-wrap: break-word !important;
+    }
+
+    .formula-cell-2:first-child{
+        border-top: 2px black solid;
+    }
+
+    .formula-cell-2:last-child{
+        border-bottom: 2px black solid;
     }
 
     ._jax{
@@ -104,6 +116,10 @@ span{
     }
 
 
-
 }
 
+/* @media (max-width: 640px) {
+    .desc{
+        display: none;
+    }
+} */
