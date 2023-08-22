@@ -43,7 +43,7 @@ function Card({ header, content, tags, redirect }: Props) {
 
     return (
         <div
-            className="rounded-md bg-[#505050] max-w-[25vw] mx-2 my-1 duration-[300ms] mb-7 hover:scale-125"
+            className="rounded-md bg-[#505050] w-[90vw] md:max-w-[25vw] mx-2 my-1 duration-[300ms] mb-7 hover:scale-125"
             onClick={handleClickCard}
         >
             <div className="bg-black py-1 text-[25pt] text-center rounded-t-md ">
