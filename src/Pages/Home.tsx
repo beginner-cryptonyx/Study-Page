@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 function Home() {
     return (
         <>
-            <div className="text-[40pt] flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-text_side">
+            <div className="text-[40pt] flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 animate-text_side text-center">
                 <Typewriter
                     onInit={(tw) => {
                         tw.typeString("Find Literally Everything Here");
@@ -27,7 +27,7 @@ function Home() {
                 />
             </div>
 
-            <div className="grid grid-cols-3 mx-auto w-[90vw] mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 mx-auto w-[90vw] mt-6">
                 <Card
                     header="Physics Formulae"
                     content="All Physics Formulae"

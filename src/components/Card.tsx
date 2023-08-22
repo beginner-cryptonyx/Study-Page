@@ -52,7 +52,7 @@ function Card({ header, content, tags, redirect }: Props) {
                 </div>
             </div>
             <div className="w-[100%]">
-                <div className="mt-3 text-[17pt] flex justify-center mb-3.5">
+                <div className="mt-3 text-[17pt] flex justify-center text-center mb-3.5">
                     {content}
                 </div>
                 <div className="flex flex-row mx-auto justify-center flex-wrap align-middle h-[100%] pt-1">
