@@ -48,6 +48,10 @@ span{
 
 @layer components{
 
+    .target{
+        @apply flex justify-center items-center;
+    }
+
     .normal .target{
         @apply from-green-500 to-green-700
     ;}
@@ -62,6 +66,11 @@ span{
         @apply bg-gradient-to-bl animate-gradient_slide;
     }
 
+    .state0, .state1, .state2{
+        @apply text-xl md:text-3xl
+    }
+
+    
     /* .desc{
         display: flex;
         align-items: center;
