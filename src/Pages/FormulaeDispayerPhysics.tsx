@@ -368,6 +368,46 @@ const Formulae: Array<Array<any>> = [
     ],
     // [`formulae`, "description", "normal", 1, "jax", "3rd content"],
 ];
+
+const Laws: Array<Array<any>> = [
+    [
+        `Newton's first law of motion`,
+        "If no external force is acting on it, an object will -if stationary, remain stationary -if moving, keep moving at a steady speed in a straight line",
+        "normal",
+    ],
+
+    [
+        `Newton's second law of motion`,
+        "F = ma, this relationship between force, mass and acceleration is sometimes called newton's second law of motion",
+        "normal",
+    ],
+    [
+        `Newton's third law of motion`,
+        "every reaction has an equally likely opposite reaction",
+        "normal",
+    ],
+    [
+        `Conservation of momentum`,
+        "When two or more objects act on each other, their total momentum remains constant, provided no external forces are acting",
+        "normal",
+    ],
+    [
+        `Principle of moments`,
+        "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that points",
+        "normal",
+    ],
+    [`Hooke's law`, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+    [``, "", "normal"],
+];
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },
     tex: {
@@ -387,8 +427,31 @@ function FormulaePhysics() {
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
-                        "Testing for Ions",
+                        "Physics Formulae",
                         Formulae.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Physics Laws",
+                        Laws.map((element_data, index) =>
                             element_data[0] === "separator" ? (
                                 <CellSeparator title={element_data[1]} />
                             ) : element_data[0] === "element" ? (
