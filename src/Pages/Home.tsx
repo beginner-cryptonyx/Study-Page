@@ -4,21 +4,25 @@ const bg = require("../images/bg1.jpg");
 
 function Home() {
     return (
-        <main className="" style={{ backgroundImage: `url(${bg})` }}>
-            <div className="backdrop-blur-lg text-[40pt] flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#e4490d] to-[#00b7ff] animate-text_side text-center">
+        <main className=" " style={{ backgroundImage: `url(${bg})` }}>
+            <div className="backdrop-saturate-[0.6] backdrop-blur-lg text-[40pt] flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3371f7] to-[#00b7ff] animate-text_side text-center pb-16 pt-2">
+                <h1 className="pr-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ffba26] to-[#ff8800] animate-gradient_slide">Find</h1>
                 <Typewriter
                     onInit={(tw) => {
-                        tw.typeString("Find Literally Everything Here");
+                        tw.typeString("Everything IGCSE");
                         tw.pauseFor(900);
-                        tw.deleteChars(25);
-                        tw.typeString("The Textbooks You Need");
-                        tw.pauseFor(700);
-                        tw.deleteAll();
-                        tw.typeString("Find All The Formulae");
                         tw.deleteChars(16);
+                        tw.typeString("Textbooks");
+                        tw.pauseFor(500);
+                        tw.pauseFor(700);
+                        tw.deleteChars(9);
+                        tw.typeString("Formulae");
+                        tw.pauseFor(500);
+                        tw.deleteChars(8);
                         tw.typeString("Resources");
                         tw.pauseFor(500);
-                        tw.typeString(" & Our Syllabus");
+                        tw.deleteChars(9);
+                        tw.typeString("Our Syllabus");
                         tw.start();
                     }}
                     options={{
@@ -28,17 +32,17 @@ function Home() {
                 />
             </div>
 
-            <article className="backdrop-blur-lg">
+            <article className="backdrop-blur-lg backdrop-saturate-[0.6]">
                 <div className="grid grid-cols-1 md:grid-cols-3 mx-auto w-[90vw] ">
                     <Card
                         header="Physics Formulae"
-                        content="All Physics Formulae"
+                        // content="All Physics Formulae"
                         tags={[]}
                         redirect={[true, "/formulae/physics"]}
                     />
                     <Card
                         header="Math Formulae"
-                        content="All Math Formulae"
+                        // content="All Math Formulae"
                         redirect={[true, "/formulae/math"]}
                         tags={[
                             ["Algebra", ""],
@@ -51,7 +55,7 @@ function Home() {
                     />
                     <Card
                         header="Chemistry Formulae"
-                        content="All Chemistry Formulae"
+                        // content="All Chemistry Formulae"
                         redirect={[true, "/formulae/chemistry"]}
                         tags={[
                             ["Reactivity Series"],
@@ -65,9 +69,13 @@ function Home() {
                     <div className="mt-14">
                         <Card
                             header="Math Textbook"
-                            content="Find all Math Chapters Here"
+                            // content="Find all Math Chapters Here"
                             tags={[
-                                ["Textbook", "Extras/Math Textbook.pdf", "true"],
+                                [
+                                    "Textbook",
+                                    "Extras/Math Textbook.pdf",
+                                    "true",
+                                ],
                                 [
                                     "Answers",
                                     "Extras/Math Textbook Answers.pdf",
@@ -109,12 +117,15 @@ function Home() {
                     <div className="grid grid-rows-3 mt-14">
                         <Card
                             header="ICT Resources"
-                            content="ICT Resources Here"
-                            tags={[["ICT Textbook", "/formulae"], ["Source Files"]]}
+                            // content="ICT Resources Here"
+                            tags={[
+                                ["ICT Textbook", "/formulae"],
+                                ["Source Files"],
+                            ]}
                         />
                         <Card
                             header="Biology Resources"
-                            content="Textbook, Workbook and Answers"
+                            // content="Textbook, Workbook and Answers"
                             tags={[
                                 ["Online Textbook And Workbook"],
                                 ["Textbook Answers"],
@@ -123,10 +134,18 @@ function Home() {
                         />
                         <Card
                             header="EVM resources"
-                            content="Textbook, Workbook and answers"
+                            // content="Textbook, Workbook and answers"
                             tags={[
-                                ["Textbook", "/Extras/EVM Textbook.pdf", "true"],
-                                ["Workbook", "/Extras/EVM Workbook.pdf", "true"],
+                                [
+                                    "Textbook",
+                                    "/Extras/EVM Textbook.pdf",
+                                    "true",
+                                ],
+                                [
+                                    "Workbook",
+                                    "/Extras/EVM Workbook.pdf",
+                                    "true",
+                                ],
                                 [
                                     "Textbook Answers",
                                     "/Extras/environmental management glossary.pdf",
@@ -148,7 +167,7 @@ function Home() {
                     <div className="grid grid-rows-2 mt-14">
                         <Card
                             header="Useful Resources"
-                            content="Find multiple useful stuff here"
+                            // content="Find multiple useful stuff here"
                             tags={[
                                 ["Class Timetable"],
                                 ["Grade 10 Exam Portion"],

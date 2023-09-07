@@ -40,6 +40,14 @@ span{
     justify-content: center;
 }
 
+.Typewriter{
+    display: flex;
+}
+
+.Typewriter__cursor{
+    color: orange;
+    z-index: 100;
+}
 .mjx-n{
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;

@@ -4,7 +4,7 @@ import { saveAs } from "file-saver";
 
 interface Props {
     header: string;
-    content: string;
+    content? : string;
     tags: Array<Array<any>>;
     redirect?: [boolean, string];
 }
@@ -43,15 +43,15 @@ function Card({ header, content, tags, redirect }: Props) {
 
     return (
         <div
-            className="rounded-md bg-black w-[90vw] md:max-w-[25vw] mx-2 my-1 duration-[300ms] mb-7 hover:scale-125 shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] flex flex-col"
+            className="rounded-3xl bg-black w-[90vw] md:max-w-[25vw] mx-2 my-1 duration-[300ms] mb-7 hover:scale-125 shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] flex flex-col"
             onClick={handleClickCard}
         >
-            <div className="bg-[#303030] py-1 text-[25pt] text-center rounded-t-md h-[calc(100%/5)] flex items-center justify-center">
-                <div className="text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-green-500 animate-text_down font-bold">
+            <div className="bg-[#222222] py-1 text-[25pt] text-center rounded-t-md h-[calc(100%/5)] flex items-center justify-center">
+                <div className="text-transparent bg-clip-text bg-gradient-to-b from-blue-400 to-green-500 animate-text_down font-bold">
                     {header}
                 </div>
             </div>
-            <div className="w-[100%] bg-[#464646] rounded-b pb-3.5 h-[calc((100%/5)*4)]">
+            <div className="w-[100%] bg-[#3f3f3f] rounded-b pb-3.5 h-[calc((100%/5)*4)]">
                 <div className="pt-3 text-[19pt] flex justify-center text-center ">
                     {content}
                 </div>
