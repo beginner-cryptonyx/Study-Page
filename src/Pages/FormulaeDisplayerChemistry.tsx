@@ -426,7 +426,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
                 "Alkaline Gas",
                 "",
                 "Strong Sharp Smell",
-                "",
+            
             ]}
         ></Point>,
     ],
@@ -440,7 +440,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
                 "",
                 "",
                 "Squeaky Pop is heard",
-                "",
+                
             ]}
         ></Point>,
         "normal",
@@ -464,7 +464,7 @@ const PracticalChemistryTesting: Array<Array<any>> = [
                 "",
                 "",
                 "Splint Immediately bursts into flame",
-                "",
+                
             ]}
         ></Point>,
         "normal",

@@ -4,6 +4,13 @@
 
 @layer base{
     :root{
-        @apply bg-background
+        @apply bg-background;
     }
+    html{
+        scrollbar-width: thin;
+        scrollbar-color: #6969dd #e0e0e0;
+    }
+    
 }
+
+
