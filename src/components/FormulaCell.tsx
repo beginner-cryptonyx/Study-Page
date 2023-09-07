@@ -51,9 +51,7 @@ function MultiCell({
             <div
                 className={`state2 hidden md:target md:w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap duration-500 justify-center align-bottom`}
             >
-                <div className="">
-                    {third_content}
-                </div>
+                <div className="">{third_content}</div>
             </div>
         </div>
     ) : columns === 2 ? (
@@ -70,9 +68,7 @@ function MultiCell({
             <div
                 className={`state1 hidden md:target md:w-1/2 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap justify-center duration-500 align-middle items-center`}
             >
-                <div className="desc">
-                    {description}
-                </div>
+                <div className="desc">{description}</div>
             </div>
         </div>
     ) : description ? (
@@ -89,9 +85,7 @@ function MultiCell({
             <div
                 className={`state1 hidden md:target w-1/2  bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap duration-500`}
             >
-                <div className="">
-                    {description}
-                </div>
+                <div className="">{description}</div>
             </div>
         </div>
     ) : (
@@ -101,7 +95,7 @@ function MultiCell({
                     jax ? "_jax" : ""
                 }`}
             >
-                <div className="mx-auto text-2xl md:text-3xl h-fit">
+                <div className="mx-auto text-xl md:text-2xl h-fit">
                     {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
                 </div>
             </div>
@@ -117,7 +111,7 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
                     jax ? "_jax" : ""
                 }`}
             >
-                <div className="mx-auto text-3xl h-fit">
+                <div className="mx-auto text-xl md:text-2xl h-fit">
                     {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
                 </div>
             </div>
@@ -132,11 +126,11 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
     ) : (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`target w-[100%] bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                className={`state0 state1 state2 target w-[100%] bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
-                <div className="mx-auto text-3xl h-fit">
+                <div className="mx-auto text-2xl h-fit">
                     {jax ? <MathJax>{`$${formula}$`}</MathJax> : formula}
                 </div>
             </div>
@@ -149,6 +143,9 @@ function CellSeparator({ title }: CellSeparatorProps) {
 
     const screenWidth = window.innerWidth;
     const stateSelectors = [".state0", ".state1", ".state2"];
+    let state0: Array<any> = Array.from(document.querySelectorAll(".state0"));
+    let state1: Array<any> = Array.from(document.querySelectorAll(".state1"));
+    let state2: Array<any> = Array.from(document.querySelectorAll(".state2"));
 
     function HandleStateChange(fromState: number, toState: number) {
         const fromIndex = Array.from(
@@ -170,31 +167,59 @@ function CellSeparator({ title }: CellSeparatorProps) {
 
     function Forward() {
         if (displayValue === 0) {
-            HandleStateChange(0, 1);
+            state0.forEach(function (element) {
+                element.classList.add("hidden");
+            });
+            state1.forEach(function (element) {
+                element.classList.remove("w-1/2");
+            });
+            state1.forEach(function (element) {
+                element.classList.remove("w-1/3");
+            });
+            state1.forEach(function (element) {
+                element.classList.add("w-[100%]");
+            });
             setDisplayValue(1);
         } else if (displayValue === 1) {
-            HandleStateChange(1, 2);
+            state1.forEach(function (element) {
+                element.classList.add("hidden");
+            });
+            state2.forEach(function (element) {
+                element.classList.remove("w-1/2");
+            });
+            state2.forEach(function (element) {
+                element.classList.remove("w-1/3");
+            });
+            state2.forEach(function (element) {
+                element.classList.add("w-[100%]");
+            });
             setDisplayValue(2);
         }
     }
 
     function Reverse() {
+        console.log(displayValue);
+
         if (displayValue === 2) {
             HandleStateChange(2, 1);
             setDisplayValue(1);
         } else if (displayValue === 1) {
             HandleStateChange(1, 0);
             setDisplayValue(0);
+        } else if (displayValue === 0) {
+            setDisplayValue(0);
         }
+
+        console.log(displayValue);
     }
 
     return (
         <div
-            className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-2xl md:text-3xl`}
+            className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl`}
         >
-            <button onClick={Reverse}>{"<"}</button>
+            {screenWidth < 700 ? <button onClick={Reverse}>{"<"}</button> : ""}
             {title}
-            <button onClick={Forward}>{">"}</button>
+            {screenWidth < 700 ? <button onClick={Forward}>{">"}</button> : ""}
         </div>
     );
 }

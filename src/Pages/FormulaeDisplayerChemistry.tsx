@@ -107,18 +107,18 @@ const Formulae: Array<Array<any>> = [
 ];
 
 const SolubilityRules: Array<Array<any>> = [
-    [`Soluble`, <p className="text-3xl">Insoluble</p>, "external"],
-    [`Sodium Salts`, <p className="text-3xl">No Exceptions</p>, "normal"],
-    [`Potassium Salts`, <p className="text-3xl">No Exceptions</p>, "normal"],
-    [`Ammonium Salts`, <p className="text-3xl">No Exceptions</p>, "normal"],
+    [`Soluble`, <p className="text-xl md:text-2xl">Insoluble</p>, "external"],
+    [`Sodium Salts`, <p className="text-xl md:text-2xl">No Exceptions</p>, "normal"],
+    [`Potassium Salts`, <p className="text-xl md:text-2xl">No Exceptions</p>, "normal"],
+    [`Ammonium Salts`, <p className="text-xl md:text-2xl">No Exceptions</p>, "normal"],
     [
         `Halides`,
-        <p className="text-3xl">Except halides of silver and lead</p>,
+        <p className="text-xl md:text-2xl">Except halides of silver and lead</p>,
         "normal",
     ],
     [
         `Sulfates`,
-        <p className="text-3xl">Except: Calcium Barium Lead sulfate</p>,
+        <p className="text-xl md:text-2xl">Except: Calcium Barium Lead sulfate</p>,
         "normal",
     ],
     [
@@ -126,7 +126,7 @@ const SolubilityRules: Array<Array<any>> = [
         Sodium
         Potassium
     Ammonium`,
-        <p className="text-3xl">Carbonates</p>,
+        <p className="text-xl md:text-2xl">Carbonates</p>,
         "normal",
     ],
 ];

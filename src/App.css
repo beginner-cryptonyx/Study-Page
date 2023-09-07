@@ -67,7 +67,7 @@ span{
     }
 
     .state0, .state1, .state2{
-        @apply text-xl md:text-3xl
+        @apply text-xl md:text-2xl
     }
 
     
