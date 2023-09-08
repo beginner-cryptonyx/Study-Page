@@ -7,8 +7,40 @@ module.exports = {
                 text_down: "text_gradient_down 5s ease infinite",
                 text_side: "text_gradient_side 5s ease infinite",
                 gradient_slide: "text_gradient_side 5s ease infinite",
+                gradient_slide_left: 'gradient_slide_left 3s ease infinite',
+                gradient_slide_right: 'gradient_slide_right 1.6s ease-in infinite'
             },
             keyframes: {
+                gradient_slide_right:{
+                    "0%": {
+                        "background-position": "0px"
+                    },
+                    "20%": {
+                        "background-position": "-110px"
+                    },
+                    "35%": {
+                        "background-position": "-180px"
+                    },
+                    "50%": {
+                        "background-position": "-210px"
+                    },
+                    "80%": {
+                        "background-position": "-350px"
+                    },
+                    "100%":  {
+                        "background-position": "-390px"
+                    }
+                },
+                gradient_slide_left: {
+                    "0%, 100%": {
+                        "background-size": "200% 200%",
+                        "background-position": "left",
+                    },
+                    "50%": {
+                        "background-size": "200% 200%",
+                        "background-position": "right",
+                    },
+                },
                 text_gradient_down: {
                     "0%, 100%": {
                         "background-size": "200% 200%",
@@ -40,6 +72,17 @@ module.exports = {
                         "background-position": "bottom left",
                     },
                 },
+                // gradient_slide_left: {
+                //     "0%": {
+                //         "background-position": "0% 50%",
+                //     },
+                //     "50%": {
+                //         "background-position": "100% 50%",
+                //     },
+                //     "100%": {
+                //         "background-position": "0% 50%",
+                //     },
+                // },
             },
             colors: {
                 background: "#1d1b1c",
