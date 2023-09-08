@@ -6,7 +6,7 @@ function Home() {
     return (
         <main className=" " style={{ backgroundImage: `url(${bg})` }}>
             <div className="backdrop-saturate-[0.6] backdrop-blur-lg text-[40pt] flex justify-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#3371f7] to-[#00b7ff] animate-text_side text-center pb-16 pt-2">
-                <h1 className="pr-2 text-transparent bg-clip-text bg-gradient-to-r from-[#ffba26] to-[#ff8800] animate-gradient_slide">Find</h1>
+                <h1 className="pr-2 text-transparent bg-clip-text bg-gradient-to-b from-[#f5b937] to-[#ff8800] animate-text_down">Find</h1>
                 <Typewriter
                     onInit={(tw) => {
                         tw.typeString("Everything IGCSE");

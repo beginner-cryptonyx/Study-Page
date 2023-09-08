@@ -4,7 +4,7 @@ import { saveAs } from "file-saver";
 
 interface Props {
     header: string;
-    content? : string;
+    content?: string;
     tags: Array<Array<any>>;
     redirect?: [boolean, string];
 }
@@ -52,18 +52,23 @@ function Card({ header, content, tags, redirect }: Props) {
                 </div>
             </div>
             <div className="w-[100%] bg-[#3f3f3f] rounded-b pb-3.5 h-[calc((100%/5)*4)]">
-                <div className="pt-3 text-[19pt] flex justify-center text-center ">
+                <div className="pt-3 text-[19pt] flex justify-center text-center min-h-fit">
                     {content}
                 </div>
 
-                <div className="flex flex-row mx-auto justify-center flex-wrap align-middle pt-4 h-min">
+                <div className="flex flex-row mx-auto justify-center flex-wrap align-middle pt-4">
                     {tags.map((item, index) => (
                         <div
-                            className="text-[14pt] mx-1 bg-gradient-to-bl from-blue-400 py-1 px-1.5 to-purple-500 rounded-md min-w-[20%] mb-6 cursor-pointer  text-center hover:brightness-90 active:brightness-75 animate-gradient_slide flex align-middle justify-center "
+                            className="flex justify-center items-center text-[14pt] m-2 rounded-lg  hover:scale-[110%] duration-100"
                             key={parseInt(SHA256(item[0]).toString(), 16)}
                             onClick={(e) => handleClickTag(index)}
                         >
-                            {item[0]}
+                            <div className="tag-btn-bg flex justify-center items-center bg-black text-white rounded-lg cursor-pointer p-[0.2rem] animate-gradient_slide_right">
+
+                                <div className="bg-black hover:bg-gradient-to-l from-[#161616] via-black to-[#161616] p-1.5 rounded-lg animate-gradient_slide_left text-center">
+                                    {item[0]}
+                                </div>
+                            </div>
                         </div>
                     ))}
                 </div>
