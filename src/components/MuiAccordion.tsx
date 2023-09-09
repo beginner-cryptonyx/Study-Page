@@ -47,9 +47,9 @@ function MUIaccordion({ content }: MUIaccordionProps) {
                         <AccordionDetails
                             style={{
                                 backgroundImage:
-                                    "linear-gradient(to right, #A200FF, #FF00DD, #A200FF)",
+                                    "linear-gradient(to right bottom, #00CDFF, #004DFF, #00FFB2)",
                                 animation:
-                                    "gradient_slide_left 3s ease infinite",
+                                    "gradient_slide_left 10s ease infinite",
                                 filter: "saturate(2%);",
                                 // backdropFilter: "opacity(10%)"
                             }}
