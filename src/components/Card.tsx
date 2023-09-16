@@ -12,6 +12,9 @@ interface Props {
 function Card({ header, content, tags, redirect }: Props) {
     const navigate = useNavigate();
 
+
+
+
     const handleClickCard = () => {
         if (typeof redirect != "undefined") {
             redirect[0] ? navigate(redirect[1]) : console.log("tried");
@@ -56,16 +59,15 @@ function Card({ header, content, tags, redirect }: Props) {
                     {content}
                 </div>
 
-                <div className="flex flex-row mx-auto justify-center flex-wrap align-middle pt-4">
+                <div className="button flex flex-row mx-auto justify-center flex-wrap align-middle pt-4">
                     {tags.map((item, index) => (
                         <div
-                            className="flex justify-center items-center text-[14pt] m-2 rounded-lg  hover:scale-[110%] duration-100"
+                            className="button flex justify-center items-center text-[14pt] m-2 rounded-lg  hover:scale-[110%] duration-100"
                             key={parseInt(SHA256(item[0]).toString(), 16)}
                             onClick={(e) => handleClickTag(index)}
                         >
-                            <div className="tag-btn-bg flex justify-center items-center bg-black text-white rounded-lg cursor-pointer p-[0.2rem] animate-gradient_slide_right">
-
-                                <div className="bg-black hover:bg-gradient-to-l from-[#161616] via-black to-[#161616] p-1.5 rounded-lg animate-gradient_slide_left text-center">
+                            <div className="button tag-btn-bg flex justify-center items-center bg-black text-white rounded-lg cursor-pointer p-[0.2rem] animate-gradient_slide_right">
+                                <div className="button bg-black hover:bg-gradient-to-l from-[#161616] via-black to-[#161616] p-1.5 rounded-lg animate-gradient_slide_left text-center">
                                     {item[0]}
                                 </div>
                             </div>
