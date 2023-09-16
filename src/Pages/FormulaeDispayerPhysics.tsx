@@ -3,19 +3,6 @@ import MUIaccordion from "../components/MuiAccordion";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
 
-const Formulae: Array<Array<any>> = [
-    [
-        `kelvin = degrees Celsius + 273`,
-        "formula of kelvin from Celsius scale",
-        "normal",
-        1,
-        "",
-        "3rd content",
-    ],
-
-    // [`formulae`, "description", "normal", 1, "jax", "3rd content"],
-];
-
 const Laws: Array<Array<any>> = [
     [
         `Newton's first law of motion`,
@@ -304,6 +291,7 @@ const Energetics: Array<Array<any>> = [
         "",
         "3rd content",
     ],
+    [`power = force x speed`, "power formula", "normal", 1, "", "3rd content"],
     [
         `power = energy transferred / ∆ time taken`,
         "power formula",
@@ -526,29 +514,6 @@ function FormulaePhysics() {
     return (
         <div className="container">
             <MathJaxContext config={mathJaxConfig} version={3}>
-                <div className="separator">‎</div>
-                <MUIaccordion
-                    content={[
-                        "Physics Formulae",
-                        Formulae.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            )
-                        ),
-                    ]}
-                />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
