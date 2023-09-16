@@ -5,6 +5,113 @@ import Point from "../components/Point";
 
 const Formulae: Array<Array<any>> = [
     [
+        `kelvin = degrees Celsius + 273`,
+        "formula of kelvin from Celsius scale",
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+
+    // [`formulae`, "description", "normal", 1, "jax", "3rd content"],
+];
+
+const Laws: Array<Array<any>> = [
+    [
+        `Newton's first law of motion`,
+        "If no external force is acting on it, an object will -if stationary, remain stationary -if moving, keep moving at a steady speed in a straight line",
+        "normal",
+    ],
+
+    [
+        `Newton's second law of motion`,
+        "F = ma, this relationship between force, mass and acceleration is sometimes called newton's second law of motion",
+        "normal",
+    ],
+    [
+        `Newton's third law of motion`,
+        "every reaction has an equally likely opposite reaction",
+        "normal",
+    ],
+    [
+        `Conservation of momentum`,
+        "When two or more objects act on each other, their total momentum remains constant, provided no external forces are acting",
+        "normal",
+    ],
+    [
+        `Principle of moments`,
+        "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that points",
+        "normal",
+    ],
+    [
+        `Hooke's law`,
+        "A material obeys hooke's law if, beneath it's elastic limit, the extension is proportional to the load",
+        "normal",
+    ],
+    [
+        `Boyle's law`,
+        "P1V1 = P2V2, if pressure is halved, then volume is doubled, if pressure is doubled, then volume is halved",
+        "normal",
+    ],
+    [
+        `Law of conservation of energy`,
+        "Energy can be stored or transferred, but it cannot be created or destroyed",
+        "normal",
+    ],
+    [
+        `Laws of reflection`,
+        <Point
+            points={[
+                "1) The angle of incidence is equal to the angle of reflection",
+                "2) the incident ray, the reflected raw, and the normal all lie in the same place",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Snell's law`,
+        <Point
+            points={[
+                "the sines of the two angles are always in proportion",
+                "sin(i)/sin(r)",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Ohm's law`,
+        "The current in a circuit is always proportional to the pd, V = IR",
+        "normal",
+    ],
+    [
+        `Right hand grip rule`,
+        "A rule used to find the field direction produced by a current",
+        "normal",
+    ],
+    [
+        `Fleming's left hand rule`,
+        "A rule used to find the direction of force",
+        "normal",
+    ],
+    [
+        `Faraday's law of electromagnetic induction`,
+        "The emf induced in a conductor is proportional to the rate at which magnetic field lines are cut by the conductor",
+        "normal",
+    ],
+    [
+        `Lenz's law`,
+        "An induced current always flows in a direction such that it opposes the charge which produced it",
+        "normal",
+    ],
+    [
+        `Fleming's right hand rule`,
+        "A rule used to find the direction of induced current",
+        "normal",
+    ],
+];
+
+const GeneralPhysics: Array<Array<any>> = [
+    [
         `\\text{density} = \\frac{\\text{mass}}{\\text{volume}}`,
         "Density formula",
         "normal",
@@ -150,6 +257,21 @@ const Formulae: Array<Array<any>> = [
         "",
         "3rd content",
     ],
+];
+
+const Heat: Array<Array<any>> = [
+    [
+        `Energy transfer = mc⋅∆T`,
+        "specific heat capacity",
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    ["formulae", "description", "difficulty"],
+];
+
+const Energetics: Array<Array<any>> = [
     [
         `G.P.E = mass ⋅ g ⋅ height from ground`,
         "formula of Gravitational Potential Energy",
@@ -223,14 +345,6 @@ const Formulae: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        `kelvin = degrees Celsius + 273`,
-        "formula of kelvin from Celsius scale",
-        "normal",
-        1,
-        "",
-        "3rd content",
-    ],
-    [
         `Energy transfer = mc⋅∆T`,
         "specific heat capacity",
         "normal",
@@ -238,6 +352,26 @@ const Formulae: Array<Array<any>> = [
         "",
         "3rd content",
     ],
+    [
+        `P = VI`,
+        "formula used to calculate the electrical power of a circuit",
+        "normal",
+        1,
+        "jax",
+        "3rd content",
+    ],
+    [
+        `E = VIT`,
+        "formula used to calculate the energy transferred in a circuit, E is the energy transferred, I is the current and t is the time taken.",
+        "normal",
+        1,
+        "jax",
+        "3rd content",
+    ],
+    ["formulae", "description", "difficulty"],
+];
+
+const WavesLight: Array<Array<any>> = [
     [
         `speed of wave = frequency ⋅ wavelength`,
         "formula of speed of wave",
@@ -278,6 +412,10 @@ const Formulae: Array<Array<any>> = [
         "jax",
         "3rd content",
     ],
+    ["formulae", "description", "difficulty"],
+];
+
+const ElectricityMagnetism: Array<Array<any>> = [
     [
         `I = \\frac{Q}{T}`,
         "formula to calculate current from charge and time, I is current, Q is charge and T is time",
@@ -366,98 +504,12 @@ const Formulae: Array<Array<any>> = [
         "jax",
         "3rd content",
     ],
-    // [`formulae`, "description", "normal", 1, "jax", "3rd content"],
 ];
 
-const Laws: Array<Array<any>> = [
-    [
-        `Newton's first law of motion`,
-        "If no external force is acting on it, an object will -if stationary, remain stationary -if moving, keep moving at a steady speed in a straight line",
-        "normal",
-    ],
-
-    [
-        `Newton's second law of motion`,
-        "F = ma, this relationship between force, mass and acceleration is sometimes called newton's second law of motion",
-        "normal",
-    ],
-    [
-        `Newton's third law of motion`,
-        "every reaction has an equally likely opposite reaction",
-        "normal",
-    ],
-    [
-        `Conservation of momentum`,
-        "When two or more objects act on each other, their total momentum remains constant, provided no external forces are acting",
-        "normal",
-    ],
-    [
-        `Principle of moments`,
-        "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that points",
-        "normal",
-    ],
-    [
-        `Hooke's law`,
-        "A material obeys hooke's law if, beneath it's elastic limit, the extension is proportional to the load",
-        "normal",
-    ],
-    [
-        `Boyle's law`,
-        "P1V1 = P2V2, if pressure is halved, then volume is doubled, if pressure is doubled, then volume is halved",
-        "normal",
-    ],
-    [
-        `Law of conservation of energy`,
-        "Energy can be stored or transferred, but it cannot be created or destroyed",
-        "normal",
-    ],
-    [
-        `Laws of reflection`,
-        <Point
-            points={[
-                "1) The angle of incidence is equal to the angle of reflection",
-                "2) the incident ray, the reflected raw, and the normal all lie in the same place",
-            ]}
-        ></Point>,
-        "normal",
-    ],
-    [
-        `Snell's law`,
-        <Point
-            points={[
-                "the sines of the two angles are always in proportion",
-                "sin(i)/sin(r)",
-            ]}
-        ></Point>,
-        "normal",
-    ],
-    [
-        `Ohm's law`,
-        "The current in a circuit is always proportional to the pd, V = IR",
-        "normal",
-    ],
-    [
-        `Right hand grip rule`,
-        "A rule used to find the field direction produced by a current",
-        "normal",
-    ],
-    [
-        `Fleming's left hand rule`,
-        "A rule used to find the direction of force",
-        "normal",
-    ],
-    [
-        `Faraday's law of electromagnetic induction`,
-        "The emf induced in a conductor is proportional to the rate at which magnetic field lines are cut by the conductor",
-        "normal",
-    ],
-    [
-        `Lenz's law`,
-        "An induced current always flows in a direction such that it opposes the charge which produced it",
-        "normal",
-    ],
-    [`Fleming's right hand rule`, "A rule used to find the direction of induced current", "normal"],
+const NuclearPhyscis: Array<Array<any>> = [
+    ["formulae", "description", "difficulty"],
 ];
+
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },
     tex: {
@@ -502,6 +554,146 @@ function FormulaePhysics() {
                     content={[
                         "Physics Laws",
                         Laws.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "General Physics",
+                        GeneralPhysics.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Energetics",
+                        Energetics.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Heat",
+                        Heat.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Waves and Light",
+                        WavesLight.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Electricity and Magnetism",
+                        ElectricityMagnetism.map((element_data, index) =>
+                            element_data[0] === "separator" ? (
+                                <CellSeparator title={element_data[1]} />
+                            ) : element_data[0] === "element" ? (
+                                element_data[1]
+                            ) : (
+                                <MultiCell
+                                    formula={element_data[0]}
+                                    description={element_data[1]}
+                                    importance={element_data[2]}
+                                    columns={element_data[3]}
+                                    jax={element_data[4] ? true : false}
+                                    third_content={element_data[5]}
+                                    key={index}
+                                ></MultiCell>
+                            )
+                        ),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Nuclear Physics ☢",
+                        NuclearPhyscis.map((element_data, index) =>
                             element_data[0] === "separator" ? (
                                 <CellSeparator title={element_data[1]} />
                             ) : element_data[0] === "element" ? (
