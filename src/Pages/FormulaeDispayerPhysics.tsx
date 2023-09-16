@@ -396,17 +396,67 @@ const Laws: Array<Array<any>> = [
         "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that points",
         "normal",
     ],
-    [`Hooke's law`, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
+    [
+        `Hooke's law`,
+        "A material obeys hooke's law if, beneath it's elastic limit, the extension is proportional to the load",
+        "normal",
+    ],
+    [
+        `Boyle's law`,
+        "P1V1 = P2V2, if pressure is halved, then volume is doubled, if pressure is doubled, then volume is halved",
+        "normal",
+    ],
+    [
+        `Law of conservation of energy`,
+        "Energy can be stored or transferred, but it cannot be created or destroyed",
+        "normal",
+    ],
+    [
+        `Laws of reflection`,
+        <Point
+            points={[
+                "1) The angle of incidence is equal to the angle of reflection",
+                "2) the incident ray, the reflected raw, and the normal all lie in the same place",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Snell's law`,
+        <Point
+            points={[
+                "the sines of the two angles are always in proportion",
+                "sin(i)/sin(r)",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Ohm's law`,
+        "The current in a circuit is always proportional to the pd, V = IR",
+        "normal",
+    ],
+    [
+        `Right hand grip rule`,
+        "A rule used to find the field direction produced by a current",
+        "normal",
+    ],
+    [
+        `Fleming's left hand rule`,
+        "A rule used to find the direction of force",
+        "normal",
+    ],
+    [
+        `Faraday's law of electromagnetic induction`,
+        "The emf induced in a conductor is proportional to the rate at which magnetic field lines are cut by the conductor",
+        "normal",
+    ],
+    [
+        `Lenz's law`,
+        "An induced current always flows in a direction such that it opposes the charge which produced it",
+        "normal",
+    ],
+    [`Fleming's right hand rule`, "A rule used to find the direction of induced current", "normal"],
 ];
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },

@@ -71,13 +71,13 @@ span{
     }
 
     .normal .target{
-        @apply from-green-500 to-green-700
+        @apply bg-green-600
     ;}
     .important .target{
-        @apply from-red-600 to-red-800
+        @apply bg-red-700
     ;}
     .external .target{
-        @apply from-slate-500 to-slate-700 
+        @apply bg-slate-600
     ;}
 
     .normal .target, .important .target, .external .target  {

@@ -10,7 +10,24 @@
         scrollbar-width: thin;
         scrollbar-color: #6969dd #e0e0e0;
     }
-    
+    ::selection{
+        /* backdrop-filter: invert(100%);
+        z-index: 1000; */
+        background: black;
+        color:white;
+    }
 }
+
+#cursor{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10000000;
+    transform: translate(-50%, -50%);
+    pointer-events: none ;
+}
+
 
 
