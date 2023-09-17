@@ -1,7 +1,7 @@
 import { MathCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJaxContext } from "better-react-mathjax";
-import Formulae from "./Displayer";
+
 
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },

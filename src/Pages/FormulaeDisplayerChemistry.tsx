@@ -1,4 +1,4 @@
-import { MultiCell, CellSeparator } from "../components/FormulaCell";
+import { MultiCell } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
