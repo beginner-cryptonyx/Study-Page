@@ -533,11 +533,7 @@ function FormulaePhysics() {
                     content={[
                         "Physics Laws",
                         Laws.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -547,7 +543,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -557,11 +553,7 @@ function FormulaePhysics() {
                     content={[
                         "General Physics",
                         GeneralPhysics.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -571,7 +563,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -580,11 +572,7 @@ function FormulaePhysics() {
                     content={[
                         "Energetics",
                         Energetics.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -594,7 +582,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -603,11 +591,7 @@ function FormulaePhysics() {
                     content={[
                         "Heat",
                         Heat.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -617,7 +601,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -626,11 +610,7 @@ function FormulaePhysics() {
                     content={[
                         "Waves and Light",
                         WavesLight.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                           
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -640,7 +620,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -650,11 +630,7 @@ function FormulaePhysics() {
                     content={[
                         "Electricity and Magnetism",
                         ElectricityMagnetism.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -664,7 +640,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />
@@ -673,11 +649,7 @@ function FormulaePhysics() {
                     content={[
                         "Nuclear Physics ☢",
                         NuclearPhyscis.map((element_data, index) =>
-                            element_data[0] === "separator" ? (
-                                <CellSeparator title={element_data[1]} />
-                            ) : element_data[0] === "element" ? (
-                                element_data[1]
-                            ) : (
+                            
                                 <MultiCell
                                     formula={element_data[0]}
                                     description={element_data[1]}
@@ -687,7 +659,7 @@ function FormulaePhysics() {
                                     third_content={element_data[5]}
                                     key={index}
                                 ></MultiCell>
-                            )
+                            
                         ),
                     ]}
                 />

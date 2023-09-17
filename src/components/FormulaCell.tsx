@@ -1,6 +1,7 @@
 import "../App.css";
 import { MathJax } from "better-react-mathjax";
 import { useState } from "react";
+
 export interface MathCellProps {
     formula: string;
     description?: string;
@@ -28,7 +29,13 @@ function MultiCell({
     third_content,
     columns,
 }: MultiCellProps) {
-    return columns === 3 ? (
+    return formula === "separator" ? (
+        <div
+            className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl separator`}
+        >
+            {description}
+        </div>
+    ) : columns === 3 ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
                 className={`state0 formulae-3 target w-[100%] md:w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
@@ -57,7 +64,7 @@ function MultiCell({
     ) : columns === 2 ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`state0 formula target w-[100%] md:w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black duration-500 justify-center align-middle items-center ${
+                className={`state0 target w-[100%] md:w-1/2 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
@@ -138,84 +145,62 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
     );
 }
 
+function SetDefault() {
+    return 0;
+}
 function CellSeparator({ title }: CellSeparatorProps) {
-    const [displayValue, setDisplayValue] = useState(0);
+    const [displayValue, setDisplayValue] = useState(SetDefault);
 
     const screenWidth = window.innerWidth;
-    const stateSelectors = [".state0", ".state1", ".state2"];
     let state0: Array<any> = Array.from(document.querySelectorAll(".state0"));
     let state1: Array<any> = Array.from(document.querySelectorAll(".state1"));
     let state2: Array<any> = Array.from(document.querySelectorAll(".state2"));
 
-    function HandleStateChange(fromState: number, toState: number) {
-        const fromIndex = Array.from(
-            document.querySelectorAll(stateSelectors[fromState])
-        );
-
-        const toIndex = Array.from(
-            document.querySelectorAll(stateSelectors[toState])
-        );
-
-        fromIndex.forEach((element) => element.classList.add("hidden"));
-        fromIndex.forEach((element) => element.classList.remove("target"));
-        toIndex.forEach((element) =>
-            element.classList.remove("w-1/2", "w-1/3")
-        );
-        toIndex.forEach((element) => element.classList.add("w-[100%]"));
-        toIndex.forEach((element) => element.classList.add("target"));
-    }
-
     function Forward() {
+        console.log(displayValue);
         if (displayValue === 0) {
             state0.forEach(function (element) {
+                element.classList.remove("target");
+                element.classList.remove("w-[100%]");
                 element.classList.add("hidden");
             });
-            state1.forEach(function (element) {
-                element.classList.remove("w-1/2");
-            });
-            state1.forEach(function (element) {
-                element.classList.remove("w-1/3");
-            });
-            state1.forEach(function (element) {
-                element.classList.add("w-[100%]");
-            });
-            setDisplayValue(1);
+
+            console.log(displayValue);
+
+            // setDisplayValue(1);
         } else if (displayValue === 1) {
-            state1.forEach(function (element) {
-                element.classList.add("hidden");
-            });
-            state2.forEach(function (element) {
-                element.classList.remove("w-1/2");
-            });
-            state2.forEach(function (element) {
-                element.classList.remove("w-1/3");
-            });
-            state2.forEach(function (element) {
-                element.classList.add("w-[100%]");
-            });
+            console.log("de");
             setDisplayValue(2);
         }
     }
 
     function Reverse() {
-        console.log(displayValue);
+        // console.log(displayValue);
 
-        if (displayValue === 2) {
-            HandleStateChange(2, 1);
-            setDisplayValue(1);
-        } else if (displayValue === 1) {
-            HandleStateChange(1, 0);
-            setDisplayValue(0);
-        } else if (displayValue === 0) {
-            setDisplayValue(0);
-        }
+        // if (displayValue === 2) {
+        //     HandleStateChange(2, 1);
+        //     setDisplayValue(1);
+        // } else if (displayValue === 1) {
+        //     state0.forEach(function (element) {
+        //         element.classList.add("target");
+        //     });
+        //     state0.forEach(function (element) {
+        //         element.classList.add("w-[100%]");
+        //     });
+        //     state0.forEach(function (element) {
+        //         element.classList.remove("hidden");
+        //     });
+        //     setDisplayValue(0);
+        // } else if (displayValue === 0) {
+        //     setDisplayValue(0);
+        // }
 
         console.log(displayValue);
     }
 
     return (
         <div
-            className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl`}
+            className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl separator`}
         >
             {screenWidth < 700 ? <button onClick={Reverse}>{"<"}</button> : ""}
             {title}
