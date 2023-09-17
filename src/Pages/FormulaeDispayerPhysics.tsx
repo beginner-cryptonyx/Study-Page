@@ -4,6 +4,8 @@ import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
 
 const Laws: Array<Array<any>> = [
+    ['separator', 'Laws and Statements'],
+    [`Law`, 'Statement', 'external'],
     [
         `Newton's first law of motion`,
         "If no external force is acting on it, an object will -if stationary, remain stationary -if moving, keep moving at a steady speed in a straight line",
@@ -98,6 +100,8 @@ const Laws: Array<Array<any>> = [
 ];
 
 const GeneralPhysics: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     [
         `\\text{density} = \\frac{\\text{mass}}{\\text{volume}}`,
         "Density formula",
@@ -247,6 +251,8 @@ const GeneralPhysics: Array<Array<any>> = [
 ];
 
 const Heat: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     [
         `Energy transfer = mc⋅∆T`,
         "specific heat capacity",
@@ -259,6 +265,8 @@ const Heat: Array<Array<any>> = [
 ];
 
 const Energetics: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     [
         `G.P.E = mass ⋅ g ⋅ height from ground`,
         "formula of Gravitational Potential Energy",
@@ -360,6 +368,8 @@ const Energetics: Array<Array<any>> = [
 ];
 
 const WavesLight: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     [
         `speed of wave = frequency ⋅ wavelength`,
         "formula of speed of wave",
@@ -404,6 +414,8 @@ const WavesLight: Array<Array<any>> = [
 ];
 
 const ElectricityMagnetism: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     [
         `I = \\frac{Q}{T}`,
         "formula to calculate current from charge and time, I is current, Q is charge and T is time",
@@ -495,6 +507,8 @@ const ElectricityMagnetism: Array<Array<any>> = [
 ];
 
 const NuclearPhyscis: Array<Array<any>> = [
+    ['separator', 'Formulae'],
+    [`Formula`, 'Description', 'external'],
     ["formulae", "description", "difficulty"],
 ];
 

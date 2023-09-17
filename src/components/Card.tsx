@@ -45,7 +45,7 @@ function Card({ header, content, tags, redirect }: Props) {
     };
 
     return (
-        <div
+        <section
             className="rounded-3xl bg-black w-[90vw] md:max-w-[25vw] mx-2 my-1 duration-[300ms] mb-7 hover:scale-125 shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] flex flex-col"
             onClick={handleClickCard}
         >
@@ -75,7 +75,7 @@ function Card({ header, content, tags, redirect }: Props) {
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
