@@ -3,7 +3,6 @@ import Typewriter from "typewriter-effect";
 const bg = require("../images/bg1.jpg");
 
 function Home() {
-
     return (
         <main className="" style={{ backgroundImage: `url(${bg})` }}>
             <div id="cursor"></div>
@@ -41,7 +40,16 @@ function Home() {
                     <Card
                         header="Physics Formulae"
                         // content="All Physics Formulae"
-                        tags={[]}
+                        tags={[
+                            ["Laws", ""],
+                            ["General Physics"],
+                            ["Energetics"],
+                            ["Thermal Physics"],
+                            ["Light and Waves"],
+                            ["Electricity"],
+                            ["Magnetism"],
+                            ["Nuclear Physics"],
+                        ]}
                         redirect={[true, "/formulae/physics"]}
                     />
                     <Card

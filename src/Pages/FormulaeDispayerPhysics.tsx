@@ -626,7 +626,7 @@ function FormulaePhysics() {
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
-                        "Heat",
+                        "Thermal Physics",
                         Heat.map((element_data, index) => (
                             <MultiCell
                                 formula={element_data[0]}
