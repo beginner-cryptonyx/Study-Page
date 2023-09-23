@@ -29,16 +29,74 @@ function MultiCell({
     third_content,
     columns,
 }: MultiCellProps) {
+    const [state, setState] = useState(0);
+    let state0: Array<any> = Array.from(document.querySelectorAll(".state0"));
+    let state1: Array<any> = Array.from(document.querySelectorAll(".state1"));
+    let state2: Array<any> = Array.from(document.querySelectorAll(".state2"));
+
+    function Forward() {
+        console.log(state);
+        if (state === 0) {
+            state0.forEach(function (element: HTMLElement) {
+                element.classList.remove("target");
+                element.classList.remove("w-[100%]");
+                element.classList.add("hidden");
+            });
+            state1.forEach(function (element: HTMLElement) {
+                element.classList.add("target");
+                element.classList.add("w-[100%]");
+                element.classList.remove("hidden");
+            });
+            setState(1);
+        } else if (state === 1) {
+            state1.forEach(function (element: HTMLElement) {
+                element.classList.remove("target");
+                element.classList.remove("w-[100%]");
+                element.classList.add("hidden");
+            });
+            state2.forEach(function (element: HTMLElement) {
+                element.classList.add("target");
+                element.classList.add("w-[100%]");
+                element.classList.remove("hidden");
+            });
+            setState(2);
+        } else if (state === 2) {
+            setState(2);
+        }
+        console.log(state);
+    }
+
+    function Reverse() {
+        console.log(state);
+        if (state === 2) {
+            setState(1);
+        } else if (state === 1) {
+            setState(0);
+        } else if (state === 0) {
+            setState(0);
+        }
+        console.log(state);
+    }
     return formula === "separator" ? (
         <div
             className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl separator`}
         >
+            {window.innerWidth <= 700 ? (
+                <button onClick={Reverse}>{"<"}</button>
+            ) : (
+                ""
+            )}
             {description}
+            {window.innerWidth <= 700 ? (
+                <button onClick={Forward}>{">"}</button>
+            ) : (
+                ""
+            )}
         </div>
     ) : columns === 3 ? (
         <div className={`formula-cell-2 ${importance ? importance : "normal"}`}>
             <div
-                className={`state0 formulae-3 target w-[100%] md:w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black flex duration-500 justify-center align-middle items-center ${
+                className={`state0 formulae-3 target w-[100%] md:w-1/3 bg-gradient-to-r border border-gray-800 border-solid border-l-2 border-l-black duration-500 justify-center align-middle items-center ${
                     jax ? "_jax" : ""
                 }`}
             >
@@ -48,9 +106,9 @@ function MultiCell({
             </div>
 
             <div
-                className={`state1 hidden md:target md:w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap  duration-500  justify-center align-bottom`}
+                className={`state1 hidden md:target md:w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap  duration-500 justify-center align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%]  p-2">
+                <div className="desc text-center h-[100%] w-[100%] p-2">
                     {description}
                 </div>
             </div>

@@ -215,6 +215,14 @@ const Acids: Array<Array<any>> = [
     ],
 ];
 
+const OrganicChemistry: Array<Array<any>> = [
+    [`separator`, "general formulae", "normal"],
+    [`C_nH_{2n + 2}`, "Alkanes", "normal", "", "true"],
+    [`C_nH_{2n}`, "Alkenes", "normal", "", "true"],
+    [`CnH_{2n-2}`, "Alkynes", "external", "", "true"],
+    [`CnH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
+];
+
 const PracticalChemistryTesting: Array<Array<any>> = [
     [`separator`, "Cation Tests"],
     [
@@ -670,6 +678,24 @@ function FormulaeChemistry() {
                     content={[
                         "Equilibrium, Rate of Reaction and Processes",
                         EquilibriumAndRate.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
+                    ]}
+                />
+
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Organic Chemistry",
+                        OrganicChemistry.map((element_data, index) => (
                             <MultiCell
                                 formula={element_data[0]}
                                 description={element_data[1]}
