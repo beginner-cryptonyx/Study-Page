@@ -367,7 +367,6 @@ const Energetics: Array<Array<any>> = [
         "jax",
         "3rd content",
     ],
-    ["formulae", "description", "difficulty"],
 ];
 
 const WavesLight: Array<Array<any>> = [
@@ -455,7 +454,6 @@ const WavesLight: Array<Array<any>> = [
         "",
         <Point points={["Virtual", "Upright", "Magnified"]}></Point>,
     ],
-    ["formulae", "description", "difficulty"],
 ];
 
 const ElectricityMagnetism: Array<Array<any>> = [
