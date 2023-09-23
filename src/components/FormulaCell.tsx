@@ -108,9 +108,7 @@ function MultiCell({
             <div
                 className={`state1 hidden md:target md:w-1/3 bg-gradient-to-l border border-gray-900 p-2 border-r-2 border-r-black flex-wrap  duration-500 justify-center align-bottom`}
             >
-                <div className="desc text-center h-[100%] w-[100%] p-2">
-                    {description}
-                </div>
+                {description}
             </div>
 
             <div
