@@ -219,8 +219,8 @@ const OrganicChemistry: Array<Array<any>> = [
     [`separator`, "general formulae", "normal"],
     [`C_nH_{2n + 2}`, "Alkanes", "normal", "", "true"],
     [`C_nH_{2n}`, "Alkenes", "normal", "", "true"],
-    [`CnH_{2n-2}`, "Alkynes", "external", "", "true"],
-    [`CnH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
+    [`C_nH_{2n-2}`, "Alkynes", "external", "", "true"],
+    [`C_nH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
 ];
 
 const PracticalChemistryTesting: Array<Array<any>> = [
