@@ -4,8 +4,8 @@ import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
 
 const Laws: Array<Array<any>> = [
-    ['separator', 'Laws and Statements'],
-    [`Law`, 'Statement', 'external'],
+    ["separator", "Laws and Statements"],
+    [`Law`, "Statement", "external"],
     [
         `Newton's first law of motion`,
         "If no external force is acting on it, an object will -if stationary, remain stationary -if moving, keep moving at a steady speed in a straight line",
@@ -100,8 +100,8 @@ const Laws: Array<Array<any>> = [
 ];
 
 const GeneralPhysics: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
+    [`Formula`, "Description", "external"],
     [
         `\\text{density} = \\frac{\\text{mass}}{\\text{volume}}`,
         "Density formula",
@@ -251,8 +251,7 @@ const GeneralPhysics: Array<Array<any>> = [
 ];
 
 const Heat: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
     [
         `Energy transfer = mc⋅∆T`,
         "specific heat capacity",
@@ -261,12 +260,24 @@ const Heat: Array<Array<any>> = [
         "",
         "3rd content",
     ],
-    ["formulae", "description", "difficulty"],
+    [
+        `Latent Heat = Mass ⋅ Specific Latent Heat`,
+        "Latent Heat Formula",
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        "Thermal capacity = mass of body ⋅ specific heat",
+        "Formula for thermal capacity",
+        "external",
+    ],
 ];
 
 const Energetics: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
+    [`Formula`, "Description", "external"],
     [
         `G.P.E = mass ⋅ g ⋅ height from ground`,
         "formula of Gravitational Potential Energy",
@@ -333,14 +344,6 @@ const Energetics: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        `Latent Heat = Mass ⋅ Specific Latent Heat`,
-        "Latent Heat Formula",
-        "normal",
-        1,
-        "",
-        "3rd content",
-    ],
-    [
         `Energy transfer = mc⋅∆T`,
         "specific heat capacity",
         "normal",
@@ -368,8 +371,8 @@ const Energetics: Array<Array<any>> = [
 ];
 
 const WavesLight: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
+    [`Formula`, "Description", "external"],
     [
         `speed of wave = frequency ⋅ wavelength`,
         "formula of speed of wave",
@@ -410,12 +413,54 @@ const WavesLight: Array<Array<any>> = [
         "jax",
         "3rd content",
     ],
+    ["separator", "Convex Lens"],
+    ["Object Location", "Image Location", "external", 3, "", "Properties"],
+    [
+        "∞",
+        "Focus",
+        "normal",
+        3,
+        "",
+        <Point points={["Real", "Inverted", "Smaller than object"]}></Point>,
+    ],
+    [
+        "At 2×Focus",
+        "2×Focus",
+        "normal",
+        3,
+        "",
+        <Point points={["Real", "Inverted", "Same size as object"]}></Point>,
+    ],
+    [
+        "Between Focus and 2×Focus",
+        "beyond 2×Focus",
+        "normal",
+        3,
+        "",
+        <Point points={["Real", "Inverted", 'Magnified']}></Point>,
+    ],
+    [
+        "Focus",
+        "∞",
+        "normal",
+        3,
+        "",
+        <Point points={["Diminished", "Technically Real and Inverted"]}></Point>,
+    ],
+    [
+        "Between Focus and Optical Center",
+        "Between Focus and 2×Focus",
+        "normal",
+        3,
+        "",
+        <Point points={["Virtual", "Upright", "Magnified"]}></Point>,
+    ],
     ["formulae", "description", "difficulty"],
 ];
 
 const ElectricityMagnetism: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
+    [`Formula`, "Description", "external"],
     [
         `I = \\frac{Q}{T}`,
         "formula to calculate current from charge and time, I is current, Q is charge and T is time",
@@ -507,8 +552,8 @@ const ElectricityMagnetism: Array<Array<any>> = [
 ];
 
 const NuclearPhyscis: Array<Array<any>> = [
-    ['separator', 'Formulae'],
-    [`Formula`, 'Description', 'external'],
+    ["separator", "Formulae"],
+    [`Formula`, "Description", "external"],
     ["formulae", "description", "difficulty"],
 ];
 
@@ -532,19 +577,17 @@ function FormulaePhysics() {
                 <MUIaccordion
                     content={[
                         "Physics Laws",
-                        Laws.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        Laws.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
 
@@ -552,76 +595,68 @@ function FormulaePhysics() {
                 <MUIaccordion
                     content={[
                         "General Physics",
-                        GeneralPhysics.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        GeneralPhysics.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
                         "Energetics",
-                        Energetics.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        Energetics.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
                         "Heat",
-                        Heat.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        Heat.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
                         "Waves and Light",
-                        WavesLight.map((element_data, index) =>
-                           
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        WavesLight.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
 
@@ -629,38 +664,34 @@ function FormulaePhysics() {
                 <MUIaccordion
                     content={[
                         "Electricity and Magnetism",
-                        ElectricityMagnetism.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        ElectricityMagnetism.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
                         "Nuclear Physics ☢",
-                        NuclearPhyscis.map((element_data, index) =>
-                            
-                                <MultiCell
-                                    formula={element_data[0]}
-                                    description={element_data[1]}
-                                    importance={element_data[2]}
-                                    columns={element_data[3]}
-                                    jax={element_data[4] ? true : false}
-                                    third_content={element_data[5]}
-                                    key={index}
-                                ></MultiCell>
-                            
-                        ),
+                        NuclearPhyscis.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
+                                key={index}
+                            ></MultiCell>
+                        )),
                     ]}
                 />
             </MathJaxContext>
