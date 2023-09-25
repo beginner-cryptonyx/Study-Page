@@ -23,28 +23,16 @@ const ReactivitySeries: Array<Array<any>> = [
     [`Magnesium`, "", "normal"],
     [`Aluminum`, "", "normal"],
     [
-        `element`,
-        <MultiCell
-            formula="carbon"
-            description=""
-            importance="important"
-            columns={1}
-            jax={false}
-        ></MultiCell>,
-        "normal",
+        "Carbon",
+        '',
+        "important",
     ],
     [`Zinc`, "", "normal"],
     [`Iron`, "", "normal"],
     [
-        `element`,
-        <MultiCell
-            formula="hydrogen"
-            description=""
-            importance="important"
-            columns={1}
-            jax={false}
-        ></MultiCell>,
-        "normal",
+        `Hydrogen`,
+        "",
+        "important",
     ],
     [`Copper`, "", "normal"],
     [`Silver`, "", "normal"],
