@@ -2,6 +2,18 @@ import { MultiCell } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
+const {
+    bulb,
+    cell,
+    cell_group,
+    fuse,
+    thermistor,
+    LDR,
+    resistor,
+    voltmeter,
+    ammeter,
+    variable_resistor,
+} = require("../images/index");
 
 const Laws: Array<Array<any>> = [
     ["separator", "Laws and Statements"],
@@ -436,7 +448,7 @@ const WavesLight: Array<Array<any>> = [
         "normal",
         3,
         "",
-        <Point points={["Real", "Inverted", 'Magnified']}></Point>,
+        <Point points={["Real", "Inverted", "Magnified"]}></Point>,
     ],
     [
         "Focus",
@@ -444,7 +456,9 @@ const WavesLight: Array<Array<any>> = [
         "normal",
         3,
         "",
-        <Point points={["Diminished", "Technically Real and Inverted"]}></Point>,
+        <Point
+            points={["Diminished", "Technically Real and Inverted"]}
+        ></Point>,
     ],
     [
         "Between Focus and Optical Center",
@@ -547,6 +561,121 @@ const ElectricityMagnetism: Array<Array<any>> = [
         "jax",
         "3rd content",
     ],
+
+    ["separator", "Symbols"],
+    [
+        <Point
+            points={[
+                "Bulb",
+                "",
+                'Has a filament with very high resistance inside a glass "bulb" filled with nobel gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`',
+            ]}
+        ></Point>,
+        <img src={bulb} height={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        `Cell: Has a potential difference`,
+        <img src={cell} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                `Voltmeter`,
+                "",
+                " measures potential difference to component connected parallel to it",
+            ]}
+        ></Point>,
+        <img src={voltmeter} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={["ammeter:", "measures current to any component in series"]}
+        ></Point>,
+        <img src={ammeter} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={["resistor", "does what it says, creates resistance"]}
+        ></Point>,
+        <img src={resistor} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                "Variable Resistor / Rheostat",
+                "Has a method to increase length of wire in contact with circuit via conductive contacts, works as length of wore is directly proportional to resistance",
+            ]}
+        ></Point>,
+        <img src={variable_resistor} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                "fuze",
+                "",
+                "Has a wire inside a glass casing, if voltage is too high the resistance increases along with the heat, due to this heat the fuze wire melts and opens the circut",
+            ]}
+        ></Point>,
+        <img src={fuse} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                "LDR : Light Dependant Resistor",
+                "",
+                "Resistance is directly proportional to Light exposure and Light intensity",
+            ]}
+        ></Point>,
+        <img src={LDR} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point points={["Battery", "", "Group of cells"]}></Point>,
+        <img src={cell_group} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point points={["Thermistor"]}></Point>,
+        <img src={thermistor} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
 ];
 
 const NuclearPhyscis: Array<Array<any>> = [
@@ -572,6 +701,7 @@ function FormulaePhysics() {
         <div className="container">
             <MathJaxContext config={mathJaxConfig} version={3}>
                 <div className="separator">‎</div>
+                <img src="./src/images/bulb.png" alt="" />
                 <MUIaccordion
                     content={[
                         "Physics Laws",

@@ -22,18 +22,10 @@ const ReactivitySeries: Array<Array<any>> = [
     [`Calcium`, "", "normal"],
     [`Magnesium`, "", "normal"],
     [`Aluminum`, "", "normal"],
-    [
-        "Carbon",
-        '',
-        "important",
-    ],
+    ["Carbon", "", "important"],
     [`Zinc`, "", "normal"],
     [`Iron`, "", "normal"],
-    [
-        `Hydrogen`,
-        "",
-        "important",
-    ],
+    [`Hydrogen`, "", "important"],
     [`Copper`, "", "normal"],
     [`Silver`, "", "normal"],
     [`Gold`, "", "normal"],
@@ -209,6 +201,16 @@ const OrganicChemistry: Array<Array<any>> = [
     [`C_nH_{2n}`, "Alkenes", "normal", "", "true"],
     [`C_nH_{2n-2}`, "Alkynes", "external", "", "true"],
     [`C_nH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
+
+    [`separator`, "Hydrocarbon Fractions and their Properties", "normal"],
+    [`Refinery Gas`, <MathJax>{'C_1 \\text{to} C_4'}</MathJax>, "normal", 3, "", ""],
+    [`Gasoline (petrol)`, "", "normal", 3, "", ""],
+    [`Naphtha`, "", "normal", 3, "", ""],
+    [`Kerosene`, "", "normal", 3, "", ""],
+    [`Diesel oil`, "", "normal", 3, "", ""],
+    [`Fuel oil`, "", "normal", 3, "", ""],
+    [`Lubricating fraction`, "", "normal", 3, "", ""],
+    [`Bitumen`, "", "normal", 3, "", ""],
 ];
 
 const PracticalChemistryTesting: Array<Array<any>> = [

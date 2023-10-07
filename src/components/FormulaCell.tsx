@@ -29,13 +29,23 @@ function MultiCell({
     third_content,
     columns,
 }: MultiCellProps) {
-    const [state, setState] = useState(0);
+    var [state, setState] = useState(0);
     let state0: Array<any> = Array.from(document.querySelectorAll(".state0"));
     let state1: Array<any> = Array.from(document.querySelectorAll(".state1"));
     let state2: Array<any> = Array.from(document.querySelectorAll(".state2"));
 
     function Forward() {
-        console.log(state);
+        // console.log(state0);
+        let state0: Array<any> = Array.from(
+            document.querySelectorAll(".state0")
+        );
+        let state1: Array<any> = Array.from(
+            document.querySelectorAll(".state1")
+        );
+        let state2: Array<any> = Array.from(
+            document.querySelectorAll(".state2")
+        );
+
         if (state === 0) {
             state0.forEach(function (element: HTMLElement) {
                 element.classList.remove("target");
@@ -67,10 +77,39 @@ function MultiCell({
     }
 
     function Reverse() {
+        let state0: Array<any> = Array.from(
+            document.querySelectorAll(".state0")
+        );
+        let state1: Array<any> = Array.from(
+            document.querySelectorAll(".state1")
+        );
+        let state2: Array<any> = Array.from(
+            document.querySelectorAll(".state2")
+        );
         console.log(state);
         if (state === 2) {
+            state2.forEach(function (element: HTMLElement) {
+                element.classList.remove("target");
+                element.classList.remove("w-[100%]");
+                element.classList.add("hidden");
+            });
+            state1.forEach(function (element: HTMLElement) {
+                element.classList.add("target");
+                element.classList.add("w-[100%]");
+                element.classList.remove("hidden");
+            });
             setState(1);
         } else if (state === 1) {
+            state1.forEach(function (element: HTMLElement) {
+                element.classList.remove("target");
+                element.classList.remove("w-[100%]");
+                element.classList.add("hidden");
+            });
+            state0.forEach(function (element: HTMLElement) {
+                element.classList.add("target");
+                element.classList.add("w-[100%]");
+                element.classList.remove("hidden");
+            });
             setState(0);
         } else if (state === 0) {
             setState(0);
@@ -201,18 +240,15 @@ function MathCell({ formula, description, importance, jax }: MathCellProps) {
     );
 }
 
-function SetDefault() {
-    return 0;
-}
 function CellSeparator({ title }: CellSeparatorProps) {
-    const [displayValue, setDisplayValue] = useState(SetDefault);
+    let [displayValue, setDisplayValue] = useState(0);
 
     const screenWidth = window.innerWidth;
     let state0: Array<any> = Array.from(document.querySelectorAll(".state0"));
     let state1: Array<any> = Array.from(document.querySelectorAll(".state1"));
     let state2: Array<any> = Array.from(document.querySelectorAll(".state2"));
 
-    function Forward() {
+    async function Forward() {
         console.log(displayValue);
         if (displayValue === 0) {
             state0.forEach(function (element) {
@@ -221,44 +257,43 @@ function CellSeparator({ title }: CellSeparatorProps) {
                 element.classList.add("hidden");
             });
 
+            setDisplayValue(1);
             console.log(displayValue);
-
-            // setDisplayValue(1);
         } else if (displayValue === 1) {
             console.log("de");
             setDisplayValue(2);
         }
     }
 
-    function Reverse() {
-        // console.log(displayValue);
+    // function Reverse() {
+    //     // console.log(displayValue);
 
-        // if (displayValue === 2) {
-        //     HandleStateChange(2, 1);
-        //     setDisplayValue(1);
-        // } else if (displayValue === 1) {
-        //     state0.forEach(function (element) {
-        //         element.classList.add("target");
-        //     });
-        //     state0.forEach(function (element) {
-        //         element.classList.add("w-[100%]");
-        //     });
-        //     state0.forEach(function (element) {
-        //         element.classList.remove("hidden");
-        //     });
-        //     setDisplayValue(0);
-        // } else if (displayValue === 0) {
-        //     setDisplayValue(0);
-        // }
+    //     // if (displayValue === 2) {
+    //     //     HandleStateChange(2, 1);
+    //     //     setDisplayValue(1);
+    //     // } else if (displayValue === 1) {
+    //     //     state0.forEach(function (element) {
+    //     //         element.classList.add("target");
+    //     //     });
+    //     //     state0.forEach(function (element) {
+    //     //         element.classList.add("w-[100%]");
+    //     //     });
+    //     //     state0.forEach(function (element) {
+    //     //         element.classList.remove("hidden");
+    //     //     });
+    //     //     setDisplayValue(0);
+    //     // } else if (displayValue === 0) {
+    //     //     setDisplayValue(0);
+    //     // }
 
-        console.log(displayValue);
-    }
+    //     console.log(displayValue);
+    // }
 
     return (
         <div
             className={`bg-slate-500 mx-auto text-center flex justify-center font-bold mb-[0.0625rem] p-3 border-black border-2 border-b-0 mt-8 text-xl md:text-2xl separator`}
         >
-            {screenWidth < 700 ? <button onClick={Reverse}>{"<"}</button> : ""}
+            {/* {screenWidth < 700 ? <button onClick={Reverse}>{"<"}</button> : ""} */}
             {title}
             {screenWidth < 700 ? <button onClick={Forward}>{">"}</button> : ""}
         </div>

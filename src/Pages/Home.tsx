@@ -139,7 +139,11 @@ function Home() {
                             header="Biology Resources"
                             // content="Textbook, Workbook and Answers"
                             tags={[
-                                ["Online Textbook And Workbook"],
+                                [
+                                    <a href="https://www.cambridge.org/go/resources">
+                                        Online Textbook And Workbook
+                                    </a>,
+                                ],
                                 ["Textbook Answers"],
                                 ["Workbook Answers"],
                             ]}
@@ -214,6 +218,7 @@ function Home() {
                     </div>
                 </div>
             </article>
+            
         </main>
     );
 }
