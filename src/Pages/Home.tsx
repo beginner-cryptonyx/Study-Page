@@ -54,17 +54,15 @@ function Home() {
                             redirect={[true, "/formulae/physics"]}
                         />
                         <Card
-                            header="Physics Formulae"
+                            header="Biology Formulae"
                             // content="All Physics Formulae"
                             tags={[
-                                ["Laws", ""],
-                                ["General Physics"],
-                                ["Energetics"],
-                                ["Thermal Physics"],
-                                ["Light and Waves"],
-                                ["Electricity"],
-                                ["Magnetism"],
-                                ["Nuclear Physics"],
+                                [
+                                    "Online Textbook & Workbook",
+                                    "https://www.cambridge.org/go/resources",
+                                    "redirect",
+                                ],
+                                ["Concept Map"]
                             ]}
                             redirect={[true, "/formulae/physics"]}
                         />
@@ -103,43 +101,139 @@ function Home() {
                                 [
                                     "Textbook",
                                     "Extras/Math Textbook.pdf",
-                                    "true",
+                                    "download",
                                 ],
                                 [
                                     "Answers",
                                     "Extras/Math Textbook Answers.pdf",
-                                    "true",
+                                    "download",
                                 ],
-                                ["Contents", "Extras/Contents.pdf", "true"],
+                                ["Contents", "Extras/Contents.pdf", "download"],
                                 [
                                     "Practice Questions",
                                     "Extras/Examination Formatted Questions.pdf",
-                                    "true",
+                                    "download",
                                 ],
-                                ["Chapter 1", "Extras/Chapter 1.pdf", "true"],
-                                ["Chapter 2", "Extras/Chapter 2.pdf", "true"],
-                                ["Chapter 3", "Extras/Chapter 3.pdf", "true"],
-                                ["Chapter 4", "Extras/Chapter 4.pdf", "true"],
-                                ["Chapter 5", "Extras/Chapter 5.pdf", "true"],
-                                ["Chapter 6", "Extras/Chapter 6.pdf", "true"],
-                                ["Chapter 7", "Extras/Chapter 7.pdf", "true"],
-                                ["Chapter 8", "Extras/Chapter 8.pdf", "true"],
-                                ["Chapter 9", "Extras/Chapter 9.pdf", "true"],
-                                ["Chapter 10", "Extras/Chapter 10.pdf", "true"],
-                                ["Chapter 11", "Extras/Chapter 11.pdf", "true"],
-                                ["Chapter 12", "Extras/Chapter 12.pdf", "true"],
-                                ["Chapter 13", "Extras/Chapter 13.pdf", "true"],
-                                ["Chapter 14", "Extras/Chapter 14.pdf", "true"],
-                                ["Chapter 15", "Extras/Chapter 15.pdf", "true"],
-                                ["Chapter 16", "Extras/Chapter 16.pdf", "true"],
-                                ["Chapter 17", "Extras/Chapter 17.pdf", "true"],
-                                ["Chapter 18", "Extras/Chapter 18.pdf", "true"],
-                                ["Chapter 19", "Extras/Chapter 19.pdf", "true"],
-                                ["Chapter 20", "Extras/Chapter 20.pdf", "true"],
-                                ["Chapter 21", "Extras/Chapter 21.pdf", "true"],
-                                ["Chapter 22", "Extras/Chapter 22.pdf", "true"],
-                                ["Chapter 23", "Extras/Chapter 23.pdf", "true"],
-                                ["Chapter 24", "Extras/Chapter 24.pdf", "true"],
+                                [
+                                    "Chapter 1",
+                                    "Extras/Chapter 1.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 2",
+                                    "Extras/Chapter 2.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 3",
+                                    "Extras/Chapter 3.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 4",
+                                    "Extras/Chapter 4.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 5",
+                                    "Extras/Chapter 5.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 6",
+                                    "Extras/Chapter 6.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 7",
+                                    "Extras/Chapter 7.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 8",
+                                    "Extras/Chapter 8.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 9",
+                                    "Extras/Chapter 9.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 10",
+                                    "Extras/Chapter 10.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 11",
+                                    "Extras/Chapter 11.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 12",
+                                    "Extras/Chapter 12.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 13",
+                                    "Extras/Chapter 13.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 14",
+                                    "Extras/Chapter 14.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 15",
+                                    "Extras/Chapter 15.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 16",
+                                    "Extras/Chapter 16.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 17",
+                                    "Extras/Chapter 17.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 18",
+                                    "Extras/Chapter 18.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 19",
+                                    "Extras/Chapter 19.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 20",
+                                    "Extras/Chapter 20.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 21",
+                                    "Extras/Chapter 21.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 22",
+                                    "Extras/Chapter 22.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 23",
+                                    "Extras/Chapter 23.pdf",
+                                    "download",
+                                ],
+                                [
+                                    "Chapter 24",
+                                    "Extras/Chapter 24.pdf",
+                                    "download",
+                                ],
                             ]}
                         />
 
@@ -152,19 +246,7 @@ function Home() {
                                     ["Source Files"],
                                 ]}
                             />
-                            <Card
-                                header="Biology Resources"
-                                // content="Textbook, Workbook and Answers"
-                                tags={[
-                                    [
-                                        <a href="https://www.cambridge.org/go/resources">
-                                            Online Textbook And Workbook
-                                        </a>,
-                                    ],
-                                    ["Textbook Answers"],
-                                    ["Workbook Answers"],
-                                ]}
-                            />
+
                             <Card
                                 header="EVM resources"
                                 // content="Textbook, Workbook and answers"
@@ -172,27 +254,27 @@ function Home() {
                                     [
                                         "Textbook",
                                         "/Extras/EVM Textbook.pdf",
-                                        "true",
+                                        "download",
                                     ],
                                     [
                                         "Workbook",
                                         "/Extras/EVM Workbook.pdf",
-                                        "true",
+                                        "download",
                                     ],
                                     [
                                         "Textbook Answers",
                                         "/Extras/environmental management glossary.pdf",
-                                        "true",
+                                        "download",
                                     ],
                                     [
                                         "Workbook Answers",
                                         "/Extras/EVM Workbook Answers.pdf",
-                                        "true",
+                                        "download",
                                     ],
                                     [
                                         "Glossary",
                                         "/Extras/environmental management glossary.pdf",
-                                        "true",
+                                        "download",
                                     ],
                                 ]}
                             />
