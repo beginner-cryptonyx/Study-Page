@@ -2,11 +2,11 @@ import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
-import FormulaeMath from "./Pages/FormulaeDisplayerMath";
-import FormulaeChemistry from "./Pages/FormulaeDisplayerChemistry";
+import FormulaeMath from "./Pages/Math";
+import FormulaeChemistry from "./Pages/Chemistry";
 import Home from "./Pages/Home";
 import Formulae from "./Pages/Displayer";
-import FormulaePhysics from "./Pages/FormulaeDispayerPhysics";
+import FormulaePhysics from "./Pages/Physics";
 
 function App() {
     return (
