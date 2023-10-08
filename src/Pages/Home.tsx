@@ -64,7 +64,7 @@ function Home() {
                                 ],
                                 ["Concept Map"]
                             ]}
-                            redirect={[true, "/formulae/physics"]}
+                            redirect={[true, "/formulae/biology"]}
                         />
                         <Card
                             header="Math Formulae"
