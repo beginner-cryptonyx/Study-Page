@@ -13,6 +13,7 @@ const {
     voltmeter,
     ammeter,
     variable_resistor,
+    motor,
 } = require("../images/index");
 
 const Laws: Array<Array<any>> = [
@@ -562,119 +563,110 @@ const ElectricityMagnetism: Array<Array<any>> = [
         "3rd content",
     ],
 
-    ["separator", "Symbols"],
+    ["separator", "Components, Their functions and symbols"],
     [
-        <Point
-            points={[
-                "Bulb",
-                "",
-                'Has a filament with very high resistance inside a glass "bulb" filled with nobel gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`',
-            ]}
-        ></Point>,
-        <img src={bulb} height={"100%"} alt="" />,
+        <Point points={["Bulb", ""]}></Point>,
+        <img src={bulb} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        `Has a filament with very high resistance inside a glass "bulb" filled with nobel gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`,
     ],
     [
-        `Cell: Has a potential difference`,
+        `Cell`,
         <img src={cell} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Has a potential difference",
     ],
     [
-        <Point
-            points={[
-                `Voltmeter`,
-                "",
-                " measures potential difference to component connected parallel to it",
-            ]}
-        ></Point>,
+        <Point points={[`Voltmeter`]}></Point>,
         <img src={voltmeter} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        " measures potential difference to component connected parallel to it",
     ],
     [
-        <Point
-            points={["ammeter:", "measures current to any component in series"]}
-        ></Point>,
+        <Point points={["ammeter"]}></Point>,
         <img src={ammeter} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Measures current to any component in series",
     ],
     [
-        <Point
-            points={["resistor", "does what it says, creates resistance"]}
-        ></Point>,
+        <Point points={["resistor"]}></Point>,
         <img src={resistor} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "does what it says, creates resistance",
     ],
     [
-        <Point
-            points={[
-                "Variable Resistor / Rheostat",
-                "Has a method to increase length of wire in contact with circuit via conductive contacts, works as length of wore is directly proportional to resistance",
-            ]}
-        ></Point>,
+        <Point points={["Variable Resistor / Rheostat"]}></Point>,
         <img src={variable_resistor} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Has a method to increase length of wire in contact with circuit via conductive contacts, works as length of wore is directly proportional to resistance",
     ],
     [
-        <Point
-            points={[
-                "fuze",
-                "",
-                "Has a wire inside a glass casing, if voltage is too high the resistance increases along with the heat, due to this heat the fuze wire melts and opens the circut",
-            ]}
-        ></Point>,
+        <Point points={["fuze"]}></Point>,
         <img src={fuse} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Has a wire inside a glass casing, if voltage is too high the resistance increases along with the heat, due to this heat the fuze wire melts and opens the circuit",
     ],
     [
-        <Point
-            points={[
-                "LDR : Light Dependant Resistor",
-                "",
-                "Resistance is directly proportional to Light exposure and Light intensity",
-            ]}
-        ></Point>,
+        <Point points={["LDR : Light Dependant Resistor"]}></Point>,
         <img src={LDR} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Resistance is directly proportional to Light exposure and Light intensity",
     ],
     [
-        <Point points={["Battery", "", "Group of cells"]}></Point>,
+        <Point points={["Battery"]}></Point>,
         <img src={cell_group} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "A group of cells",
     ],
     [
         <Point points={["Thermistor"]}></Point>,
         <img src={thermistor} width={"100%"} alt="" />,
         "normal",
-        1,
+        3,
         "",
-        "3rd content",
+        "Changes resistance when temperature changes",
+    ],
+    [
+        <Point points={["Motor"]}></Point>,
+        <img src={motor} width={"100%"} alt="" />,
+        "normal",
+        3,
+        "",
+        <Point
+            points={[
+                "Motor",
+                "",
+                "Has Coil made up of copper, it is free to rotate between the poles of a magnet",
+                "A commutator (split ring) is fixed to the coil and rotates with it",
+                "",
+                "There are 2 carbon brushes/contacts which rub against the commutator and ensures it is connected to the battery",
+                "",
+                <a
+                    className="p-2 bg-black bg-opacity-30 text-purple-800 rounded-md"
+                    href="https://www.youtube.com/watch?v=CWulQ1ZSE3c"
+                >
+                    Video Explaining motors
+                </a>,
+            ]}
+        ></Point>,
     ],
 ];
 
