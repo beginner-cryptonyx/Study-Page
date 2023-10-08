@@ -62,7 +62,7 @@ function Home() {
                                     "https://www.cambridge.org/go/resources",
                                     "redirect",
                                 ],
-                                ["Concept Map"]
+                                ["Concept Map"],
                             ]}
                             redirect={[true, "/formulae/biology"]}
                         />
