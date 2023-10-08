@@ -36,49 +36,66 @@ function Home() {
             </div>
 
             <article className="backdrop-blur-lg backdrop-saturate-[0.6]">
-                <div className="grid grid-cols-1 md:grid-cols-3 mx-auto w-[90vw] ">
-                    <Card
-                        header="Physics Formulae"
-                        // content="All Physics Formulae"
-                        tags={[
-                            ["Laws", ""],
-                            ["General Physics"],
-                            ["Energetics"],
-                            ["Thermal Physics"],
-                            ["Light and Waves"],
-                            ["Electricity"],
-                            ["Magnetism"],
-                            ["Nuclear Physics"],
-                        ]}
-                        redirect={[true, "/formulae/physics"]}
-                    />
-                    <Card
-                        header="Math Formulae"
-                        // content="All Math Formulae"
-                        redirect={[true, "/formulae/math"]}
-                        tags={[
-                            ["Algebra", ""],
-                            ["Geometry"],
-                            ["Polynomials"],
-                            ["Statistics"],
-                            ["Graphs"],
-                            ["Probability"],
-                        ]}
-                    />
-                    <Card
-                        header="Chemistry Formulae"
-                        // content="All Chemistry Formulae"
-                        redirect={[true, "/formulae/chemistry"]}
-                        tags={[
-                            ["Reactivity Series"],
-                            ["General Formulae"],
-                            ["Solubility"],
-                            ["Acids and Basses"],
-                            ["Ion testing"],
-                            ["Equilibrium and Rate of Reaction"],
-                        ]}
-                    />
-                    <div className="mt-14">
+                <div className="grid mx-auto w-[90vw] ">
+                    <div className="grid grid-cols-1 md:grid-cols-4 mx-auto w-[90vw]">
+                        <Card
+                            header="Physics Formulae"
+                            // content="All Physics Formulae"
+                            tags={[
+                                ["Laws", ""],
+                                ["General Physics"],
+                                ["Energetics"],
+                                ["Thermal Physics"],
+                                ["Light and Waves"],
+                                ["Electricity"],
+                                ["Magnetism"],
+                                ["Nuclear Physics"],
+                            ]}
+                            redirect={[true, "/formulae/physics"]}
+                        />
+                        <Card
+                            header="Physics Formulae"
+                            // content="All Physics Formulae"
+                            tags={[
+                                ["Laws", ""],
+                                ["General Physics"],
+                                ["Energetics"],
+                                ["Thermal Physics"],
+                                ["Light and Waves"],
+                                ["Electricity"],
+                                ["Magnetism"],
+                                ["Nuclear Physics"],
+                            ]}
+                            redirect={[true, "/formulae/physics"]}
+                        />
+                        <Card
+                            header="Math Formulae"
+                            // content="All Math Formulae"
+                            redirect={[true, "/formulae/math"]}
+                            tags={[
+                                ["Algebra", ""],
+                                ["Geometry"],
+                                ["Polynomials"],
+                                ["Statistics"],
+                                ["Graphs"],
+                                ["Probability"],
+                            ]}
+                        />
+                        <Card
+                            header="Chemistry Formulae"
+                            // content="All Chemistry Formulae"
+                            redirect={[true, "/formulae/chemistry"]}
+                            tags={[
+                                ["Reactivity Series"],
+                                ["General Formulae"],
+                                ["Solubility"],
+                                ["Acids and Basses"],
+                                ["Ion testing"],
+                                ["Equilibrium and Rate of Reaction"],
+                            ]}
+                        />
+                    </div>
+                    <div className="mt-14 grid grid-cols-1 md:grid-cols-3">
                         <Card
                             header="Math Textbook"
                             // content="Find all Math Chapters Here"
@@ -125,100 +142,100 @@ function Home() {
                                 ["Chapter 24", "Extras/Chapter 24.pdf", "true"],
                             ]}
                         />
-                    </div>
-                    <div className="grid grid-rows-3 mt-14">
-                        <Card
-                            header="ICT Resources"
-                            // content="ICT Resources Here"
-                            tags={[
-                                ["ICT Textbook", "/formulae"],
-                                ["Source Files"],
-                            ]}
-                        />
-                        <Card
-                            header="Biology Resources"
-                            // content="Textbook, Workbook and Answers"
-                            tags={[
-                                [
-                                    <a href="https://www.cambridge.org/go/resources">
-                                        Online Textbook And Workbook
-                                    </a>,
-                                ],
-                                ["Textbook Answers"],
-                                ["Workbook Answers"],
-                            ]}
-                        />
-                        <Card
-                            header="EVM resources"
-                            // content="Textbook, Workbook and answers"
-                            tags={[
-                                [
-                                    "Textbook",
-                                    "/Extras/EVM Textbook.pdf",
-                                    "true",
-                                ],
-                                [
-                                    "Workbook",
-                                    "/Extras/EVM Workbook.pdf",
-                                    "true",
-                                ],
-                                [
-                                    "Textbook Answers",
-                                    "/Extras/environmental management glossary.pdf",
-                                    "true",
-                                ],
-                                [
-                                    "Workbook Answers",
-                                    "/Extras/EVM Workbook Answers.pdf",
-                                    "true",
-                                ],
-                                [
-                                    "Glossary",
-                                    "/Extras/environmental management glossary.pdf",
-                                    "true",
-                                ],
-                            ]}
-                        />
-                    </div>
-                    <div className="grid grid-rows-2 mt-14">
-                        <Card
-                            header="Useful Resources"
-                            // content="Find multiple useful stuff here"
-                            tags={[
-                                ["Class Timetable"],
-                                ["Grade 10 Exam Portion"],
-                                ["Grade 10 Exam Timetable"],
-                                [
-                                    <a href="https://papers.gceguide.com/Cambridge%20IGCSE/">
-                                        GCE Guide
-                                    </a>,
-                                ],
-                                [
-                                    <a href="https://www.savemyexams.com/igcse/#cie">
-                                        Save My Exams
-                                    </a>,
-                                ],
-                                [
-                                    <a href="https://xtremepape.rs/threads/save-my-exams-notes-markschemes-free.108774/">
-                                        SaveMyExams Cracked
-                                    </a>,
-                                ],
-                                [
-                                    <a href="https://znotes.org/caie/igcse/">
-                                        ZNotes
-                                    </a>,
-                                ],
-                                [
-                                    <a href="https://papacambridge.com/caie">
-                                        Papa Cambridge
-                                    </a>,
-                                ],
-                            ]}
-                        />
+
+                        <div className="grid grid-rows-3">
+                            <Card
+                                header="ICT Resources"
+                                // content="ICT Resources Here"
+                                tags={[
+                                    ["ICT Textbook", "/formulae"],
+                                    ["Source Files"],
+                                ]}
+                            />
+                            <Card
+                                header="Biology Resources"
+                                // content="Textbook, Workbook and Answers"
+                                tags={[
+                                    [
+                                        <a href="https://www.cambridge.org/go/resources">
+                                            Online Textbook And Workbook
+                                        </a>,
+                                    ],
+                                    ["Textbook Answers"],
+                                    ["Workbook Answers"],
+                                ]}
+                            />
+                            <Card
+                                header="EVM resources"
+                                // content="Textbook, Workbook and answers"
+                                tags={[
+                                    [
+                                        "Textbook",
+                                        "/Extras/EVM Textbook.pdf",
+                                        "true",
+                                    ],
+                                    [
+                                        "Workbook",
+                                        "/Extras/EVM Workbook.pdf",
+                                        "true",
+                                    ],
+                                    [
+                                        "Textbook Answers",
+                                        "/Extras/environmental management glossary.pdf",
+                                        "true",
+                                    ],
+                                    [
+                                        "Workbook Answers",
+                                        "/Extras/EVM Workbook Answers.pdf",
+                                        "true",
+                                    ],
+                                    [
+                                        "Glossary",
+                                        "/Extras/environmental management glossary.pdf",
+                                        "true",
+                                    ],
+                                ]}
+                            />
+                        </div>
+                        <div className="grid grid-rows-2">
+                            <Card
+                                header="Useful Resources"
+                                // content="Find multiple useful stuff here"
+                                tags={[
+                                    ["Class Timetable"],
+                                    ["Grade 10 Exam Portion"],
+                                    ["Grade 10 Exam Timetable"],
+                                    [
+                                        <a href="https://papers.gceguide.com/Cambridge%20IGCSE/">
+                                            GCE Guide
+                                        </a>,
+                                    ],
+                                    [
+                                        <a href="https://www.savemyexams.com/igcse/#cie">
+                                            Save My Exams
+                                        </a>,
+                                    ],
+                                    [
+                                        <a href="https://xtremepape.rs/threads/save-my-exams-notes-markschemes-free.108774/">
+                                            SaveMyExams Cracked
+                                        </a>,
+                                    ],
+                                    [
+                                        <a href="https://znotes.org/caie/igcse/">
+                                            ZNotes
+                                        </a>,
+                                    ],
+                                    [
+                                        <a href="https://papacambridge.com/caie">
+                                            Papa Cambridge
+                                        </a>,
+                                    ],
+                                ]}
+                            />
+                        </div>
                     </div>
                 </div>
             </article>
-            
         </main>
     );
 }
