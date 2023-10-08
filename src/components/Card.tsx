@@ -12,9 +12,6 @@ interface Props {
 function Card({ header, content, tags, redirect }: Props) {
     const navigate = useNavigate();
 
-
-
-
     const handleClickCard = () => {
         if (typeof redirect != "undefined") {
             redirect[0] ? navigate(redirect[1]) : console.log("tried");
@@ -24,11 +21,7 @@ function Card({ header, content, tags, redirect }: Props) {
     const handleClickTag = (index: number) => {
         if (typeof tags[index][1] != "undefined") {
             switch (tags[index][2]) {
-                case "true":
-                    // const link = document.createElement("a");
-                    // link.href = tags[index][1];
-                    // link.setAttribute("download", tags[index][1]);
-                    // link.click();
+                case "download":
                     saveAs(
                         tags[index][1],
                         tags[index][1].substring(
@@ -38,8 +31,13 @@ function Card({ header, content, tags, redirect }: Props) {
                     );
                     break;
 
+                case "redirect":
+                    window.location.href = tags[index][1]
+                    break;
+
                 case "false":
                     navigate(tags[index][1]);
+                    break;
             }
         }
     };
