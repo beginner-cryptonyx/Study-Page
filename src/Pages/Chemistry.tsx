@@ -203,7 +203,14 @@ const OrganicChemistry: Array<Array<any>> = [
     [`C_nH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
 
     [`separator`, "Hydrocarbon Fractions and their Properties", "normal"],
-    [`Refinery Gas`, <MathJax>{'C_1 \\text{to} C_4'}</MathJax>, "normal", 3, "", ""],
+    [
+        `Refinery Gas`,
+        <MathJax>{"C_1 \\text{to} C_4"}</MathJax>,
+        "normal",
+        3,
+        "",
+        "",
+    ],
     [`Gasoline (petrol)`, "", "normal", 3, "", ""],
     [`Naphtha`, "", "normal", 3, "", ""],
     [`Kerosene`, "", "normal", 3, "", ""],
@@ -684,7 +691,7 @@ function FormulaeChemistry() {
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
-                        "Organic Chemistry",
+                        "Organic Chemistry {work in progress}",
                         OrganicChemistry.map((element_data, index) => (
                             <MultiCell
                                 formula={element_data[0]}

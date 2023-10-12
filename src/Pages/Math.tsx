@@ -2,7 +2,6 @@ import { MathCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJaxContext } from "better-react-mathjax";
 
-
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },
     tex: {
@@ -57,9 +56,6 @@ const AlgebraicMathFormulae: Array<Array<any>> = [
         "formula for finding nth term of an geometric progression (eg: 1,3,9,27)",
         "external",
     ],
-    [``, "", "normal"],
-    [``, "", "normal"],
-    [``, "", "normal"],
 ];
 
 const GeometricalMathFormulae: Array<Array<any>> = [
@@ -353,7 +349,6 @@ const StatisticalMathFormulae: Array<Array<any>> = [
         "Probability of A or B Occurring",
         "normal",
     ],
-    [``, "", "normal"],
 ];
 
 function FormulaeMath() {
