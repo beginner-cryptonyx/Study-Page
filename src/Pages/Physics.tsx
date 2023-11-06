@@ -32,7 +32,7 @@ const Laws: Array<Array<any>> = [
     ],
     [
         `Newton's third law of motion`,
-        "every reaction has an equally likely opposite reaction",
+        "To every action there is an equal but opposite reaction",
         "normal",
     ],
     [
@@ -42,7 +42,7 @@ const Laws: Array<Array<any>> = [
     ],
     [
         `Principle of moments`,
-        "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that points",
+        "If an object is in equilibrium: the sum of the clockwise moments about any point is equal to the sum of the anticlockwise moments about that point",
         "normal",
     ],
     [
@@ -65,7 +65,7 @@ const Laws: Array<Array<any>> = [
         <Point
             points={[
                 "1) The angle of incidence is equal to the angle of reflection",
-                "2) the incident ray, the reflected raw, and the normal all lie in the same place",
+                "2) The incident ray, the reflected ray and the normal all lie in the same plane",
             ]}
         ></Point>,
         "normal",
@@ -74,7 +74,7 @@ const Laws: Array<Array<any>> = [
         `Snell's law`,
         <Point
             points={[
-                "the sines of the two angles are always in proportion",
+                "The sines of the incident angle and the refracted angle are always in proportion",
                 "sin(i)/sin(r)",
             ]}
         ></Point>,
@@ -92,7 +92,12 @@ const Laws: Array<Array<any>> = [
     ],
     [
         `Fleming's left hand rule`,
-        "A rule used to find the direction of force",
+        "A rule used to find the direction of force (Used for motor)",
+        "normal",
+    ],
+    [
+        `Fleming's right hand rule`,
+        "A rule used to find the direction of induced current (Used for generator)",
         "normal",
     ],
     [
@@ -103,11 +108,6 @@ const Laws: Array<Array<any>> = [
     [
         `Lenz's law`,
         "An induced current always flows in a direction such that it opposes the charge which produced it",
-        "normal",
-    ],
-    [
-        `Fleming's right hand rule`,
-        "A rule used to find the direction of induced current",
         "normal",
     ],
 ];
@@ -670,7 +670,9 @@ const ElectricityMagnetism: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        <Point points={["Thermistor: changes resistance when temperature changes"]}></Point>,
+        <Point
+            points={["Thermistor: changes resistance when temperature changes"]}
+        ></Point>,
         <img src={thermistor} width={"100%"} alt="" />,
         "normal",
         1,
@@ -687,7 +689,10 @@ const ElectricityMagnetism: Array<Array<any>> = [
                 "",
                 "There are 2 carbon brushes/contacts which rub against the commutator and ensures it is connected to the battery",
                 "",
-                <a className="p-2 bg-black bg-opacity-30 text-purple-800 rounded-md" href="https://www.youtube.com/watch?v=CWulQ1ZSE3c">
+                <a
+                    className="p-2 bg-black bg-opacity-30 text-purple-800 rounded-md"
+                    href="https://www.youtube.com/watch?v=CWulQ1ZSE3c"
+                >
                     Video Explaining motors
                 </a>,
             ]}
