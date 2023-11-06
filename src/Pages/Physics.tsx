@@ -569,7 +569,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
             points={[
                 "Bulb",
                 "",
-                'Has a filament with very high resistance inside a glass "bulb" filled with nobel gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`',
+                'Has a filament with very high resistance inside a glass "bulb" filled with noble gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`',
             ]}
         ></Point>,
         <img src={bulb} width={"100%"} alt="" />,
@@ -624,7 +624,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
         <Point
             points={[
                 "Variable Resistor / Rheostat",
-                "Has a method to increase length of wire in contact with circuit via conductive contacts, works as length of wore is directly proportional to resistance",
+                "Has a method to increase length of wire in contact with circuit via conductive contacts, works as length of wire is directly proportional to resistance",
             ]}
         ></Point>,
         <img src={variable_resistor} width={"100%"} alt="" />,
@@ -636,9 +636,9 @@ const ElectricityMagnetism: Array<Array<any>> = [
     [
         <Point
             points={[
-                "fuze",
+                "Fuse",
                 "",
-                "Has a wire inside a glass casing, if voltage is too high the resistance increases along with the heat, due to this heat the fuze wire melts and opens the circuit",
+                "Has a wire inside a glass casing, if voltage is too high the resistance increases along with the heat, due to this heat the fuse wire melts and opens the circuit",
             ]}
         ></Point>,
         <img src={fuse} width={"100%"} alt="" />,
