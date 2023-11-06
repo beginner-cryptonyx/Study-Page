@@ -10,6 +10,8 @@ const variable_resistor = require("../images/Electrical Symbols/variable resisto
 const fuse = require("../images/Electrical Symbols/fuse.png");
 const LED = require("../images/Electrical Symbols/LED.png");
 const motor = require("../images/Electrical Symbols/motor.png");
+const heater = require("../images/Electrical Symbols/motor.png");
+const transformer = require("../images/Electrical Symbols/transformer.png");
 
 module.exports = {
     bulb: bulb,
@@ -24,4 +26,5 @@ module.exports = {
     fuse: fuse,
     LED: LED,
     motor: motor,
+    transformer: transformer,
 };

@@ -44,7 +44,7 @@ function Card({ header, content, tags, redirect }: Props) {
 
     return (
         <section
-            className="rounded-3xl bg-black w-[90vw] md:w-[93.5%] mx-2 my-1 duration-[300ms] mb-7 hover:scale-110 shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] flex flex-col"
+            className="rounded-3xl bg-black w-[90vw] md:w-[93.5%] mx-2 my-1 duration-[300ms] mb-7 hover:scale-110 shadow-[0_35px_60px_-15px_rgba(0,0,0,1)] flex flex-col h-[90%]"
             onClick={handleClickCard}
         >
             <div className="bg-[#222222] py-1 text-[25pt] text-center rounded-t-md h-[7.5vh] flex items-center justify-center">

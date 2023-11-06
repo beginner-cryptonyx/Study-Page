@@ -2,6 +2,7 @@ import { MultiCell } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import Point from "../components/Point";
+import { LED } from "../images";
 const {
     bulb,
     cell,
@@ -14,6 +15,7 @@ const {
     ammeter,
     variable_resistor,
     motor,
+    transformer
 } = require("../images/index");
 
 const Laws: Array<Array<any>> = [
@@ -572,7 +574,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
                 'Has a filament with very high resistance inside a glass "bulb" filled with noble gasses, it lights up as resistance generates heat and the thermal energy is converted to light energy`',
             ]}
         ></Point>,
-        <img src={bulb} width={"100%"} alt="" />,
+        <img src={bulb} width={"100rem"} alt="" />,
         "normal",
         1,
         "",
@@ -655,7 +657,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
                 "Resistance is directly proportional to Light exposure and Light intensity",
             ]}
         ></Point>,
-        <img src={LDR} width={"100%"} alt="" />,
+        <img src={LDR} width={"110rem"} alt="" />,
         "normal",
         1,
         "",
@@ -698,6 +700,34 @@ const ElectricityMagnetism: Array<Array<any>> = [
             ]}
         ></Point>,
         <img src={motor} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                `LED`,
+                "",
+                "Produces Light",
+            ]}
+        ></Point>,
+        <img src={LED} width={"100%"} alt="" />,
+        "normal",
+        1,
+        "",
+        "3rd content",
+    ],
+    [
+        <Point
+            points={[
+                `Transformer`,
+                "",
+                "Work in progress",
+            ]}
+        ></Point>,
+        <img src={transformer} width={"100%"} alt="" />,
         "normal",
         1,
         "",
