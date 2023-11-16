@@ -284,7 +284,12 @@ const Heat: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        "Thermal capacity = mass of body ⋅ specific heat",
+        "Thermal capacity (Q) = mass of body ⋅ specific heat",
+        "Formula for thermal capacity",
+        "external",
+    ],
+    [
+        "Thermal capacity = Energy Absorbed ⋅ Temperature Change",
         "Formula for thermal capacity",
         "external",
     ],
