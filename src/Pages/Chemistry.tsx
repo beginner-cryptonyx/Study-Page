@@ -141,10 +141,7 @@ const Acids: Array<Array<any>> = [
     [`Non Metal Oxide`, "Acid", "normal", ""],
     [`Hydroxide`, "Base", "normal", ""],
     [`Carbonate`, "Base", "normal", ""],
-    [`Metal Oxide`, "Insoluble", "normal", ""],
-    [`Metal Oxide`, "Insoluble", "normal", ""],
-    [`Metal Oxide`, "Insoluble", "normal", ""],
-    [`Metal Oxide`, "Insoluble", "normal", ""],
+
 
     ["separator", "Acid Reactions"],
     [`Acid + Metal → Salt + Hydrogen`, "", "normal", ""],
