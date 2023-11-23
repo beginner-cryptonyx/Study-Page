@@ -150,6 +150,7 @@ const GeometricalMathFormulae: Array<Array<any>> = [
         "normal",
     ],
     [`\\sin{θ} = \\sin{180 - θ}`, "Alternative sine formula", "normal"],
+    [`\\sin{θ} = \\sin{360 + θ}`, "Alternative sine formula", "normal"],
     [`cos(θ) = -cos(180 - θ)`, "Alternative cosine formula", "normal"],
     [
         `cos(θ) = cos(360-θ)`,
