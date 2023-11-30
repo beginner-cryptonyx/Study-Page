@@ -15,7 +15,7 @@ const {
     ammeter,
     variable_resistor,
     motor,
-    transformer
+    transformer,
 } = require("../images/index");
 
 const Laws: Array<Array<any>> = [
@@ -711,13 +711,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        <Point
-            points={[
-                `LED`,
-                "",
-                "Produces Light",
-            ]}
-        ></Point>,
+        <Point points={[`LED`, "", "Produces Light"]}></Point>,
         <img src={LED} width={"100%"} alt="" />,
         "normal",
         1,
@@ -725,13 +719,7 @@ const ElectricityMagnetism: Array<Array<any>> = [
         "3rd content",
     ],
     [
-        <Point
-            points={[
-                `Transformer`,
-                "",
-                "Work in progress",
-            ]}
-        ></Point>,
+        <Point points={[`Transformer`, "", "Work in progress"]}></Point>,
         <img src={transformer} width={"100%"} alt="" />,
         "normal",
         1,
@@ -741,8 +729,49 @@ const ElectricityMagnetism: Array<Array<any>> = [
 ];
 
 const NuclearPhyscis: Array<Array<any>> = [
-    ["separator", "Formulae"],
-    [`Formula`, "Description", "external"],
+    ["separator", "Radiation - Types and Properties"],
+    [
+        `Alpha Particles (α)`,
+        <Point
+            points={[
+                "Charge: +2",
+                "Mass: high (4 Amu)",
+                "Speed: 0.1*C",
+                "Ionizing effect: strong",
+                "Penetration Power: very little; can be stopped by paper",
+                "Effects of fields: Deflected by magnetic and electric felids",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Beta Particles (β)`,
+        <Point
+            points={[
+                "Charge: -1",
+                "Mass: very low",
+                "Speed: 0.9*C",
+                "Ionizing effect: weak",
+                "Penetration Power: Penetrative; Blocked by metals like aluminum",
+                "Effects of fields: Deflected by magnetic and electric felids",
+            ]}
+        ></Point>,
+        "normal",
+    ],
+    [
+        `Gamma Rays (γ)`,
+        <Point
+            points={[
+                "Charge: 0",
+                "Mass: -",
+                "Speed: C",
+                "Ionizing effect: very weak",
+                "Penetration Power: Very penetrative; Blocked by dense metals like lead",
+                "Effects of fields: no deflection",
+            ]}
+        ></Point>,
+        "normal",
+    ],
     ["formulae", "description", "difficulty"],
 ];
 
