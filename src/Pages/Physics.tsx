@@ -380,6 +380,14 @@ const Energetics: Array<Array<any>> = [
         "3rd content",
     ],
     [
+        `P = I^2R`,
+        "formula used to calculate the electrical power of a circuit",
+        "normal",
+        1,
+        "jax",
+        "3rd content",
+    ],
+    [
         `E = VIT`,
         "formula used to calculate the energy transferred in a circuit, E is the energy transferred, I is the current and t is the time taken.",
         "normal",
@@ -772,7 +780,14 @@ const NuclearPhyscis: Array<Array<any>> = [
         ></Point>,
         "normal",
     ],
-    ["formulae", "description", "difficulty"],
+    ["separator", "Beta Decay", ""],
+    [
+        "{}^{\\text{mass number}\\!}_{\\text{proton number}\\!} \\text{element} \\rightarrow {}^{\\text{same mass number}\\!}_{\\text{proton number} + 1\\!} \\text{1 element b4 initial element} + {}^{0}\\!_{-1}\\beta + ",
+        "",
+        "normal",
+        "2",
+        "true",
+    ],
 ];
 
 const mathJaxConfig = {
