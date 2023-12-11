@@ -289,7 +289,7 @@ const Heat: Array<Array<any>> = [
         "external",
     ],
     [
-        "Thermal capacity = Energy Absorbed ⋅ Temperature Change",
+        "Thermal capacity = Energy Absorbed ÷ Temperature Change",
         "Formula for thermal capacity",
         "external",
     ],

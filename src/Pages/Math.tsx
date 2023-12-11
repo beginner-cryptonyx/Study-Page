@@ -1,6 +1,8 @@
 import { MathCell, CellSeparator } from "../components/FormulaCell";
 import MUIaccordion from "../components/MuiAccordion";
 import { MathJaxContext } from "better-react-mathjax";
+import Point from "../components/Point";
+
 
 const mathJaxConfig = {
     loader: { load: ["[tex]/html"] },
@@ -54,7 +56,13 @@ const AlgebraicMathFormulae: Array<Array<any>> = [
     [
         `a_n = ar^{n-1}`,
         "formula for finding nth term of an geometric progression (eg: 1,3,9,27)",
-        "external",
+        "normal",
+    ],
+
+    [
+        ``,
+        "formula for finding nth term of an quadratic progression (eg: 1,3,9,27)",
+        "normal",
     ],
 ];
 
