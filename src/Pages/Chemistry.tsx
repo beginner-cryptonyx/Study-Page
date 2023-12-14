@@ -142,7 +142,6 @@ const Acids: Array<Array<any>> = [
     [`Hydroxide`, "Base", "normal", ""],
     [`Carbonate`, "Base", "normal", ""],
 
-
     ["separator", "Acid Reactions"],
     [`Acid + Metal → Salt + Hydrogen`, "", "normal", ""],
     [`Acid + Base → Salt + Water`, "", "normal", ""],
@@ -216,7 +215,31 @@ const OrganicChemistry: Array<Array<any>> = [
     [`Lubricating fraction`, "", "normal", 3, "", ""],
     [`Bitumen`, "", "normal", 3, "", ""],
 ];
+const GroupTrends: Array<Array<any>> = [
+    [`separator`, "Group 1", "normal", "", "", ""],
+    [`Reactivity`, "Increases with group number", "normal", "", "", ""],
+    [
+        `Boiling/Melting point`,
+        "Decreases with group number",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [`Density`, "Increases with group number", "normal", "", "", ""],
 
+    [`separator`, "Group 7", "normal", "", "", ""],
+    [`Reactivity`, "Decreases with group number", "normal", "", "", ""],
+    [
+        `Boiling/Melting point`,
+        "Increases with group number",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [`Density`, "Increases with group number", "normal", "", "", ""],
+];
 const PracticalChemistryTesting: Array<Array<any>> = [
     [`separator`, "Cation Tests"],
     [
@@ -613,6 +636,23 @@ function FormulaeChemistry() {
                                 description={element_data[1]}
                                 importance={element_data[2]}
                                 jax={element_data[3] ? true : false}
+                                key={index}
+                            ></MultiCell>
+                        )),
+                    ]}
+                />
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Group Trends",
+                        GroupTrends.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                columns={element_data[3]}
+                                jax={element_data[4] ? true : false}
+                                third_content={element_data[5]}
                                 key={index}
                             ></MultiCell>
                         )),
