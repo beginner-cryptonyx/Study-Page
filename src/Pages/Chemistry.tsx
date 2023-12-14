@@ -215,6 +215,87 @@ const OrganicChemistry: Array<Array<any>> = [
     [`Lubricating fraction`, "", "normal", 3, "", ""],
     [`Bitumen`, "", "normal", 3, "", ""],
 ];
+
+const DecompositionRules: Array<Array<any>> = [
+    [`separator`, "Carbonates", "normal", "", "", ""],
+    [
+        `Reactive metals like potassium and sodium will not decompose`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Most metal carbonates decompose to form carbon dioxide and a metal oxide`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Very underactive metals like silver and platinum form their respective metals along with carbon dioxide and oxygen`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+
+    [`separator`, "Nitrate", "normal", "", "", ""],
+    [
+        `Reactive metals like potassium and sodium will form their metal nitrite and oxygen`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Most metal Nitrates decompose to form their metal oxide, nitrogen dioxide and oxygen`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Very underactive metals like silver and platinum form their respective metals along with nitrogen dioxide and oxygen`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Ammonium nitrate forms nitrous oxide (N2O) and water`,
+        "",
+        "external",
+        "",
+        "",
+        "",
+    ],
+    [`separator`, "Sulphate", "normal", "", "", ""],
+    [`Metals in group 1 or 2 will not decompose `, "", "normal", "", "", ""],
+    [
+        `Sulphate of heavy metals decompose to make a metal oxide and sulfur trioxide`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+    [
+        `Exceptions include: (ammonium sulfate which forms ammonia and sulfuric acid) and (Iron || sulfate which forms iron ||| oxide, sulfur trioxide and sulfur dioxide)`,
+        "",
+        "normal",
+        "",
+        "",
+        "",
+    ],
+];
+
 const GroupTrends: Array<Array<any>> = [
     [`separator`, "Group 1", "normal", "", "", ""],
     [`Reactivity`, "Increases with group number", "normal", "", "", ""],
@@ -724,7 +805,21 @@ function FormulaeChemistry() {
                         )),
                     ]}
                 />
-
+                <div className="separator">‎</div>
+                <MUIaccordion
+                    content={[
+                        "Decomposition Rules",
+                        DecompositionRules.map((element_data, index) => (
+                            <MultiCell
+                                formula={element_data[0]}
+                                description={element_data[1]}
+                                importance={element_data[2]}
+                                jax={element_data[3] ? true : false}
+                                key={index}
+                            ></MultiCell>
+                        )),
+                    ]}
+                />
                 <div className="separator">‎</div>
                 <MUIaccordion
                     content={[
