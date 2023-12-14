@@ -690,7 +690,7 @@ const EquilibriumAndRate: Array<Array<any>> = [
 function FormulaeChemistry() {
     return (
         <div className="container">
-            <div className="pt-10"></div>
+            <div className="pt-5"></div>
             <MathJaxContext config={mathJaxConfig} version={3}>
                 <MUIaccordion
                     content={[
