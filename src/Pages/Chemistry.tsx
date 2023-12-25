@@ -192,28 +192,80 @@ const Acids: Array<Array<any>> = [
 ];
 
 const OrganicChemistry: Array<Array<any>> = [
-    [`separator`, "general formulae", "normal"],
+    [`separator`, "General formulae", "normal"],
     [`C_nH_{2n + 2}`, "Alkanes", "normal", "", "true"],
     [`C_nH_{2n}`, "Alkenes", "normal", "", "true"],
     [`C_nH_{2n-2}`, "Alkynes", "external", "", "true"],
     [`C_nH_{2n+1}`, "Substituent / Alkyle", "normal", "", "true"],
 
     [`separator`, "Hydrocarbon Fractions and their Properties", "normal"],
+    [`Fraction Name`, "Carbon chain length", "external", 3, "", "Uses"],
+
+    [`Refinery Gas`, "1 - 4", "normal", 3, "", "Gas for heating and cooking"],
+    [`Gasoline (petrol)`, "5 - 6", "normal", 3, "", "Fuel for cars"],
     [
-        `Refinery Gas`,
-        <MathJax>{"C_1 \\text{to} C_4"}</MathJax>,
+        `Naphtha`,
+        "6 - 10",
         "normal",
         3,
         "",
-        "",
+        "Feedstock for chemicals and plastics",
     ],
-    [`Gasoline (petrol)`, "", "normal", 3, "", ""],
-    [`Naphtha`, "", "normal", 3, "", ""],
-    [`Kerosene`, "", "normal", 3, "", ""],
-    [`Diesel oil`, "", "normal", 3, "", ""],
-    [`Fuel oil`, "", "normal", 3, "", ""],
-    [`Lubricating fraction`, "", "normal", 3, "", ""],
-    [`Bitumen`, "", "normal", 3, "", ""],
+    [
+        `Kerosene`,
+        "10 - 15",
+        "normal",
+        3,
+        "",
+        "Fuel for aircrafts, stoves, and lamps",
+    ],
+    [`Diesel oil`, "15 - 20", "normal", 3, "", "Fuel for diesel engines"],
+    [
+        `Fuel oil`,
+        "20 - 30",
+        "normal",
+        3,
+        "",
+        "Fuel for power stations and ships",
+    ],
+    [
+        `Lubricating fraction`,
+        "30 - 50",
+        "normal",
+        3,
+        "",
+        <Point points={["Engine oil", "Waxes", "Polishes"]}></Point>,
+    ],
+    [
+        `Bitumen`,
+        "50+",
+        "normal",
+        3,
+        "",
+        <Point points={["Roofs", "Road Surfaces (tar)"]}></Point>,
+    ],
+
+    // [`separator`, "Organic Chemistry Reactions", "normal"],
+    // [
+    //     `Catalytic Cracking`,
+    //     <Point
+    //         points={["Zeolite is the Catalyst", "", "Produces alkenes"]}
+    //     ></Point>,
+    //     "normal",
+    //     3,
+    //     "",
+    //     <Point points={["540 Degrees C", "", "Catalyst (zeolite)"]}></Point>,
+    // ],
+    // [
+    //     `Ethene to Ethane`,
+    //     <Point
+    //         points={["Zeolite is the Catalyst", "", "Produces alkenes"]}
+    //     ></Point>,
+    //     "normal",
+    //     3,
+    //     "",
+    //     <Point points={["540 Degrees C", "", "Catalyst (zeolite)"]}></Point>,
+    // ],
 ];
 
 const DecompositionRules: Array<Array<any>> = [
@@ -671,6 +723,16 @@ const EquilibriumAndRate: Array<Array<any>> = [
         3,
         "",
         <Point points={["450 Degrees C", "", "2 Atmospheres"]}></Point>,
+    ],
+    [
+        `Catalytic Cracking`,
+        <Point
+            points={["Zeolite is the Catalyst", "", "Produces alkenes"]}
+        ></Point>,
+        "normal",
+        3,
+        "",
+        <Point points={["540 Degrees C", "", "Catalyst (zeolite)"]}></Point>,
     ],
 
     ["separator", "Factors affecting Reversible Reactions"],
